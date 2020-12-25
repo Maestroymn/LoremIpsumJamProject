@@ -1,67 +1,68 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyboardListener : MonoBehaviour
+namespace InputSystem
 {
-    [SerializeField] KeyCode firstKey;
-    [SerializeField] KeyCode secondKey;
-    [SerializeField] KeyCode thirdKey;
-    [SerializeField] KeyCode fourthKey;
-    [SerializeField] KeyCode fifthKey;
-    [SerializeField] KeyCode sixthKey;
-    public static event Action FirstKeyPressed;
-    public static event Action SecondKeyPressed;
-    public static event Action ThirdKeyPressed;
-    public static event Action FourthKeyPressed;
-    public static event Action FifthKeyPressed;
-    public static event Action SixthKeyPressed;
-
-    void Update()
+    public class KeyboardListener : MonoBehaviour
     {
-        if (Input.anyKeyDown)
-        {
-            KeyPressed();
-        }
-    }
+        public KeyCode FirstKey;
+        public KeyCode SecondKey;
+        public KeyCode ThirdKey;
+        public KeyCode FourthKey;
+        public KeyCode FifthKey;
+        public KeyCode SixthKey;
+        public static event Action FirstKeyPressed;
+        public static event Action SecondKeyPressed;
+        public static event Action ThirdKeyPressed;
+        public static event Action FourthKeyPressed;
+        public static event Action FifthKeyPressed;
+        public static event Action SixthKeyPressed;
 
-    void KeyPressed()
-    {
-        if (Input.GetKeyDown(firstKey))
+        void Update()
         {
-            FirstKeyPressed?.Invoke();
-            Debug.Log(firstKey + " basıldı");
-        }
-
-        if (Input.GetKeyDown(secondKey))
-        {
-            SecondKeyPressed?.Invoke();
-            Debug.Log(secondKey + " basıldı");
-        }
-
-        if (Input.GetKeyDown(thirdKey))
-        {
-            ThirdKeyPressed?.Invoke();
-            Debug.Log(thirdKey + " basıldı");
+            if (Input.anyKeyDown)
+            {
+                KeyPressed();
+            }
         }
 
-        if (Input.GetKeyDown(fourthKey))
+        void KeyPressed()
         {
-            FourthKeyPressed?.Invoke();
-            Debug.Log(fourthKey + " basıldı");
-        }
+            if (Input.GetKeyDown(FirstKey))
+            {
+                FirstKeyPressed?.Invoke();
+                Debug.Log(FirstKey + " basıldı");
+            }
 
-        if (Input.GetKeyDown(fifthKey))
-        {
-            FifthKeyPressed?.Invoke();
-            Debug.Log(fifthKey + " basıldı");
-        }
+            if (Input.GetKeyDown(SecondKey))
+            {
+                SecondKeyPressed?.Invoke();
+                Debug.Log(SecondKey + " basıldı");
+            }
 
-        if (Input.GetKeyDown(sixthKey))
-        {
-            SixthKeyPressed?.Invoke();
-            Debug.Log(sixthKey + " basıldı");
+            if (Input.GetKeyDown(ThirdKey))
+            {
+                ThirdKeyPressed?.Invoke();
+                Debug.Log(ThirdKey + " basıldı");
+            }
+
+            if (Input.GetKeyDown(FourthKey))
+            {
+                FourthKeyPressed?.Invoke();
+                Debug.Log(FourthKey + " basıldı");
+            }
+
+            if (Input.GetKeyDown(FifthKey))
+            {
+                FifthKeyPressed?.Invoke();
+                Debug.Log(FifthKey + " basıldı");
+            }
+
+            if (Input.GetKeyDown(SixthKey))
+            {
+                SixthKeyPressed?.Invoke();
+                Debug.Log(SixthKey + " basıldı");
+            }
         }
     }
 }

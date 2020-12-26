@@ -1,144 +1,161 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 
-public class GuitaristCharacterBehaviour : MonoBehaviour
+namespace Behaviours
 {
-    private bool _isJoystickClaimed, _isJoystickPressed, _isMouseClaimed;
-    [SerializeField] private MouseJoystickListener joystickListener;
-    [SerializeField] private MouseListener mouseListener;
-
-    JoystickInputs joystickInputs;
-    private void Awake()
+    public class GuitaristCharacterBehaviour : MonoBehaviour
     {
-        joystickInputs = new JoystickInputs();
+        public CharacterSituation CharacterSituation;
+        public float Angle;
+        private bool _isJoystickClaimed, _isJoystickPressed, _isMouseClaimed;
+        private Vector2 _mouseDir;
+        private float _vertical;
+        [SerializeField] private MouseJoystickListener joystickListener;
+        [SerializeField] private MouseListener mouseListener;
+        [SerializeField] public Rigidbody2D Rigidbody2D;
+        [SerializeField] private DrumCharacterBehaviour _drumCharacter;
+        JoystickInputs joystickInputs;
+        private void StartInputSelectionRoutine()
+        {
+            joystickInputs = new JoystickInputs();
+            StartCoroutine(GuitaristSelectInput());
 
-        joystickInputs.MouseJoystick.RightOne.performed += ctx => SelectJoystick();
-        joystickInputs.MouseJoystick.RightOne.canceled += ctx => SelectJoystick();
+            joystickInputs.MouseJoystick.RightOne.performed += ctx => SelectJoystick();
+            joystickInputs.MouseJoystick.RightOne.canceled += ctx => SelectJoystick();
+        }
         
-    }
-
-    private void Start()
-    {
-        StartCoroutine(GuitaristSelectInput());
-    }
-
-    private IEnumerator GuitaristSelectInput()
-    {
-        while (true)
+        private void FixedUpdate()
         {
-            if (Input.GetMouseButton(0) && !_isMouseClaimed)
+            if(CharacterSituation==CharacterSituation.OnMap)
             {
-                _isMouseClaimed = true;
-                Debug.Log("Tıkladım Mouse");
-                mouseListener.LeftClick += OnLeftClick;
-                mouseListener.RightClick += OnRightClick;
-                mouseListener.LeftClickDraggedUp += OnLeftClickDragUp;
-                mouseListener.LeftClickDraggedDown += OnLeftClickDragDown;
-                mouseListener.RightClickDraggedUp += OnRightClickDragUp;
-                mouseListener.RightClickDraggedDown += OnRightClickDragDown;
-                _isJoystickClaimed = false;
-                _isJoystickPressed = false;
+                LookAtMouse();
             }
-
-            if (_isJoystickPressed && !_isJoystickClaimed)
-            {
-                _isJoystickClaimed = true;
-                Debug.Log("Joystick Added");
-                joystickListener.Initialized(joystickInputs);
-                joystickListener.JoystickLeftOne += OnJoystickLeftOne;
-                joystickListener.JoystickRightOne += OnJoystickRightOne;
-                joystickListener.JoystickLeftDraggedUp += OnJoystickLeftDragUp;
-                joystickListener.JoystickLeftDraggedDown += OnJoystickLeftDragDown;
-                joystickListener.JoystickRightDraggedUp += OnJoystickRightDragUp;
-                joystickListener.JoystickRightDraggedDown += OnJoystickRightDragDown;
-                _isMouseClaimed = false;
-            }
-            yield return null;
         }
-    }
+        
+        void LookAtMouse()
+        {
+            if (!(Camera.main is null))
+                _mouseDir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+            Angle = Mathf.Atan2(_mouseDir.y, _mouseDir.x) * Mathf.Rad2Deg;
+            _drumCharacter.transform.rotation = Quaternion.AngleAxis(Angle, Vector3.forward);
+            transform.rotation = Quaternion.AngleAxis(Angle, Vector3.forward);
+        }
 
-    // Mouse Inputs
-    private void OnLeftClick(PointerEventData eventData)
-    {
+        private IEnumerator GuitaristSelectInput()
+        {
+            while (CharacterSituation==CharacterSituation.InputSelectionStage)
+            {
+                if (Input.GetMouseButton(0) && !_isMouseClaimed)
+                {
+                    _isMouseClaimed = true;
+                    Debug.Log("Tıkladım Mouse");
+                    mouseListener.LeftClick += OnLeftClick;
+                    mouseListener.RightClick += OnRightClick;
+                    mouseListener.LeftClickDraggedUp += OnLeftClickDragUp;
+                    mouseListener.LeftClickDraggedDown += OnLeftClickDragDown;
+                    mouseListener.RightClickDraggedUp += OnRightClickDragUp;
+                    mouseListener.RightClickDraggedDown += OnRightClickDragDown;
+                    _isJoystickClaimed = false;
+                    _isJoystickPressed = false;
+                }
+                if (_isJoystickPressed && !_isJoystickClaimed)
+                {
+                    _isJoystickClaimed = true;
+                    Debug.Log("Joystick Added");
+                    joystickListener.Initialized(joystickInputs);
+                    joystickListener.JoystickLeftOne += OnJoystickLeftOne;
+                    joystickListener.JoystickRightOne += OnJoystickRightOne;
+                    joystickListener.JoystickLeftDraggedUp += OnJoystickLeftDragUp;
+                    joystickListener.JoystickLeftDraggedDown += OnJoystickLeftDragDown;
+                    joystickListener.JoystickRightDraggedUp += OnJoystickRightDragUp;
+                    joystickListener.JoystickRightDraggedDown += OnJoystickRightDragDown;
+                    _isMouseClaimed = false;
+                }
+                yield return null;
+            }
+        }
 
-    }
+        // Mouse Inputs
+        private void OnLeftClick(PointerEventData eventData)
+        {
 
-    private void OnRightClick(PointerEventData eventData)
-    {
+        }
 
-    }
+        private void OnRightClick(PointerEventData eventData)
+        {
+
+        }
     
-    private void OnLeftClickDragUp(PointerEventData eventData)
-    {
-
-    }
-
-    private void OnLeftClickDragDown(PointerEventData eventData)
-    {
-
-    }
-
-    private void OnRightClickDragUp(PointerEventData eventData)
-    {
-
-    }
-
-    private void OnRightClickDragDown(PointerEventData eventData)
-    {
-
-    }
-
-    // Joystick Inputs
-    private void OnJoystickRightOne()
-    {
-
-    }
-
-    private void OnJoystickLeftOne()
-    {
-
-    }
-
-    private void OnJoystickLeftDragUp()
-    {
-
-    }
-
-    private void OnJoystickLeftDragDown()
-    {
-
-    }
-
-    private void OnJoystickRightDragUp()
-    {
-
-    }
-
-    private void OnJoystickRightDragDown()
-    {
-
-    }
-
-    // Joystick Click Control
-    private void SelectJoystick()
-    {
-        if (joystickInputs.MouseJoystick.RightOne.triggered && !_isJoystickClaimed)
+        private void OnLeftClickDragUp(PointerEventData eventData)
         {
-            _isJoystickPressed = true;
-            Debug.Log("Joystick");
+
         }
-    }
 
-    private void OnEnable()
-    {
-        joystickInputs.MouseJoystick.Enable();
-    }
+        private void OnLeftClickDragDown(PointerEventData eventData)
+        {
 
-    private void OnDisable()
-    {
-        joystickInputs.MouseJoystick.Disable();
+        }
+
+        private void OnRightClickDragUp(PointerEventData eventData)
+        {
+
+        }
+
+        private void OnRightClickDragDown(PointerEventData eventData)
+        {
+
+        }
+
+        // Joystick Inputs
+        private void OnJoystickRightOne()
+        {
+
+        }
+
+        private void OnJoystickLeftOne()
+        {
+
+        }
+
+        private void OnJoystickLeftDragUp()
+        {
+
+        }
+
+        private void OnJoystickLeftDragDown()
+        {
+
+        }
+
+        private void OnJoystickRightDragUp()
+        {
+
+        }
+
+        private void OnJoystickRightDragDown()
+        {
+
+        }
+
+        // Joystick Click Control
+        private void SelectJoystick()
+        {
+            if (joystickInputs.MouseJoystick.RightOne.triggered && !_isJoystickClaimed)
+            {
+                _isJoystickPressed = true;
+                Debug.Log("Joystick");
+            }
+        }
+
+        private void OnEnable()
+        {
+            joystickInputs.MouseJoystick.Enable();
+        }
+
+        private void OnDisable()
+        {
+            joystickInputs.MouseJoystick.Disable();
+        }
     }
 }

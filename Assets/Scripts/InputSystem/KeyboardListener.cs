@@ -11,12 +11,12 @@ namespace InputSystem
         public KeyCode FourthKey;
         public KeyCode FifthKey;
         public KeyCode SixthKey;
-        public static event Action FirstKeyPressed;
-        public static event Action SecondKeyPressed;
-        public static event Action ThirdKeyPressed;
-        public static event Action FourthKeyPressed;
-        public static event Action FifthKeyPressed;
-        public static event Action SixthKeyPressed;
+        public event Action FirstKeyPressed;
+        public event Action SecondKeyPressed;
+        public event Action ThirdKeyPressed;
+        public event Action FourthKeyPressed;
+        public event Action FifthKeyPressed;
+        public event Action SixthKeyPressed;
 
         void Update()
         { 

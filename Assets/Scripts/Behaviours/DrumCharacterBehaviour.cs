@@ -1,77 +1,88 @@
 ﻿using System.Collections;
+using InputSystem;
 using UnityEngine;
 
 namespace Behaviours
 {
+    public enum CharacterSituation
+    {
+        OnMap,
+        OnArena,
+        InputSelectionStage
+    }
     public class DrumCharacterBehaviour : MonoBehaviour
     {
-        float _vertical;
-        [SerializeField] float movementSpeed = 50;
-        Rigidbody2D drummerRigidBody;
-        [SerializeField] GameObject secondPlayer;
-        Vector2 _mouseDir;
-        float _angle;
-        Vector3 _direction;
+        [SerializeField] private float movementSpeed = 50;
+        [SerializeField] private GuitaristCharacterBehaviour _guitaristCharacter;
+        [SerializeField] public Rigidbody2D DrummerRigidBody;
+        [SerializeField] private KeyboardListener _keyboardListener;
+        [SerializeField] private KeyboardJoystickListener _keyboardJoystickListener;
 
+        private float _vertical;
+        private Vector3 _direction;
         private bool _isJoystickClaimed, _isJoystickPressed, _isKeyboardClaimed;
-        JoystickInputs joystickInputs;
-        private void Awake()
-        {
-            drummerRigidBody = GetComponent<Rigidbody2D>();
 
+        public CharacterSituation CharacterSituation;
+        
+        JoystickInputs joystickInputs;
+        private void StartInputSelectionRoutine()
+        {
             joystickInputs = new JoystickInputs();
+            _keyboardJoystickListener.Initialized(joystickInputs);
             StartCoroutine(DrummerSelectInputs());
 
             joystickInputs.KeyboardJoystick.SouthButton.performed += ctx => SelectJoystickKeyboard();
             joystickInputs.KeyboardJoystick.SouthButton.canceled += ctx => SelectJoystickKeyboard();
         }
+        
         private void FixedUpdate()
         {
-            LookAtMouse();
-            MovementBehaviour();
-            Debug.Log(Input.mousePosition+"   " + transform.position);
-        }
-
-        void LookAtMouse()
-        {
-            _mouseDir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
-            _angle = Mathf.Atan2(_mouseDir.y, _mouseDir.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(_angle, Vector3.forward);
-
-            secondPlayer.transform.rotation = Quaternion.AngleAxis(_angle, Vector3.forward);
+            if(CharacterSituation==CharacterSituation.OnMap)
+            {
+                MovementBehaviour();
+            }
         }
 
         void MovementBehaviour()
         {
-
             _vertical = Input.GetAxis("Vertical");
-            Vector3 _newAngle = new Vector2(Mathf.Cos(_angle * Mathf.PI / 180f), Mathf.Sin(_angle * Mathf.PI / 180f));
+            Vector3 _newAngle = new Vector2(Mathf.Cos(_guitaristCharacter.Angle * Mathf.PI / 180f), Mathf.Sin(_guitaristCharacter.Angle * Mathf.PI / 180f));
             _direction = _vertical * _newAngle;
-
-            if (Vector2.Distance(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition)) < 0.2f)
+            if (!(Camera.main is null) && Vector2.Distance(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition)) < 0.2f)
             {
                 _direction = Vector3.zero;
             }
-            drummerRigidBody.velocity = _direction * movementSpeed * Time.deltaTime;
-
-            secondPlayer.GetComponent<Rigidbody2D>().velocity = _direction * movementSpeed * Time.deltaTime;
+            DrummerRigidBody.velocity = _direction * movementSpeed * Time.deltaTime;
+            _guitaristCharacter.Rigidbody2D.velocity = _direction * movementSpeed * Time.deltaTime;
         }
 
         private IEnumerator DrummerSelectInputs()
         {
-            while (true)
+            while (CharacterSituation==CharacterSituation.InputSelectionStage)
             {
                 if (Input.GetKeyDown(KeyCode.Space) && !_isKeyboardClaimed)
                 {
                     _isKeyboardClaimed = true;
                     _isJoystickClaimed = false;
                     _isJoystickPressed = false;
+                    _keyboardListener.FirstKeyPressed += OnFirstKeyPressed;
+                    _keyboardListener.SecondKeyPressed += OnSecondKeyPressed;
+                    _keyboardListener.ThirdKeyPressed += OnThirdKeyPressed;
+                    _keyboardListener.FourthKeyPressed += OnFourthKeyPressed;
+                    _keyboardListener.FifthKeyPressed += OnFifthKeyPressed;
+                    _keyboardListener.SixthKeyPressed += OnSixthKeyPressed;
                 }
 
                 if (_isJoystickPressed && !_isJoystickClaimed)
                 {
                     _isJoystickClaimed = true;
                     _isKeyboardClaimed = false;
+                    _keyboardJoystickListener.JoystickRightTwo += OnFirstKeyPressed;
+                    _keyboardJoystickListener.JoystickLeftTwo += OnSecondKeyPressed;
+                    _keyboardJoystickListener.JoystickSouthButton += OnThirdKeyPressed;
+                    _keyboardJoystickListener.JoystickNorthButton += OnFourthKeyPressed;
+                    _keyboardJoystickListener.JoystickEastButton += OnFifthKeyPressed;
+                    _keyboardJoystickListener.JoystickWestButton += OnSixthKeyPressed;
                 }
                 yield return null;
             }

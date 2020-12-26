@@ -18,9 +18,10 @@ namespace InputSystem
         {
             _soundBars.ForEach(soundbar =>
             {
+                
                 Dragged += soundbar.ChangeBarScale;
                 Clicked += soundbar.ChangeBarScale;
-                //Enter += soundbar.SongPlay;
+                Enter += soundbar.ChangeBarScale;
                 Released += soundbar.ChangeBarScale;
             });
         }
@@ -31,7 +32,7 @@ namespace InputSystem
             {
                 Dragged -= soundbar.ChangeBarScale;
                 Clicked -= soundbar.ChangeBarScale;
-                Enter -= soundbar.SongPlay;
+                //Enter -= soundbar.SongPlay;
                 Released -= soundbar.ChangeBarScale;
             });
         }

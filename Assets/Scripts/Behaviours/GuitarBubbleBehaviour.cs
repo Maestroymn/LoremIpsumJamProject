@@ -4,11 +4,19 @@ using UnityEngine;
 
 namespace Behaviours
 {
+    public enum MouseInputs
+    {
+        LeftClick,
+        LeftClickDragUp,
+        LeftClickDragDown,
+        RightClick,
+        RightClickDragUp,
+        RightClickDragDown,
+    }
     public class GuitarBubbleBehaviour : MonoBehaviour
     {
-        public KeyCode input;
+        public MouseInputs input;
         [SerializeField] private GuitaristCharacterBehaviour guitarist;
-
         public bool _isInteractable = true;
 
         public void OnHit()

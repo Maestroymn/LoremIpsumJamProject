@@ -17,15 +17,15 @@ namespace Behaviours
         [SerializeField] private DrumCharacterBehaviour _drumCharacter;
         public GuitarBubbleBehaviour currentBubble;
 
-        //private void StartInputSelectionRoutine()
-        //{
-        //    StartCoroutine(GuitaristSelectInput());
-        //}
-
-        private void Start()
+        public void StartInputSelectionRoutine()
         {
             StartCoroutine(GuitaristSelectInput());
         }
+
+        // private void Start()
+        // {
+        //     StartCoroutine(GuitaristSelectInput());
+        // }
 
         private void FixedUpdate()
         {
@@ -75,11 +75,11 @@ namespace Behaviours
                 yield return null;
             }
         }
-
+        
         // Mouse Inputs
         private void OnLeftClick(PointerEventData eventData)
         {
-            if (currentBubble.input == KeyCode.Mouse0 && currentBubble._isInteractable)
+            if (currentBubble.input == MouseInputs.LeftClick && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Mouse Clicked Btw");
@@ -88,7 +88,7 @@ namespace Behaviours
 
         private void OnRightClick(PointerEventData eventData)
         {
-            if (currentBubble.input == KeyCode.Mouse1 && currentBubble._isInteractable)
+            if (currentBubble.input == MouseInputs.RightClick && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Mouse 1 OnRightClick ");
@@ -97,7 +97,7 @@ namespace Behaviours
     
         private void OnLeftClickDragUp(PointerEventData eventData)
         {
-            if (currentBubble.input == KeyCode.Mouse0 && currentBubble._isInteractable)
+            if (currentBubble.input == MouseInputs.LeftClickDragUp && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Left Click Drag Up");
@@ -106,7 +106,7 @@ namespace Behaviours
 
         private void OnLeftClickDragDown(PointerEventData eventData)
         {
-            if (currentBubble.input == KeyCode.Mouse0 && currentBubble._isInteractable)
+            if (currentBubble.input == MouseInputs.LeftClickDragDown && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Left Click Drag Down");
@@ -115,7 +115,7 @@ namespace Behaviours
 
         private void OnRightClickDragUp(PointerEventData eventData)
         {
-            if (currentBubble.input == KeyCode.Mouse1 && currentBubble._isInteractable)
+            if (currentBubble.input == MouseInputs.RightClickDragUp && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("right Click Drag Up");
@@ -124,7 +124,7 @@ namespace Behaviours
 
         private void OnRightClickDragDown(PointerEventData eventData)
         {
-            if (currentBubble.input == KeyCode.Mouse1 && currentBubble._isInteractable)
+            if (currentBubble.input == MouseInputs.RightClickDragDown && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Right Click Drag Down");

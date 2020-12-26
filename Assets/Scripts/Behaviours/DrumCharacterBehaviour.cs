@@ -25,7 +25,7 @@ namespace Behaviours
 
         public CharacterSituation CharacterSituation;
         
-        private void StartInputSelectionRoutine()
+        public void StartInputSelectionRoutine()
         {
             StartCoroutine(DrummerSelectInputs());
         }

@@ -10,7 +10,8 @@ public class BossHealthManager : MonoBehaviour
     [SerializeField] int current;
     [SerializeField] Image mask;
     [SerializeField] List<float> percentageValues;
-    public event Action percentageReached;
+    public event Action<int> percentageReached;
+    public float fillAmount;
     
     void Start()
     {
@@ -20,15 +21,16 @@ public class BossHealthManager : MonoBehaviour
         }
     }
 
-    void GetCurrentFill()
+    public void SetHealth(int damage)
     {
-        float fillAmount = (float)current / (float)maximum;
+        current -= damage;
+        fillAmount = (float)current / (float)maximum;
         mask.fillAmount = fillAmount;
         for (int i = 0; i < percentageValues.Count; i++)
         {
             if(percentageValues[i] <= fillAmount && percentageValues[i - 1] > fillAmount && i >= 1)
             {
-                percentageReached?.Invoke();
+                percentageReached?.Invoke(i);
             }
         }
     }

@@ -16,12 +16,12 @@ namespace Behaviours
         [SerializeField] private GuitaristCharacterBehaviour _guitaristCharacter;
         [SerializeField] public Rigidbody2D DrummerRigidBody;
         [SerializeField] private KeyboardListener _keyboardListener;
-        [SerializeField] private KeyboardJoystickListener _keyboardJoystickListener;
-        public DrumBubbleBehaviour currentBubble;
+        [SerializeField] private Animator _animator;
+        [HideInInspector] public DrumBubbleBehaviour currentBubble;
 
         private float _vertical;
         private Vector3 _direction;
-        private bool _isJoystickClaimed, _isJoystickPressed, _isKeyboardClaimed;
+        private bool _isKeyboardClaimed;
 
         public CharacterSituation CharacterSituation;
         
@@ -58,26 +58,12 @@ namespace Behaviours
                 if (Input.GetKeyDown(KeyCode.Space) && !_isKeyboardClaimed)
                 {
                     _isKeyboardClaimed = true;
-                    _isJoystickClaimed = false;
-                    _isJoystickPressed = false;
                     _keyboardListener.FirstKeyPressed += OnFirstKeyPressed;
                     _keyboardListener.SecondKeyPressed += OnSecondKeyPressed;
                     _keyboardListener.ThirdKeyPressed += OnThirdKeyPressed;
                     _keyboardListener.FourthKeyPressed += OnFourthKeyPressed;
                     _keyboardListener.FifthKeyPressed += OnFifthKeyPressed;
                     _keyboardListener.SixthKeyPressed += OnSixthKeyPressed;
-                }
-
-                if (Input.GetButton("SouthButton1") && !_isJoystickClaimed)
-                {
-                    _isJoystickClaimed = true;
-                    _isKeyboardClaimed = false;
-                    _keyboardJoystickListener.JoystickRightTwo += OnFirstKeyPressed;
-                    _keyboardJoystickListener.JoystickLeftTwo += OnSecondKeyPressed;
-                    _keyboardJoystickListener.JoystickSouthButton += OnThirdKeyPressed;
-                    _keyboardJoystickListener.JoystickNorthButton += OnFourthKeyPressed;
-                    _keyboardJoystickListener.JoystickEastButton += OnFifthKeyPressed;
-                    _keyboardJoystickListener.JoystickWestButton += OnSixthKeyPressed;
                 }
                 yield return null;
             }
@@ -133,31 +119,5 @@ namespace Behaviours
             }
         }
 
-        // Joystick Inputs
-        private void OnJoystickRightTwo()
-        {
-
-        }
-        private void OnJoystickLeftTwo()
-        {
-
-        }
-        private void OnJoystickSouthButton()
-        {
-
-        }
-        private void OnJoystickNorthButton()
-        {
-
-        }
-        private void OnJoystickEastButton()
-        {
-
-        }
-        private void OnJoystickWestButton()
-        {
-
-        }
-        
     }
 }

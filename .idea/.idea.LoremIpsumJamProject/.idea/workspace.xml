@@ -22,26 +22,12 @@
     <list default="true" id="a4c9d793-16a5-4efb-bc56-fe7704bdc10b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Drummer Laser.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Drummer Laser.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Drummer/Drummer_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Drummer/Drummer_Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Drummer_Glow.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Drummer_Glow.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Drummer_Laser.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Drummer_Laser.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/GuitarGuy_Menu.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/GuitarGuy_Menu.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Guitar_Idle_Wing.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Guitar_Idle_Wing.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/CharacterMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CharacterMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/KeybindMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/KeybindMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/MainMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/MainMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Settings.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Settings.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grid.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grid.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/UIManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/UIManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/CharacterMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/CharacterMenuController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SkylineScroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SkylineScroller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Materials/Skyline 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Materials/Skyline 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Boss Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Boss Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +41,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/de/544df211/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/MainMenuController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/CharacterMenuController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/MapController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputSystem/MainMenuInputListener.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -68,13 +55,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem/KeyboardListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem/KeyboardJoystickListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem/MouseListener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitarBubbleBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SkylineScroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CharacterMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MapController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -119,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608918434029</updated>
       <workItem from="1608918452812" duration="14136000" />
-      <workItem from="1608979444454" duration="16921000" />
+      <workItem from="1608979444454" duration="19891000" />
     </task>
     <servers />
   </component>

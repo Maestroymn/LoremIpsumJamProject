@@ -8,25 +8,20 @@ namespace Behaviours
     {
         public CharacterSituation CharacterSituation;
         public float Angle;
-        private bool _isJoystickClaimed, _isJoystickPressed, _isMouseClaimed;
+        private bool _isMouseClaimed;
         private Vector2 _mouseDir;
         private float _vertical;
-        [SerializeField] private MouseJoystickListener joystickListener;
         [SerializeField] private MouseListener mouseListener;
         [SerializeField] public Rigidbody2D Rigidbody2D;
         [SerializeField] private DrumCharacterBehaviour _drumCharacter;
-        public GuitarBubbleBehaviour currentBubble;
+        [SerializeField] private Animator _animator;
+        [HideInInspector] public GuitarBubbleBehaviour currentBubble;
 
-        public void StartInputSelectionRoutine()
+        public void StartInputSelectionRoutine() 
         {
             StartCoroutine(GuitaristSelectInput());
         }
-
-        // private void Start()
-        // {
-        //     StartCoroutine(GuitaristSelectInput());
-        // }
-
+        
         private void FixedUpdate()
         {
             if(CharacterSituation==CharacterSituation.OnMap)
@@ -58,19 +53,6 @@ namespace Behaviours
                     mouseListener.LeftClickDraggedDown += OnLeftClickDragDown;
                     mouseListener.RightClickDraggedUp += OnRightClickDragUp;
                     mouseListener.RightClickDraggedDown += OnRightClickDragDown;
-                    _isJoystickClaimed = false;
-                }
-                if (Input.GetButton("RB2") && !_isJoystickClaimed)
-                {
-                    _isJoystickClaimed = true;
-                    Debug.Log("Joystick Added");
-                    joystickListener.JoystickLeftOne += OnJoystickLeftOne;
-                    joystickListener.JoystickRightOne += OnJoystickRightOne;
-                    joystickListener.JoystickLeftDraggedUp += OnJoystickLeftDragUp;
-                    joystickListener.JoystickLeftDraggedDown += OnJoystickLeftDragDown;
-                    joystickListener.JoystickRightDraggedUp += OnJoystickRightDragUp;
-                    joystickListener.JoystickRightDraggedDown += OnJoystickRightDragDown;
-                    _isMouseClaimed = false;
                 }
                 yield return null;
             }
@@ -130,37 +112,5 @@ namespace Behaviours
                 Debug.Log("Right Click Drag Down");
             }
         }
-
-        // Joystick Inputs
-        private void OnJoystickRightOne()
-        {
-
-        }
-
-        private void OnJoystickLeftOne()
-        {
-
-        }
-
-        private void OnJoystickLeftDragUp()
-        {
-
-        }
-
-        private void OnJoystickLeftDragDown()
-        {
-
-        }
-
-        private void OnJoystickRightDragUp()
-        {
-
-        }
-
-        private void OnJoystickRightDragDown()
-        {
-
-        }
-        
     }
 }

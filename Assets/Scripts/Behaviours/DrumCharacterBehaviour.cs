@@ -24,15 +24,9 @@ namespace Behaviours
 
         public CharacterSituation CharacterSituation;
         
-        JoystickInputs joystickInputs;
         private void StartInputSelectionRoutine()
         {
-            joystickInputs = new JoystickInputs();
-            _keyboardJoystickListener.Initialized(joystickInputs);
             StartCoroutine(DrummerSelectInputs());
-
-            joystickInputs.KeyboardJoystick.SouthButton.performed += ctx => SelectJoystickKeyboard();
-            joystickInputs.KeyboardJoystick.SouthButton.canceled += ctx => SelectJoystickKeyboard();
         }
         
         private void FixedUpdate()
@@ -73,7 +67,7 @@ namespace Behaviours
                     _keyboardListener.SixthKeyPressed += OnSixthKeyPressed;
                 }
 
-                if (_isJoystickPressed && !_isJoystickClaimed)
+                if (Input.GetButton("SouthButton1") && !_isJoystickClaimed)
                 {
                     _isJoystickClaimed = true;
                     _isKeyboardClaimed = false;
@@ -139,24 +133,6 @@ namespace Behaviours
         {
 
         }
-
-        private void SelectJoystickKeyboard()
-        {
-            if (joystickInputs.KeyboardJoystick.SouthButton.triggered && !_isJoystickClaimed)
-            {
-                _isJoystickPressed = true;
-                Debug.Log("Joystick");
-            }
-        }
-
-        private void OnEnable()
-        {
-            joystickInputs.MouseJoystick.Enable();
-        }
-
-        private void OnDisable()
-        {
-            joystickInputs.MouseJoystick.Disable();
-        }
+        
     }
 }

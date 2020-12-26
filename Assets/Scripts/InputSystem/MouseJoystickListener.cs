@@ -13,52 +13,63 @@ public class MouseJoystickListener : MonoBehaviour
     public event Action JoystickRightDraggedUp;
     public event Action JoystickRightDraggedDown;
 
-    JoystickInputs joystickInputs;
+    //JoystickInputs joystickInputs;
 
-    public void Initialized(JoystickInputs input)
+    private float stickVertical;
+
+    //public void Initialized()
+    //{
+    //    //joystickInputs = input;
+
+    //    //joystickInputs.MouseJoystick.RightOne.performed += ctx => RightOneListener();
+    //    //joystickInputs.MouseJoystick.RightOne.canceled += ctx => RightOneListener();
+
+    //    //joystickInputs.MouseJoystick.LeftOne.performed += ctx => LeftOneListener();
+    //    //joystickInputs.MouseJoystick.LeftOne.canceled += ctx => LeftOneListener();
+
+    //    //joystickInputs.MouseJoystick.RightStickUp.performed += ctx => DraggedUpListener();
+    //    //joystickInputs.MouseJoystick.RightStickUp.canceled += ctx => DraggedUpListener();
+
+    //    //joystickInputs.MouseJoystick.RightStickDown.performed += ctx => DraggedDownListener();
+    //    //joystickInputs.MouseJoystick.RightStickDown.canceled += ctx => DraggedDownListener();
+    //}
+
+    private void Update()
     {
-        joystickInputs = input;
-
-        joystickInputs.MouseJoystick.RightOne.performed += ctx => RightOneListener();
-        joystickInputs.MouseJoystick.RightOne.canceled += ctx => RightOneListener();
-
-        joystickInputs.MouseJoystick.LeftOne.performed += ctx => LeftOneListener();
-        joystickInputs.MouseJoystick.LeftOne.canceled += ctx => LeftOneListener();
-
-        joystickInputs.MouseJoystick.RightStickUp.performed += ctx => DraggedUpListener();
-        joystickInputs.MouseJoystick.RightStickUp.canceled += ctx => DraggedUpListener();
-
-        joystickInputs.MouseJoystick.RightStickDown.performed += ctx => DraggedDownListener();
-        joystickInputs.MouseJoystick.RightStickDown.canceled += ctx => DraggedDownListener();
+        RightButtonListener();
+        LeftButtonListener();
+        DraggedUpListener();
+        DraggedDownListener();
     }
 
-    private void RightOneListener()
+    private void RightButtonListener()
     {
-        if (joystickInputs.MouseJoystick.RightOne.triggered)
+        if (Input.GetButton("RB2"))
         {
-            Debug.Log("Right One");
+            Debug.Log("Right Button");
             JoystickRightOne?.Invoke();
         }
     }
 
-    private void LeftOneListener()
+    private void LeftButtonListener()
     {
-        if (joystickInputs.MouseJoystick.LeftOne.triggered)
+        if (Input.GetButton("LB2"))
         {
-            Debug.Log("Left ONe");
+            Debug.Log("Left Button");
             JoystickLeftOne?.Invoke();
         }
     }
-
+    
     private void DraggedUpListener()
     {
-        if (joystickInputs.MouseJoystick.LeftOne.triggered && joystickInputs.MouseJoystick.RightStickUp.triggered)
+        stickVertical = Input.GetAxisRaw("RStickVertical2");
+        if (Input.GetButton("LB2") && stickVertical > 0.0f)
         {
             Debug.Log("Left ONe Dragged Up");
             JoystickLeftDraggedUp?.Invoke();
         }
 
-        if (joystickInputs.MouseJoystick.RightOne.triggered && joystickInputs.MouseJoystick.RightStickUp.triggered)
+        if (Input.GetButton("RB2") && stickVertical > 0.0f)
         {
             Debug.Log("Right One Dragged Up");
             JoystickRightDraggedUp?.Invoke();
@@ -67,30 +78,18 @@ public class MouseJoystickListener : MonoBehaviour
 
     private void DraggedDownListener()
     {
-        if (joystickInputs.MouseJoystick.LeftOne.triggered && joystickInputs.MouseJoystick.RightStickDown.triggered)
+        stickVertical = Input.GetAxisRaw("RStickVertical2");
+        if (Input.GetButton("LB2") && stickVertical < 0.0f)
         {
             Debug.Log("Left One Dragged Down");
             JoystickLeftDraggedDown?.Invoke();
         }
 
-        if (joystickInputs.MouseJoystick.RightOne.triggered && joystickInputs.MouseJoystick.RightStickDown.triggered)
+        if (Input.GetButton("RB2") && stickVertical < 0.0f)
         {
             Debug.Log("Right One Dragged Down");
             JoystickRightDraggedDown?.Invoke();
         }
     }
 
-    //private void OnEnable()
-    //{
-    //    if (true)
-    //    {
-
-    //    }
-    //    joystickInputs.MouseJoystick.Enable();
-    //}
-
-    //private void OnDisable()
-    //{
-    //    joystickInputs.MouseJoystick.Disable();
-    //}
 }

@@ -1,5 +1,5 @@
 using UnityEngine;
-﻿using System;
+using System;
 using UnityEngine.EventSystems;
 
 public class MouseListener : MonoBehaviour, IDragHandler, IPointerDownHandler

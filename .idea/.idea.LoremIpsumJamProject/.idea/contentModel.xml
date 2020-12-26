@@ -59,10 +59,17 @@
         <e p="Scripts" t="Include">
           <e p="ArmProjectile.cs" t="Include" />
           <e p="Behaviours" t="Include">
+            <e p="BarScript.cs" t="Include" />
             <e p="CameraFollow.cs" t="Include" />
+            <e p="DrumBubbleBehaviour.cs" t="Include" />
             <e p="DrumCharacterBehaviour.cs" t="Include" />
+            <e p="GuitarBubbleBehaviour.cs" t="Include" />
             <e p="GuitaristCharacterBehaviour.cs" t="Include" />
             <e p="MainMenuSoundBarBehaviour.cs" t="Include" />
+          </e>
+          <e p="Controllers" t="Include">
+            <e p="BubbleController.cs" t="Include" />
+            <e p="CharacterMenuController.cs" t="Include" />
           </e>
           <e p="InputSystem" t="Include">
             <e p="JoystickInputs.cs" t="Include" />

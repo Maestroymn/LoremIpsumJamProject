@@ -11,80 +11,64 @@ namespace InputSystem
         public event Action JoystickNorthButton;
         public event Action JoystickEastButton;
         public event Action JoystickWestButton;
+        
 
-        JoystickInputs joysticksInputs;
-
-        public void Initialized(JoystickInputs input)
+        private void Update()
         {
-            joysticksInputs = input;
-
-            joysticksInputs.KeyboardJoystick.RightTwo.performed += ctx => RightTwoListener();
-            joysticksInputs.KeyboardJoystick.RightTwo.canceled += ctx => RightTwoListener();
-
-            joysticksInputs.KeyboardJoystick.LeftTwo.performed += ctx => LeftTwoListener();
-            joysticksInputs.KeyboardJoystick.LeftTwo.canceled += ctx => LeftTwoListener();
-
-            joysticksInputs.KeyboardJoystick.SouthButton.performed += ctx => SouthButtonListener();
-            joysticksInputs.KeyboardJoystick.SouthButton.canceled += ctx => SouthButtonListener();
-
-            joysticksInputs.KeyboardJoystick.NorthButton.performed += ctx => NorthButtonListener();
-            joysticksInputs.KeyboardJoystick.NorthButton.canceled += ctx => NorthButtonListener();
-
-            joysticksInputs.KeyboardJoystick.EastButton.performed += ctx => EastButtonListener();
-            joysticksInputs.KeyboardJoystick.EastButton.canceled += ctx => EastButtonListener();
-
-            joysticksInputs.KeyboardJoystick.WestButton.performed += ctx => WestButtonListener();
-            joysticksInputs.KeyboardJoystick.WestButton.canceled += ctx => WestButtonListener();
+            RightTriggerListener();
+            LeftTriggerListener();
+            SouthButtonListener();
+            NorthButtonListener();
+            EastButtonListener();
+            WestButtonListener();
         }
 
-        private void RightTwoListener()
+        private void RightTriggerListener()
         {
-            if (joysticksInputs.KeyboardJoystick.RightTwo.triggered)
+            if (Input.GetAxisRaw("RT1") > 0.0f)
             {
-                Debug.Log("Right Two");
+                Debug.Log("Right Trigger");
                 JoystickRightTwo?.Invoke();
             }
         }
 
-        private void LeftTwoListener()
+        private void LeftTriggerListener()
         {
-            if (joysticksInputs.KeyboardJoystick.LeftTwo.triggered)
+            if (Input.GetAxisRaw("LT1") > 0.0f)
             {
-                Debug.Log("Left Two");
+                Debug.Log("Left Trigger");
                 JoystickLeftTwo?.Invoke();
             }
         }
-
         private void SouthButtonListener()
         {
-            if (joysticksInputs.KeyboardJoystick.SouthButton.triggered)
+            if (Input.GetButton("SouthButton1"))
             {
                 Debug.Log("South Button");
                 JoystickSouthButton?.Invoke();
             }
         }
-
         private void NorthButtonListener()
         {
-            if (joysticksInputs.KeyboardJoystick.NorthButton.triggered)
+            if (Input.GetButton("NorthButton1"))
             {
                 Debug.Log("North Button");
                 JoystickNorthButton?.Invoke();
+
             }
         }
-
         private void EastButtonListener()
         {
-            if (joysticksInputs.KeyboardJoystick.EastButton.triggered)
+            if (Input.GetButton("EastButton1"))
             {
                 Debug.Log("East Button");
                 JoystickEastButton?.Invoke();
+
             }
         }
-
         private void WestButtonListener()
         {
-            if (joysticksInputs.KeyboardJoystick.WestButton.triggered)
+            if (Input.GetButton("WestButton1"))
             {
                 Debug.Log("West Button");
                 JoystickWestButton?.Invoke();

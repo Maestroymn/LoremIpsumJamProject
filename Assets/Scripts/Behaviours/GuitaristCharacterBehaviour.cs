@@ -15,16 +15,18 @@ namespace Behaviours
         [SerializeField] private MouseListener mouseListener;
         [SerializeField] public Rigidbody2D Rigidbody2D;
         [SerializeField] private DrumCharacterBehaviour _drumCharacter;
-        JoystickInputs joystickInputs;
-        private void StartInputSelectionRoutine()
-        {
-            joystickInputs = new JoystickInputs();
-            StartCoroutine(GuitaristSelectInput());
+        public GuitarBubbleBehaviour currentBubble;
 
-            joystickInputs.MouseJoystick.RightOne.performed += ctx => SelectJoystick();
-            joystickInputs.MouseJoystick.RightOne.canceled += ctx => SelectJoystick();
+        public void StartInputSelectionRoutine()
+        {
+            StartCoroutine(GuitaristSelectInput());
         }
-        
+
+        // private void Start()
+        // {
+        //     StartCoroutine(GuitaristSelectInput());
+        // }
+
         private void FixedUpdate()
         {
             if(CharacterSituation==CharacterSituation.OnMap)
@@ -57,13 +59,11 @@ namespace Behaviours
                     mouseListener.RightClickDraggedUp += OnRightClickDragUp;
                     mouseListener.RightClickDraggedDown += OnRightClickDragDown;
                     _isJoystickClaimed = false;
-                    _isJoystickPressed = false;
                 }
-                if (_isJoystickPressed && !_isJoystickClaimed)
+                if (Input.GetButton("RB2") && !_isJoystickClaimed)
                 {
                     _isJoystickClaimed = true;
                     Debug.Log("Joystick Added");
-                    joystickListener.Initialized(joystickInputs);
                     joystickListener.JoystickLeftOne += OnJoystickLeftOne;
                     joystickListener.JoystickRightOne += OnJoystickRightOne;
                     joystickListener.JoystickLeftDraggedUp += OnJoystickLeftDragUp;
@@ -75,36 +75,60 @@ namespace Behaviours
                 yield return null;
             }
         }
-
+        
         // Mouse Inputs
         private void OnLeftClick(PointerEventData eventData)
         {
-
+            if (currentBubble.input == MouseInputs.LeftClick && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Mouse Clicked Btw");
+            }
         }
 
         private void OnRightClick(PointerEventData eventData)
         {
-
+            if (currentBubble.input == MouseInputs.RightClick && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Mouse 1 OnRightClick ");
+            }
         }
     
         private void OnLeftClickDragUp(PointerEventData eventData)
         {
-
+            if (currentBubble.input == MouseInputs.LeftClickDragUp && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Left Click Drag Up");
+            }
         }
 
         private void OnLeftClickDragDown(PointerEventData eventData)
         {
-
+            if (currentBubble.input == MouseInputs.LeftClickDragDown && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Left Click Drag Down");
+            }
         }
 
         private void OnRightClickDragUp(PointerEventData eventData)
         {
-
+            if (currentBubble.input == MouseInputs.RightClickDragUp && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("right Click Drag Up");
+            }
         }
 
         private void OnRightClickDragDown(PointerEventData eventData)
         {
-
+            if (currentBubble.input == MouseInputs.RightClickDragDown && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Right Click Drag Down");
+            }
         }
 
         // Joystick Inputs
@@ -137,25 +161,6 @@ namespace Behaviours
         {
 
         }
-
-        // Joystick Click Control
-        private void SelectJoystick()
-        {
-            if (joystickInputs.MouseJoystick.RightOne.triggered && !_isJoystickClaimed)
-            {
-                _isJoystickPressed = true;
-                Debug.Log("Joystick");
-            }
-        }
-
-        private void OnEnable()
-        {
-            joystickInputs.MouseJoystick.Enable();
-        }
-
-        private void OnDisable()
-        {
-            joystickInputs.MouseJoystick.Disable();
-        }
+        
     }
 }

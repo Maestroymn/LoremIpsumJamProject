@@ -17,6 +17,7 @@ namespace Behaviours
         [SerializeField] public Rigidbody2D DrummerRigidBody;
         [SerializeField] private KeyboardListener _keyboardListener;
         [SerializeField] private KeyboardJoystickListener _keyboardJoystickListener;
+        public DrumBubbleBehaviour currentBubble;
 
         private float _vertical;
         private Vector3 _direction;
@@ -24,15 +25,9 @@ namespace Behaviours
 
         public CharacterSituation CharacterSituation;
         
-        JoystickInputs joystickInputs;
-        private void StartInputSelectionRoutine()
+        public void StartInputSelectionRoutine()
         {
-            joystickInputs = new JoystickInputs();
-            _keyboardJoystickListener.Initialized(joystickInputs);
             StartCoroutine(DrummerSelectInputs());
-
-            joystickInputs.KeyboardJoystick.SouthButton.performed += ctx => SelectJoystickKeyboard();
-            joystickInputs.KeyboardJoystick.SouthButton.canceled += ctx => SelectJoystickKeyboard();
         }
         
         private void FixedUpdate()
@@ -73,7 +68,7 @@ namespace Behaviours
                     _keyboardListener.SixthKeyPressed += OnSixthKeyPressed;
                 }
 
-                if (_isJoystickPressed && !_isJoystickClaimed)
+                if (Input.GetButton("SouthButton1") && !_isJoystickClaimed)
                 {
                     _isJoystickClaimed = true;
                     _isKeyboardClaimed = false;
@@ -91,27 +86,51 @@ namespace Behaviours
         // Keyboard Inputs
         private void OnFirstKeyPressed()
         {
-
+            if (currentBubble.input == _keyboardListener.FirstKey && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Key Pressed");
+            }
         }
         private void OnSecondKeyPressed()
         {
-
+            if (currentBubble.input == _keyboardListener.SecondKey && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Key Pressed");
+            }
         }
         private void OnThirdKeyPressed()
         {
-
+            if (currentBubble.input == _keyboardListener.ThirdKey && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Key Pressed");
+            }
         }
         private void OnFourthKeyPressed()
         {
-
+            if (currentBubble.input == _keyboardListener.FourthKey && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Key Pressed");
+            }
         }
         private void OnFifthKeyPressed()
         {
-
+            if (currentBubble.input == _keyboardListener.FifthKey && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Key Pressed");
+            }
         }
         private void OnSixthKeyPressed()
         {
-
+            if (currentBubble.input == _keyboardListener.SixthKey && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Key Pressed");
+            }
         }
 
         // Joystick Inputs
@@ -139,24 +158,6 @@ namespace Behaviours
         {
 
         }
-
-        private void SelectJoystickKeyboard()
-        {
-            if (joystickInputs.KeyboardJoystick.SouthButton.triggered && !_isJoystickClaimed)
-            {
-                _isJoystickPressed = true;
-                Debug.Log("Joystick");
-            }
-        }
-
-        private void OnEnable()
-        {
-            joystickInputs.MouseJoystick.Enable();
-        }
-
-        private void OnDisable()
-        {
-            joystickInputs.MouseJoystick.Disable();
-        }
+        
     }
 }

@@ -1,0 +1,2180 @@
+fileFormatVersion: 2
+guid: 13c700c260494564eacd1e98a47a1930
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3471502784548232059
+    second: Pressable_Buttons_0
+  - first:
+      213: 3994817265504574292
+    second: Pressable_Buttons_1
+  - first:
+      213: -2544098543800380180
+    second: Pressable_Buttons_2
+  - first:
+      213: 986007229387865107
+    second: Pressable_Buttons_3
+  - first:
+      213: -8557226288663005577
+    second: Pressable_Buttons_4
+  - first:
+      213: -4300396820527333983
+    second: Pressable_Buttons_5
+  - first:
+      213: 6543855809863036145
+    second: Pressable_Buttons_6
+  - first:
+      213: -3899634968525171298
+    second: Pressable_Buttons_7
+  - first:
+      213: 3979950829029804319
+    second: Pressable_Buttons_8
+  - first:
+      213: 4251851488092299443
+    second: Pressable_Buttons_9
+  - first:
+      213: 1888859407138301931
+    second: Pressable_Buttons_10
+  - first:
+      213: 8352977182650974259
+    second: Pressable_Buttons_11
+  - first:
+      213: -30554226623417961
+    second: Pressable_Buttons_12
+  - first:
+      213: 7965806271316713346
+    second: Pressable_Buttons_13
+  - first:
+      213: -4700509507122494653
+    second: Pressable_Buttons_14
+  - first:
+      213: 3516890904038511863
+    second: Pressable_Buttons_15
+  - first:
+      213: 2054754902616724713
+    second: Pressable_Buttons_16
+  - first:
+      213: -4274614014323150021
+    second: Pressable_Buttons_17
+  - first:
+      213: -2710562002571438609
+    second: Pressable_Buttons_18
+  - first:
+      213: -7045450163178647474
+    second: Pressable_Buttons_19
+  - first:
+      213: 738722686376609785
+    second: Pressable_Buttons_20
+  - first:
+      213: 8123226334942653640
+    second: Pressable_Buttons_21
+  - first:
+      213: -1573486270212811532
+    second: Pressable_Buttons_22
+  - first:
+      213: -3704252224848237286
+    second: Pressable_Buttons_23
+  - first:
+      213: 4412235338696062977
+    second: Pressable_Buttons_24
+  - first:
+      213: -6355534887887166471
+    second: Pressable_Buttons_25
+  - first:
+      213: -9103096470627191430
+    second: Pressable_Buttons_26
+  - first:
+      213: 7484873147201592558
+    second: Pressable_Buttons_27
+  - first:
+      213: 490185866671577370
+    second: Pressable_Buttons_28
+  - first:
+      213: 4627308158618354629
+    second: Pressable_Buttons_29
+  - first:
+      213: 1309183579920043414
+    second: Pressable_Buttons_30
+  - first:
+      213: -3508772012613920752
+    second: Pressable_Buttons_31
+  - first:
+      213: 4030921480969967385
+    second: Pressable_Buttons_32
+  - first:
+      213: -5221471470230481699
+    second: Pressable_Buttons_33
+  - first:
+      213: 5656351847759419908
+    second: Pressable_Buttons_34
+  - first:
+      213: -1605987686265326256
+    second: Pressable_Buttons_35
+  - first:
+      213: -4347632667204199344
+    second: Pressable_Buttons_36
+  - first:
+      213: -7659968277310049042
+    second: Pressable_Buttons_37
+  - first:
+      213: 9121889916085485074
+    second: Pressable_Buttons_38
+  - first:
+      213: -5995044363415441678
+    second: Pressable_Buttons_39
+  - first:
+      213: 2157486084818208287
+    second: Pressable_Buttons_40
+  - first:
+      213: 7706874521513596163
+    second: Pressable_Buttons_41
+  - first:
+      213: -5491639206891250998
+    second: Pressable_Buttons_42
+  - first:
+      213: -4101560993301400664
+    second: Pressable_Buttons_43
+  - first:
+      213: 1437962243196173416
+    second: Pressable_Buttons_44
+  - first:
+      213: -2899391278275280305
+    second: Pressable_Buttons_45
+  - first:
+      213: 488868649347502854
+    second: Pressable_Buttons_46
+  - first:
+      213: -7066928151973419512
+    second: Pressable_Buttons_47
+  - first:
+      213: -6145574991614370707
+    second: Pressable_Buttons_48
+  - first:
+      213: -2989723881058395525
+    second: Pressable_Buttons_49
+  - first:
+      213: 755061859826259150
+    second: Pressable_Buttons_50
+  - first:
+      213: 2647211636337954538
+    second: Pressable_Buttons_51
+  - first:
+      213: -94904393524184568
+    second: Pressable_Buttons_52
+  - first:
+      213: -6925949572545318540
+    second: Pressable_Buttons_53
+  - first:
+      213: -6558797780999875494
+    second: Pressable_Buttons_54
+  - first:
+      213: 8383273821765053006
+    second: Pressable_Buttons_55
+  - first:
+      213: 1612919791766378230
+    second: Pressable_Buttons_56
+  - first:
+      213: 2199224901418825505
+    second: Pressable_Buttons_57
+  - first:
+      213: -8754599475260352362
+    second: Pressable_Buttons_58
+  - first:
+      213: 6717636071083947272
+    second: Pressable_Buttons_59
+  - first:
+      213: 960945859078036824
+    second: Pressable_Buttons_60
+  - first:
+      213: -4872319639989596845
+    second: Pressable_Buttons_61
+  - first:
+      213: 5450708808329048952
+    second: Pressable_Buttons_62
+  - first:
+      213: 2057502270246205730
+    second: Pressable_Buttons_63
+  - first:
+      213: -4526190550295201476
+    second: Pressable_Buttons_64
+  - first:
+      213: 6949208238414006944
+    second: Pressable_Buttons_65
+  - first:
+      213: 4671309362548296550
+    second: Pressable_Buttons_66
+  - first:
+      213: -3315197986190436447
+    second: Pressable_Buttons_67
+  - first:
+      213: -3752910490677570333
+    second: Pressable_Buttons_68
+  - first:
+      213: -7389982136064538242
+    second: Pressable_Buttons_69
+  - first:
+      213: 5641599051292943815
+    second: Pressable_Buttons_70
+  - first:
+      213: 7317210300868010880
+    second: Pressable_Buttons_71
+  - first:
+      213: -7900196556182675456
+    second: Pressable_Buttons_72
+  - first:
+      213: -2221606372453667034
+    second: Pressable_Buttons_73
+  - first:
+      213: -1628753921523444728
+    second: Pressable_Buttons_74
+  - first:
+      213: 1629791343385932701
+    second: Pressable_Buttons_75
+  - first:
+      213: -1152546553150303230
+    second: Pressable_Buttons_76
+  - first:
+      213: -4829072923548976153
+    second: Pressable_Buttons_77
+  - first:
+      213: 5962149826423181208
+    second: Pressable_Buttons_78
+  - first:
+      213: 6548745012500991327
+    second: Pressable_Buttons_79
+  - first:
+      213: -8993730718358775617
+    second: Pressable_Buttons_80
+  - first:
+      213: -6686715073846915333
+    second: Pressable_Buttons_81
+  - first:
+      213: -5880416130908233940
+    second: Pressable_Buttons_82
+  - first:
+      213: 4839152578885035649
+    second: Pressable_Buttons_83
+  - first:
+      213: 8937337544329202427
+    second: Pressable_Buttons_84
+  - first:
+      213: -3902832877821190202
+    second: Pressable_Buttons_85
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pressable_Buttons_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584293a3c9eb2dfc0800000000000000
+      internalID: -3471502784548232059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b5ff43321707730800000000000000
+      internalID: 3994817265504574292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce490378adb81bcd0800000000000000
+      internalID: -2544098543800380180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c71add9500fad00800000000000000
+      internalID: 986007229387865107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7767b915700ae3980800000000000000
+      internalID: -8557226288663005577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1adbf3f40ebe154c0800000000000000
+      internalID: -4300396820527333983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc2340303270da50800000000000000
+      internalID: 6543855809863036145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_7
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e959d5348a6b1e9c0800000000000000
+      internalID: -3899634968525171298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19c7db3130ab3730800000000000000
+      internalID: 3979950829029804319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_9
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b02571b66c910b30800000000000000
+      internalID: 4251851488092299443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_10
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be722298f93963a10800000000000000
+      internalID: 1888859407138301931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_11
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330cadcdd7cbbe370800000000000000
+      internalID: 8352977182650974259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79179bfb713739ff0800000000000000
+      internalID: -30554226623417961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_13
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f596f599a3c8e60800000000000000
+      internalID: 7965806271316713346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_14
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3430e94f18f64ceb0800000000000000
+      internalID: -4700509507122494653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_15
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 165
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f49409d4a18ec030800000000000000
+      internalID: 3516890904038511863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 133
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e456f682b4f38c10800000000000000
+      internalID: 2054754902616724713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 133
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33bc5ca3358da4c0800000000000000
+      internalID: -4274614014323150021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_18
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 133
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5de074836226ad0800000000000000
+      internalID: -2710562002571438609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_19
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 133
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40d40da768893e90800000000000000
+      internalID: -7045450163178647474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_20
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 133
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7000d8e58704a00800000000000000
+      internalID: 738722686376609785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_21
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 133
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccea5c105f7bb070800000000000000
+      internalID: 8123226334942653640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_22
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 133
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4d20de29ad92ae0800000000000000
+      internalID: -1573486270212811532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_23
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 133
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d687b3a3ad79cc0800000000000000
+      internalID: -3704252224848237286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_24
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 133
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108776cd9a86b3d30800000000000000
+      internalID: 4412235338696062977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_25
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 133
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f322e941ba9cc7a0800000000000000
+      internalID: -6355534887887166471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_26
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 134
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7577208dfd4ba180800000000000000
+      internalID: -9103096470627191430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_27
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 134
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec9fc7887c9fd760800000000000000
+      internalID: 7484873147201592558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_28
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 134
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1950e8d27d7dc600800000000000000
+      internalID: 490185866671577370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_29
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 132
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3c6b4f040873040800000000000000
+      internalID: 4627308158618354629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_30
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 133
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d88e297872b2210800000000000000
+      internalID: 1309183579920043414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_31
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 133
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018905ed1765e4fc0800000000000000
+      internalID: -3508772012613920752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_32
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 101
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917d4beeab5b0f730800000000000000
+      internalID: 4030921480969967385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_33
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 101
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd45314cc5b9987b0800000000000000
+      internalID: -5221471470230481699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_34
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 101
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a135279066f7e40800000000000000
+      internalID: 5656351847759419908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_35
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 101
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055f08e45b266b9e0800000000000000
+      internalID: -1605987686265326256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_36
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 101
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cd869bf1b1aa3c0800000000000000
+      internalID: -4347632667204199344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_37
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 101
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee47c20af6352b590800000000000000
+      internalID: -7659968277310049042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_38
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 101
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e3e708c86779e70800000000000000
+      internalID: 9121889916085485074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_39
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 101
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe2ae12ae25dcca0800000000000000
+      internalID: -5995044363415441678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_40
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 101
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16007dc92ee0fd10800000000000000
+      internalID: 2157486084818208287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_41
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 101
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30593576b8154fa60800000000000000
+      internalID: 7706874521513596163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_42
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 101
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca93aebc37c9c3b0800000000000000
+      internalID: -5491639206891250998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_43
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3fba1f1045417c0800000000000000
+      internalID: -4101560993301400664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_44
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cb122aa0ba4f310800000000000000
+      internalID: 1437962243196173416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_45
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4249897efa43c7d0800000000000000
+      internalID: -2899391278275280305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_46
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603de2a427fc8c600800000000000000
+      internalID: 488868649347502854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_47
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806aa68b94a3ded90800000000000000
+      internalID: -7066928151973419512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_48
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c1d441b1886baa0800000000000000
+      internalID: -6145574991614370707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_49
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a130d68fd5286d0800000000000000
+      internalID: -2989723881058395525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_50
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4d362d2c48a7a00800000000000000
+      internalID: 755061859826259150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_51
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee443d25f8ccb420800000000000000
+      internalID: 2647211636337954538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_52
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80afd58f4f4deaef0800000000000000
+      internalID: -94904393524184568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_53
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471fa2c1f8512ef90800000000000000
+      internalID: -6925949572545318540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_54
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54d1ed0b287af4a0800000000000000
+      internalID: -6558797780999875494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_55
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a2329df1f575470800000000000000
+      internalID: 8383273821765053006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_56
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f69e67410e326610800000000000000
+      internalID: 1612919791766378230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_57
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12733465567358e10800000000000000
+      internalID: 2199224901418825505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_58
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 69
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698194e392a618680800000000000000
+      internalID: -8754599475260352362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_59
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 37
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8053f434a66d93d50800000000000000
+      internalID: 6717636071083947272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_60
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 37
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d9ab2ea27f55d00800000000000000
+      internalID: 960945859078036824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_61
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 37
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35dc2422a1b026cb0800000000000000
+      internalID: -4872319639989596845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_62
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 37
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873bb8638cec4ab40800000000000000
+      internalID: 5450708808329048952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_63
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 37
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229b596e967bd8c10800000000000000
+      internalID: 2057502270246205730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_64
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 37
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39bcefdcadbf21c0800000000000000
+      internalID: -4526190550295201476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_65
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 37
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa82e8031c807060800000000000000
+      internalID: 6949208238414006944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_66
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 37
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66bc5a69d13d3d040800000000000000
+      internalID: 4671309362548296550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_67
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 37
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a757090ffc0ef1d0800000000000000
+      internalID: -3315197986190436447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_68
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 37
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e49351eacbfaebc0800000000000000
+      internalID: -3752910490677570333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_69
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 38
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79046ba662817990800000000000000
+      internalID: -7389982136064538242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_70
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 38
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c52f79527cfa4e40800000000000000
+      internalID: 5641599051292943815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_71
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 38
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083211a1004fb8560800000000000000
+      internalID: 7317210300868010880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_72
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 36
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000a7f4d61ddc5290800000000000000
+      internalID: -7900196556182675456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_73
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 37
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fa72b56c44b21e0800000000000000
+      internalID: -2221606372453667034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_74
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 37
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804121910f08569e0800000000000000
+      internalID: -1628753921523444728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_75
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d937680879e2e9610800000000000000
+      internalID: 1629791343385932701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_76
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 5
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204106034055100f0800000000000000
+      internalID: -1152546553150303230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_77
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 5
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebf765f2cfabfcb0800000000000000
+      internalID: -4829072923548976153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_78
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 5
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f4c95adafcdb250800000000000000
+      internalID: 5962149826423181208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_79
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 5
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d8bb264e0d1ea50800000000000000
+      internalID: 6548745012500991327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_80
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 5
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8d4beff89df2380800000000000000
+      internalID: -8993730718358775617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_81
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 5
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfeca1d61140433a0800000000000000
+      internalID: -6686715073846915333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_82
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 5
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fdcb94fa0946ea0800000000000000
+      internalID: -5880416130908233940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_83
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 5
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186ab5ea1af182340800000000000000
+      internalID: 4839152578885035649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_84
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 5
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa018ff42dc70c70800000000000000
+      internalID: 8937337544329202427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pressable_Buttons_85
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 5
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf90cbfc2a56d9c0800000000000000
+      internalID: -3902832877821190202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

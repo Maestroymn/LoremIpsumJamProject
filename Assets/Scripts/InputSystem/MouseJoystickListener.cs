@@ -6,24 +6,30 @@ using UnityEngine.InputSystem;
 
 public class MouseJoystickListener : MonoBehaviour
 {
-    public static event Action JoystickRightOne;
-    public static event Action JoystickLeftOne;
-    public static event Action JoystickLeftDraggedUp;
-    public static event Action JoystickLeftDraggedDown;
-    public static event Action JoystickRightDraggedUp;
-    public static event Action JoystickRightDraggedDown;
+    public event Action JoystickRightOne;
+    public event Action JoystickLeftOne;
+    public event Action JoystickLeftDraggedUp;
+    public event Action JoystickLeftDraggedDown;
+    public event Action JoystickRightDraggedUp;
+    public event Action JoystickRightDraggedDown;
 
     JoystickInputs joystickInputs;
 
-    private void Awake()
+    public void Initialized(JoystickInputs input)
     {
-        joystickInputs = new JoystickInputs();
+        joystickInputs = input;
 
         joystickInputs.MouseJoystick.RightOne.performed += ctx => RightOneListener();
+        joystickInputs.MouseJoystick.RightOne.canceled += ctx => RightOneListener();
+
         joystickInputs.MouseJoystick.LeftOne.performed += ctx => LeftOneListener();
+        joystickInputs.MouseJoystick.LeftOne.canceled += ctx => LeftOneListener();
 
         joystickInputs.MouseJoystick.RightStickUp.performed += ctx => DraggedUpListener();
+        joystickInputs.MouseJoystick.RightStickUp.canceled += ctx => DraggedUpListener();
+
         joystickInputs.MouseJoystick.RightStickDown.performed += ctx => DraggedDownListener();
+        joystickInputs.MouseJoystick.RightStickDown.canceled += ctx => DraggedDownListener();
     }
 
     private void RightOneListener()
@@ -74,13 +80,17 @@ public class MouseJoystickListener : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        joystickInputs.MouseJoystick.Enable();
-    }
+    //private void OnEnable()
+    //{
+    //    if (true)
+    //    {
 
-    private void OnDisable()
-    {
-        joystickInputs.MouseJoystick.Disable();
-    }
+    //    }
+    //    joystickInputs.MouseJoystick.Enable();
+    //}
+
+    //private void OnDisable()
+    //{
+    //    joystickInputs.MouseJoystick.Disable();
+    //}
 }

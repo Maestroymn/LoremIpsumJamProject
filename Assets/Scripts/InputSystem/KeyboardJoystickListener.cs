@@ -14,16 +14,27 @@ public class KeyboardJoystickListener : MonoBehaviour
 
     JoystickInputs joysticksInputs;
 
-    private void Awake()
+    public void Initialized(JoystickInputs input)
     {
-        joysticksInputs = new JoystickInputs();
+        joysticksInputs = input;
 
         joysticksInputs.KeyboardJoystick.RightTwo.performed += ctx => RightTwoListener();
+        joysticksInputs.KeyboardJoystick.RightTwo.canceled += ctx => RightTwoListener();
+
         joysticksInputs.KeyboardJoystick.LeftTwo.performed += ctx => LeftTwoListener();
+        joysticksInputs.KeyboardJoystick.LeftTwo.canceled += ctx => LeftTwoListener();
+
         joysticksInputs.KeyboardJoystick.SouthButton.performed += ctx => SouthButtonListener();
+        joysticksInputs.KeyboardJoystick.SouthButton.canceled += ctx => SouthButtonListener();
+
         joysticksInputs.KeyboardJoystick.NorthButton.performed += ctx => NorthButtonListener();
+        joysticksInputs.KeyboardJoystick.NorthButton.canceled += ctx => NorthButtonListener();
+
         joysticksInputs.KeyboardJoystick.EastButton.performed += ctx => EastButtonListener();
+        joysticksInputs.KeyboardJoystick.EastButton.canceled += ctx => EastButtonListener();
+
         joysticksInputs.KeyboardJoystick.WestButton.performed += ctx => WestButtonListener();
+        joysticksInputs.KeyboardJoystick.WestButton.canceled += ctx => WestButtonListener();
     }
 
     private void RightTwoListener()
@@ -80,13 +91,13 @@ public class KeyboardJoystickListener : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        joysticksInputs.KeyboardJoystick.Enable();
-    }
+    //private void OnEnable()
+    //{
+    //    joysticksInputs.KeyboardJoystick.Enable();
+    //}
 
-    private void OnDisable()
-    {
-        joysticksInputs.KeyboardJoystick.Disable();
-    }
+    //private void OnDisable()
+    //{
+    //    joysticksInputs.KeyboardJoystick.Disable();
+    //}
 }

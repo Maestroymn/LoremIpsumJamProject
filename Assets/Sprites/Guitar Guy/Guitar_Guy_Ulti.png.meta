@@ -1,0 +1,776 @@
+fileFormatVersion: 2
+guid: 42863ccf78390a848a979ea0fc4d511e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5753311726765869259
+    second: Guitar_Guy_Ulti_0
+  - first:
+      213: 1387348814962876695
+    second: Guitar_Guy_Ulti_1
+  - first:
+      213: 1848030582417069864
+    second: Guitar_Guy_Ulti_2
+  - first:
+      213: -884277699808934379
+    second: Guitar_Guy_Ulti_3
+  - first:
+      213: 3341014474326734945
+    second: Guitar_Guy_Ulti_4
+  - first:
+      213: -5139704858701602782
+    second: Guitar_Guy_Ulti_5
+  - first:
+      213: -1075020948549653347
+    second: Guitar_Guy_Ulti_6
+  - first:
+      213: -2485771230505660980
+    second: Guitar_Guy_Ulti_7
+  - first:
+      213: -2883335613029452811
+    second: Guitar_Guy_Ulti_8
+  - first:
+      213: 6556859846553297226
+    second: Guitar_Guy_Ulti_9
+  - first:
+      213: 3494149593520542291
+    second: Guitar_Guy_Ulti_10
+  - first:
+      213: 5681666799103111315
+    second: Guitar_Guy_Ulti_11
+  - first:
+      213: 6491044974012375994
+    second: Guitar_Guy_Ulti_12
+  - first:
+      213: -2507381042088310141
+    second: Guitar_Guy_Ulti_13
+  - first:
+      213: -4137026104025186648
+    second: Guitar_Guy_Ulti_14
+  - first:
+      213: 2645244575750564603
+    second: Guitar_Guy_Ulti_15
+  - first:
+      213: 4860751682733935379
+    second: Guitar_Guy_Ulti_16
+  - first:
+      213: -879440532882534072
+    second: Guitar_Guy_Ulti_17
+  - first:
+      213: -3261039398853794276
+    second: Guitar_Guy_Ulti_18
+  - first:
+      213: 4318391095683506164
+    second: Guitar_Guy_Ulti_19
+  - first:
+      213: -8387793937054144839
+    second: Guitar_Guy_Ulti_20
+  - first:
+      213: -1968820973267257390
+    second: Guitar_Guy_Ulti_21
+  - first:
+      213: -3713397082625645155
+    second: Guitar_Guy_Ulti_22
+  - first:
+      213: -6643511697241926791
+    second: Guitar_Guy_Ulti_23
+  - first:
+      213: -4253804771350915460
+    second: Guitar_Guy_Ulti_24
+  - first:
+      213: 6698169921962153907
+    second: Guitar_Guy_Ulti_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 88
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_0
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 2805
+        width: 224
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc808fb788ed7df40800000000000000
+      internalID: 5753311726765869259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_1
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 2805
+        width: 227
+        height: 263
+      alignment: 9
+      pivot: {x: 0.5190158, y: 0.47420835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711eb6f856ad04310800000000000000
+      internalID: 1387348814962876695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_2
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 2802
+        width: 224
+        height: 254
+      alignment: 9
+      pivot: {x: 0.5032343, y: 0.5085565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827170ff50685a910800000000000000
+      internalID: 1848030582417069864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_3
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 2797
+        width: 224
+        height: 259
+      alignment: 9
+      pivot: {x: 0.50323486, y: 0.51398575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516c61cfd1a6ab3f0800000000000000
+      internalID: -884277699808934379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 2345
+        width: 224
+        height: 260
+      alignment: 9
+      pivot: {x: 0.502835, y: 0.514655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168fea386faad5e20800000000000000
+      internalID: 3341014474326734945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_5
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 2345
+        width: 224
+        height: 260
+      alignment: 9
+      pivot: {x: 0.5, y: 0.51954067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220edbe89a91ca8b0800000000000000
+      internalID: -5139704858701602782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_6
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 2345
+        width: 236
+        height: 260
+      alignment: 9
+      pivot: {x: 0.5215273, y: 0.5122127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c289b9422c411f0800000000000000
+      internalID: -1075020948549653347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_7
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 2346
+        width: 224
+        height: 259
+      alignment: 9
+      pivot: {x: 0.5000011, y: 0.5147116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd03dc6c34c08dd0800000000000000
+      internalID: -2485771230505660980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_8
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1893
+        width: 224
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5049252, y: 0.51831615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3752959855cf7d0800000000000000
+      internalID: -2883335613029452811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_9
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1893
+        width: 224
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5207281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41e4db6a45aefa50800000000000000
+      internalID: 6556859846553297226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_10
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 1893
+        width: 227
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5083933, y: 0.5170328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3521ed1ea86bd7030800000000000000
+      internalID: 3494149593520542291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_11
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 1893
+        width: 224
+        height: 260
+      alignment: 9
+      pivot: {x: 0.5000011, y: 0.5195402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390fbacd9d559de40800000000000000
+      internalID: 5681666799103111315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_12
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1452
+        width: 224
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3a7194303d41a50800000000000000
+      internalID: 6491044974012375994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_13
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1452
+        width: 243
+        height: 277
+      alignment: 9
+      pivot: {x: 0.5385581, y: 0.44926283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a07c51a3ef33dd0800000000000000
+      internalID: -2507381042088310141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_14
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 1452
+        width: 339
+        height: 277
+      alignment: 9
+      pivot: {x: 0.6747089, y: 0.4476834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae7f036da45696c0800000000000000
+      internalID: -4137026104025186648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_15
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 1452
+        width: 362
+        height: 268
+      alignment: 9
+      pivot: {x: 0.6949375, y: 0.46708566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa24a13debc5b420800000000000000
+      internalID: 2645244575750564603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1001
+        width: 315
+        height: 268
+      alignment: 9
+      pivot: {x: 0.64992094, y: 0.46625713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b0dbee6ebd47340800000000000000
+      internalID: 4860751682733935379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_17
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1001
+        width: 256
+        height: 270
+      alignment: 9
+      pivot: {x: 0.55494905, y: 0.45906395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841d47cae799bc3f0800000000000000
+      internalID: -879440532882534072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_18
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 928
+        width: 447
+        height: 332
+      alignment: 9
+      pivot: {x: 0.35164142, y: 0.58474106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1624c8c1f57eb2d0800000000000000
+      internalID: -3261039398853794276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_19
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 944
+        width: 403
+        height: 305
+      alignment: 9
+      pivot: {x: 0.37284273, y: 0.59224313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffdc6b52d10eeb30800000000000000
+      internalID: 4318391095683506164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_20
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 535
+        width: 388
+        height: 266
+      alignment: 9
+      pivot: {x: 0.7199441, y: 0.51210654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b666bccad1989b80800000000000000
+      internalID: -8387793937054144839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_21
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 532
+        width: 420
+        height: 269
+      alignment: 9
+      pivot: {x: 0.7415235, y: 0.5179568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7f01e81c75da4e0800000000000000
+      internalID: -1968820973267257390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_22
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 529
+        width: 422
+        height: 272
+      alignment: 9
+      pivot: {x: 0.74037874, y: 0.53551817}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95602c170d577cc0800000000000000
+      internalID: -3713397082625645155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_23
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 540
+        width: 421
+        height: 261
+      alignment: 9
+      pivot: {x: 0.74859893, y: 0.49999976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9731eb86f418dc3a0800000000000000
+      internalID: -6643511697241926791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_24
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 93
+        width: 224
+        height: 257
+      alignment: 9
+      pivot: {x: 0.49765545, y: 0.51226157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7654cb191377f4c0800000000000000
+      internalID: -4253804771350915460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guitar_Guy_Ulti_25
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 92
+        width: 224
+        height: 258
+      alignment: 9
+      pivot: {x: 0.5000003, y: 0.51221377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b792cb3e0ea4fc50800000000000000
+      internalID: 6698169921962153907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

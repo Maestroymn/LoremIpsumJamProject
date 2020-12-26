@@ -4,12 +4,12 @@ using UnityEngine.EventSystems;
 
 public class MouseListener : MonoBehaviour, IDragHandler, IPointerDownHandler
 {
-    public static event Action<PointerEventData> LeftClick;
-    public static event Action<PointerEventData> RightClick;
-    public static event Action<PointerEventData> LeftClickDraggedUp;
-    public static event Action<PointerEventData> LeftClickDraggedDown;
-    public static event Action<PointerEventData> RightClickDraggedUp;
-    public static event Action<PointerEventData> RightClickDraggedDown;
+    public event Action<PointerEventData> LeftClick;
+    public event Action<PointerEventData> RightClick;
+    public event Action<PointerEventData> LeftClickDraggedUp;
+    public event Action<PointerEventData> LeftClickDraggedDown;
+    public event Action<PointerEventData> RightClickDraggedUp;
+    public event Action<PointerEventData> RightClickDraggedDown;
 
     private float  lastMousePos;
 

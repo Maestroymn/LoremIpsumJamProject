@@ -19,7 +19,7 @@ namespace InputSystem
         public static event Action SixthKeyPressed;
 
         void Update()
-        {
+        { 
             if (Input.anyKeyDown)
             {
                 KeyPressed();

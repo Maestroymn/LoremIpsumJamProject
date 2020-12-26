@@ -17,6 +17,7 @@ namespace Behaviours
         [SerializeField] public Rigidbody2D DrummerRigidBody;
         [SerializeField] private KeyboardListener _keyboardListener;
         [SerializeField] private KeyboardJoystickListener _keyboardJoystickListener;
+        public DrumBubbleBehaviour currentBubble;
 
         private float _vertical;
         private Vector3 _direction;
@@ -85,27 +86,51 @@ namespace Behaviours
         // Keyboard Inputs
         private void OnFirstKeyPressed()
         {
-
+            if (currentBubble.input == _keyboardListener.FirstKey && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Key Pressed");
+            }
         }
         private void OnSecondKeyPressed()
         {
-
+            if (currentBubble.input == _keyboardListener.SecondKey && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Key Pressed");
+            }
         }
         private void OnThirdKeyPressed()
         {
-
+            if (currentBubble.input == _keyboardListener.ThirdKey && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Key Pressed");
+            }
         }
         private void OnFourthKeyPressed()
         {
-
+            if (currentBubble.input == _keyboardListener.FourthKey && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Key Pressed");
+            }
         }
         private void OnFifthKeyPressed()
         {
-
+            if (currentBubble.input == _keyboardListener.FifthKey && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Key Pressed");
+            }
         }
         private void OnSixthKeyPressed()
         {
-
+            if (currentBubble.input == _keyboardListener.SixthKey && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Key Pressed");
+            }
         }
 
         // Joystick Inputs

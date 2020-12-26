@@ -15,11 +15,18 @@ namespace Behaviours
         [SerializeField] private MouseListener mouseListener;
         [SerializeField] public Rigidbody2D Rigidbody2D;
         [SerializeField] private DrumCharacterBehaviour _drumCharacter;
-        private void StartInputSelectionRoutine()
+        public GuitarBubbleBehaviour currentBubble;
+
+        //private void StartInputSelectionRoutine()
+        //{
+        //    StartCoroutine(GuitaristSelectInput());
+        //}
+
+        private void Start()
         {
             StartCoroutine(GuitaristSelectInput());
         }
-        
+
         private void FixedUpdate()
         {
             if(CharacterSituation==CharacterSituation.OnMap)
@@ -72,32 +79,56 @@ namespace Behaviours
         // Mouse Inputs
         private void OnLeftClick(PointerEventData eventData)
         {
-
+            if (currentBubble.input == KeyCode.Mouse0 && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Mouse Clicked Btw");
+            }
         }
 
         private void OnRightClick(PointerEventData eventData)
         {
-
+            if (currentBubble.input == KeyCode.Mouse1 && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Mouse 1 OnRightClick ");
+            }
         }
     
         private void OnLeftClickDragUp(PointerEventData eventData)
         {
-
+            if (currentBubble.input == KeyCode.Mouse0 && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Left Click Drag Up");
+            }
         }
 
         private void OnLeftClickDragDown(PointerEventData eventData)
         {
-
+            if (currentBubble.input == KeyCode.Mouse0 && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Left Click Drag Down");
+            }
         }
 
         private void OnRightClickDragUp(PointerEventData eventData)
         {
-
+            if (currentBubble.input == KeyCode.Mouse1 && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("right Click Drag Up");
+            }
         }
 
         private void OnRightClickDragDown(PointerEventData eventData)
         {
-
+            if (currentBubble.input == KeyCode.Mouse1 && currentBubble._isInteractable)
+            {
+                currentBubble._isInteractable = false;
+                Debug.Log("Right Click Drag Down");
+            }
         }
 
         // Joystick Inputs

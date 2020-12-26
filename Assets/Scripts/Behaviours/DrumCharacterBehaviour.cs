@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 namespace Behaviours
 {
@@ -11,9 +12,18 @@ namespace Behaviours
         Vector2 _mouseDir;
         float _angle;
         Vector3 _direction;
+
+        private bool _isJoystickClaimed, _isJoystickPressed, _isKeyboardClaimed;
+        JoystickInputs joystickInputs;
         private void Awake()
         {
             drummerRigidBody = GetComponent<Rigidbody2D>();
+
+            joystickInputs = new JoystickInputs();
+            StartCoroutine(DrummerSelectInputs());
+
+            joystickInputs.KeyboardJoystick.SouthButton.performed += ctx => SelectJoystickKeyboard();
+            joystickInputs.KeyboardJoystick.SouthButton.canceled += ctx => SelectJoystickKeyboard();
         }
         private void FixedUpdate()
         {
@@ -45,6 +55,97 @@ namespace Behaviours
             drummerRigidBody.velocity = _direction * movementSpeed * Time.deltaTime;
 
             secondPlayer.GetComponent<Rigidbody2D>().velocity = _direction * movementSpeed * Time.deltaTime;
+        }
+
+        private IEnumerator DrummerSelectInputs()
+        {
+            while (true)
+            {
+                if (Input.GetKeyDown(KeyCode.Space) && !_isKeyboardClaimed)
+                {
+                    _isKeyboardClaimed = true;
+                    _isJoystickClaimed = false;
+                    _isJoystickPressed = false;
+                }
+
+                if (_isJoystickPressed && !_isJoystickClaimed)
+                {
+                    _isJoystickClaimed = true;
+                    _isKeyboardClaimed = false;
+                }
+                yield return null;
+            }
+        }
+
+        // Keyboard Inputs
+        private void OnFirstKeyPressed()
+        {
+
+        }
+        private void OnSecondKeyPressed()
+        {
+
+        }
+        private void OnThirdKeyPressed()
+        {
+
+        }
+        private void OnFourthKeyPressed()
+        {
+
+        }
+        private void OnFifthKeyPressed()
+        {
+
+        }
+        private void OnSixthKeyPressed()
+        {
+
+        }
+
+        // Joystick Inputs
+        private void OnJoystickRightTwo()
+        {
+
+        }
+        private void OnJoystickLeftTwo()
+        {
+
+        }
+        private void OnJoystickSouthButton()
+        {
+
+        }
+        private void OnJoystickNorthButton()
+        {
+
+        }
+        private void OnJoystickEastButton()
+        {
+
+        }
+        private void OnJoystickWestButton()
+        {
+
+        }
+
+        private void SelectJoystickKeyboard()
+        {
+            if (joystickInputs.KeyboardJoystick.SouthButton.triggered && !_isJoystickClaimed)
+            {
+                _isJoystickPressed = true;
+                Debug.Log("Joystick");
+            }
+        }
+
+        private void OnEnable()
+        {
+            joystickInputs.MouseJoystick.Enable();
+        }
+
+        private void OnDisable()
+        {
+            joystickInputs.MouseJoystick.Disable();
         }
     }
 }

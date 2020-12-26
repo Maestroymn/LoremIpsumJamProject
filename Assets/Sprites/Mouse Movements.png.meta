@@ -1,7 +1,88 @@
 fileFormatVersion: 2
 guid: ebdb6d2edae6cca4786bbcf5e9b286dc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7327630055342625753
+    second: MouseLeftClick
+  - first:
+      213: 5135902715892381222
+    second: MouseRightClick
+  - first:
+      213: -4941312293891461941
+    second: MouseLeftClickDragDown
+  - first:
+      213: -2572186203296013668
+    second: Mouse Movements_3
+  - first:
+      213: -6169027686433218520
+    second: MouseLeftClickDragUp
+  - first:
+      213: 233659545289844272
+    second: Mouse Movements_5
+  - first:
+      213: -6599806341135626685
+    second: MouseRightClickDragDown
+  - first:
+      213: -4174210296805075217
+    second: Mouse Movements_7
+  - first:
+      213: -4858222509067150159
+    second: MouseRightClickDragUp
+  - first:
+      213: 6296447122270555073
+    second: Mouse Movements_9
+  - first:
+      213: -3261367004655427160
+    second: MouseLeftClick
+  - first:
+      213: 4805871696759133219
+    second: MouseRightClick
+  - first:
+      213: 4186881225930374112
+    second: MouseLeftClickDragDown
+  - first:
+      213: -4020263205356644580
+    second: Mouse Movements_3
+  - first:
+      213: 821731040235060636
+    second: MouseLeftClickDragUp
+  - first:
+      213: -7318353281838284985
+    second: Mouse Movements_5
+  - first:
+      213: 7080665743087854483
+    second: Mouse Movements_10
+  - first:
+      213: 6730956171403886923
+    second: Mouse Movements_11
+  - first:
+      213: 3470033396742975700
+    second: Mouse Movements_12
+  - first:
+      213: -5059724417912866556
+    second: Mouse Movements_13
+  - first:
+      213: -4796225491436223797
+    second: Mouse Movements_14
+  - first:
+      213: 6696658455030554599
+    second: Mouse Movements_15
+  - first:
+      213: -8441189444717664879
+    second: Mouse Movements_16
+  - first:
+      213: -989376278874475175
+    second: Mouse Movements_17
+  - first:
+      213: -4564965612591531309
+    second: Mouse Movements_18
+  - first:
+      213: -4966747131470215231
+    second: Mouse Movements_19
+  - first:
+      213: -8293267059703413397
+    second: Mouse Movements_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +121,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +152,243 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MouseLeftClick
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1655d1dfb4db2d0800000000000000
+      internalID: -3261367004655427160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseRightClick
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3249e6978d2e1b240800000000000000
+      internalID: 4805871696759133219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseLeftClickDragDown
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ebf45cba4aca1a30800000000000000
+      internalID: 4186881225930374112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse Movements_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17d42d3ae72538c0800000000000000
+      internalID: -4020263205356644580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseLeftClickDragUp
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d7f120700676b00800000000000000
+      internalID: 821731040235060636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse Movements_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ff637e67cff6a90800000000000000
+      internalID: -7318353281838284985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseRightClickDragDown
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e8d3a9917c864a0800000000000000
+      internalID: -6599806341135626685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse Movements_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6d729d9d93216c0800000000000000
+      internalID: -4174210296805075217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseRightClickDragUp
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcde333e50249cb0800000000000000
+      internalID: -4858222509067150159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse Movements_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb87f53c49716750800000000000000
+      internalID: 6296447122270555073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

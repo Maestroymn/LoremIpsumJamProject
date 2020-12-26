@@ -70,6 +70,7 @@
           <e p="Controllers" t="Include">
             <e p="BubbleController.cs" t="Include" />
             <e p="CharacterMenuController.cs" t="Include" />
+            <e p="MainMenuController.cs" t="Include" />
           </e>
           <e p="InputSystem" t="Include">
             <e p="JoystickInputs.cs" t="Include" />
@@ -82,6 +83,7 @@
           <e p="KeybindScript.cs" t="Include" />
           <e p="Managers" t="Include">
             <e p="GameManager.cs" t="Include" />
+            <e p="UIManager.cs" t="Include" />
           </e>
           <e p="SettingsMenu.cs" t="Include" />
           <e p="SkylineScroller.cs" t="Include" />

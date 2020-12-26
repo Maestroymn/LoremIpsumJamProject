@@ -22,10 +22,10 @@ public class GuitaristCharacterBehaviour : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(SelectInput());
+        StartCoroutine(GuitaristSelectInput());
     }
 
-    private IEnumerator SelectInput()
+    private IEnumerator GuitaristSelectInput()
     {
         while (true)
         {

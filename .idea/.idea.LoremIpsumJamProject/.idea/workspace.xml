@@ -20,31 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4c9d793-16a5-4efb-bc56-fe7704bdc10b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Guitar Guy/Guitar Guy.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Guitar Guy/Guitar Guy.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Guitar Guy/Guitar_Guy_First_Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Guitar Guy/Guitar_Guy_First_Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Guitar Guy/Guitar_Guy_Second_Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Guitar Guy/Guitar_Guy_Second_Attack.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Arenas/Arena1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Arenas/Arena1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_A.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_A.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_D.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_D.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_E.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_E.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_LeftClick.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_LeftClick.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_LeftClickDragDown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_LeftClickDragDown.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_LeftClickDragUp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_LeftClickDragUp.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_Q.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_Q.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_RightClick.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_RightClick.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_RightClickDragDown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_RightClickDragDown.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_RightClickDragUp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_RightClickDragUp.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_S.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_S.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_W.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bubbles/Bubble_W.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grid.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Grid.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Boss Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Boss Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/BarScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/BarScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumBubbleBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumBubbleBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitarBubbleBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitarBubbleBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/BubbleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/BubbleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Guitar Guy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Guitar Guy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/ArenaManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/ArenaManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,29 +51,29 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/NewBehaviourScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/MainMenuSoundBarBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem/MainMenuInputListener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem/KeyboardListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem/KeyboardJoystickListener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem/MouseListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SkylineScroller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CharacterMenuController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MapController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BarScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BubbleSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitarBubbleBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitarBubbleSpawner1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainMenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CharacterMenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BubbleController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem/KeyboardListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem/MouseListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitarBubbleBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumBubbleBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumBubbleSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitarBubbleSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ArenaManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/BubbleController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" />
       </list>
     </option>
   </component>
@@ -136,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608918434029</updated>
       <workItem from="1608918452812" duration="14136000" />
-      <workItem from="1608979444454" duration="24819000" />
+      <workItem from="1608979444454" duration="32896000" />
     </task>
     <servers />
   </component>
@@ -165,9 +148,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="788" y="194" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608924734392" />
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1608943212045">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1609030996536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608943212045" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609030996536" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1609038264425">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609038264425" />
   </component>
 </project>

@@ -22,10 +22,11 @@ namespace Behaviours
         {
             while (_guitaristCharacter.CharacterSituation == CharacterSituation.OnArena)
             {
+                yield return new WaitForSeconds(Random.Range(minSpawnThreshold,maxSpawnThreshold));
                 GuitarBubbleBehaviour bubble = Instantiate(_bubblePrefabs[Random.Range(0, _bubblePrefabs.Count)],transform.position,Quaternion.identity);
                 bubble.guitarist = _guitaristCharacter;
-                _bubbleController.bubbles.Add(bubble.gameObject);
-                yield return new WaitForSeconds(Random.Range(minSpawnThreshold,maxSpawnThreshold));
+                bubble.transform.SetParent(transform);
+                _bubbleController.GuitarBubbles.Add(bubble);
             }
         }
     }

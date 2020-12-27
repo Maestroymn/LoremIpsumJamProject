@@ -1,22 +1,36 @@
 ﻿using System.Collections.Generic;
+using Behaviours;
 using UnityEngine;
 
 namespace Controllers
 {
     public class BubbleController : MonoBehaviour
     {
-        [SerializeField] public List<GameObject> bubbles;
+        public List<DrumBubbleBehaviour> DrummerBubbles;
+        public List<GuitarBubbleBehaviour> GuitarBubbles;
         [SerializeField] public float bubbleSpeed;
 
         private void Update()
         {
-            if(bubbles.Count!=0)
+            if(DrummerBubbles.Count!=0)
             {
-                foreach (var item in bubbles)
+                DrummerBubbles.ForEach(x=>
                 {
-                    item.transform.position += new Vector3(transform.position.x + bubbleSpeed * Time.deltaTime,
-                        transform.position.y, transform.position.z);
-                }
+                    if (x != null)
+                    {
+                        x.transform.localPosition+=Time.deltaTime*Vector3.right*bubbleSpeed;
+                    }
+                });
+            }
+            if(GuitarBubbles.Count!=0)
+            {
+                GuitarBubbles.ForEach(x=>
+                {
+                    if (x != null)
+                    {
+                        x.transform.localPosition+=Time.deltaTime*Vector3.right*bubbleSpeed;
+                    }
+                });
             }
         }
     }

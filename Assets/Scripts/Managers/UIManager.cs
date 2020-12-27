@@ -7,18 +7,10 @@ namespace Managers
 {
     public class UIManager : MonoBehaviour
     {
-        [SerializeField] private Image _fadeImage;
-        [SerializeField] private CharacterMenuController _characterMenuController;
+        [SerializeField] public Image _fadeImage;
+        [SerializeField] public CharacterMenuController _characterMenuController;
         [SerializeField] private SettingsMenu _settingsMenu;
-        [SerializeField] private MainMenuController _mainMenu;
-        [SerializeField] private ArenaManager _arenaManager;
-        public void SceneChange()
-        {
-            LeanTween.alpha(_fadeImage.rectTransform, 1, 2f).setEase(LeanTweenType.easeInCirc).setOnComplete(() =>
-            {
-                LeanTween.alpha(_fadeImage.rectTransform, 0, 2f).setEase(LeanTweenType.easeInCirc);
-            });
-        }
+        [SerializeField] public MainMenuController _mainMenu;
 
         public void SwitchToCharacterScene()
         {
@@ -28,7 +20,7 @@ namespace Managers
                 _characterMenuController.gameObject.SetActive(true);
                 LeanTween.alpha(_fadeImage.rectTransform, 0, 2f).setEase(LeanTweenType.easeInCirc).setOnComplete(() =>
                 {
-                    _characterMenuController.Initialize(this);
+                    _characterMenuController.Initialize();
                 });
             });
         }

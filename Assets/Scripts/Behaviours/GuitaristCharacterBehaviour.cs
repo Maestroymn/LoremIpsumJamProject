@@ -16,6 +16,7 @@ namespace Behaviours
         [SerializeField] private DrumCharacterBehaviour _drumCharacter;
         [SerializeField] private Animator _animator;
         [HideInInspector] public GuitarBubbleBehaviour currentBubble;
+        [SerializeField] private BaseBossBehaviour boss;
 
         public void Initialize()
         {
@@ -98,6 +99,11 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 Debug.Log("Right Click Drag Down");
             }
+        }
+        private void HitDamage(int damage)
+        {
+            boss.damageTaken = damage;
+            boss.DamageBoss();
         }
     }
 }

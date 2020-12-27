@@ -11,6 +11,7 @@ namespace Controllers
 
         public void Initialize()
         {
+            _gameManager._introduce.gameObject.SetActive(false);
             gameObject.SetActive(true);
             if(!_boss1.IsEntered)
             {

@@ -58,7 +58,7 @@ namespace Controllers
         private void ArenaFinished()
         {
             _bossBehaviour.OnBossDead -= ArenaFinished;
-            _gameManager.ReturnToMap(gameObject);
+            _gameManager.GoodEnd(gameObject);
         }
 
         private IEnumerator WaitUntilEntryFinish()

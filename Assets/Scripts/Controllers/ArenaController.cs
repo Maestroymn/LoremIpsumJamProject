@@ -63,7 +63,8 @@ namespace Controllers
 
         private IEnumerator WaitUntilEntryFinish()
         {
-            yield return new WaitForSeconds(BossEntryAnimator.GetCurrentAnimatorStateInfo(0).length+BossEntryAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            //yield return new WaitForSeconds(BossEntryAnimator.GetCurrentAnimatorStateInfo(0).length+BossEntryAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            yield return new WaitForSeconds(2.5f);
             LeanTween.scale(EntryParent.GetComponent<RectTransform>(),Vector3.zero,.4f).setOnComplete(()=>
             {
                 _guitaristCharacter.gameObject.SetActive(true);

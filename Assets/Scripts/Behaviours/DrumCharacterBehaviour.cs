@@ -65,7 +65,7 @@ namespace Behaviours
         // Keyboard Inputs
         private void OnFirstKeyPressed()
         {
-            if (currentBubble.input == _keyboardListener.FirstKey && currentBubble._isInteractable && currentBubble!=null)
+            if (currentBubble!=null&&currentBubble.input == _keyboardListener.FirstKey && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log(currentBubble.input+" Pressed");
@@ -78,7 +78,7 @@ namespace Behaviours
         }
         private void OnSecondKeyPressed()
         {
-            if (currentBubble.input == _keyboardListener.SecondKey && currentBubble._isInteractable && currentBubble!=null)
+            if (currentBubble!=null&&currentBubble.input == _keyboardListener.SecondKey && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log(currentBubble.input+" Pressed");
@@ -90,7 +90,7 @@ namespace Behaviours
         }
         private void OnThirdKeyPressed()
         {
-            if (currentBubble.input == _keyboardListener.ThirdKey && currentBubble._isInteractable && currentBubble!=null)
+            if ( currentBubble!=null&&currentBubble.input == _keyboardListener.ThirdKey && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log(currentBubble.input+" Pressed");
@@ -102,7 +102,7 @@ namespace Behaviours
         }
         private void OnFourthKeyPressed()
         {
-            if (currentBubble.input == _keyboardListener.FourthKey && currentBubble._isInteractable && currentBubble!=null)
+            if (currentBubble!=null&&currentBubble.input == _keyboardListener.FourthKey && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log(currentBubble.input+" Pressed");
@@ -114,7 +114,7 @@ namespace Behaviours
         }
         private void OnFifthKeyPressed()
         {
-            if (currentBubble.input == _keyboardListener.FifthKey && currentBubble._isInteractable && currentBubble!=null)
+            if (currentBubble!=null&&currentBubble.input == _keyboardListener.FifthKey && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log(currentBubble.input+" Pressed");
@@ -126,7 +126,7 @@ namespace Behaviours
         }
         private void OnSixthKeyPressed()
         {
-            if (currentBubble.input == _keyboardListener.SixthKey && currentBubble._isInteractable && currentBubble!=null)
+            if (currentBubble!=null&&currentBubble.input == _keyboardListener.SixthKey && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log(currentBubble.input+" Pressed");

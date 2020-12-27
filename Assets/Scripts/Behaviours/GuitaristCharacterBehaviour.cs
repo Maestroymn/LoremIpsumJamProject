@@ -52,7 +52,7 @@ namespace Behaviours
         // Mouse Inputs
         private void OnLeftClick(PointerEventData eventData)
         {
-            if (currentBubble.input == MouseInputs.LeftClick && currentBubble._isInteractable)
+            if (currentBubble!=null && currentBubble.input == MouseInputs.LeftClick && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Mouse Clicked Btw");
@@ -65,7 +65,7 @@ namespace Behaviours
 
         private void OnRightClick(PointerEventData eventData)
         {
-            if (currentBubble.input == MouseInputs.RightClick && currentBubble._isInteractable)
+            if (currentBubble!=null && currentBubble.input == MouseInputs.RightClick && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Mouse 1 OnRightClick ");
@@ -78,7 +78,7 @@ namespace Behaviours
     
         private void OnLeftClickDragUp(PointerEventData eventData)
         {
-            if (currentBubble.input == MouseInputs.LeftClickDragUp && currentBubble._isInteractable)
+            if (currentBubble!=null && currentBubble.input == MouseInputs.LeftClickDragUp && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Left Click Drag Up");
@@ -91,7 +91,7 @@ namespace Behaviours
 
         private void OnLeftClickDragDown(PointerEventData eventData)
         {
-            if (currentBubble.input == MouseInputs.LeftClickDragDown && currentBubble._isInteractable)
+            if (currentBubble!=null && currentBubble.input == MouseInputs.LeftClickDragDown && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Left Click Drag Down");
@@ -104,7 +104,7 @@ namespace Behaviours
 
         private void OnRightClickDragUp(PointerEventData eventData)
         {
-            if (currentBubble.input == MouseInputs.RightClickDragUp && currentBubble._isInteractable)
+            if (currentBubble!=null && currentBubble.input == MouseInputs.RightClickDragUp && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("right Click Drag Up");
@@ -118,7 +118,7 @@ namespace Behaviours
         private void OnRightClickDragDown(PointerEventData eventData)
         {
             
-            if (currentBubble.input == MouseInputs.RightClickDragDown && currentBubble._isInteractable)
+            if (currentBubble!=null&&currentBubble.input == MouseInputs.RightClickDragDown && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Right Click Drag Down");

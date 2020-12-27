@@ -669,6 +669,11 @@ PrefabInstance:
       propertyPath: ComboManager
       value: 
       objectReference: {fileID: 754924280717404804}
+    - target: {fileID: 284459400766290462, guid: a5336a8d5a8c518429d5587202c1639e,
+        type: 3}
+      propertyPath: _Laseranimator
+      value: 
+      objectReference: {fileID: 8459453869635925378}
     - target: {fileID: 546210667743549243, guid: a5336a8d5a8c518429d5587202c1639e,
         type: 3}
       propertyPath: m_IsActive
@@ -824,6 +829,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4af26fbfba2e3d458d999c548fbfdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &8459453869635925378 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 284459399616579138, guid: a5336a8d5a8c518429d5587202c1639e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8544628289650111424}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &5895838975344841835 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2830130182231959467, guid: a5336a8d5a8c518429d5587202c1639e,

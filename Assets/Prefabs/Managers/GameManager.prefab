@@ -654,6 +654,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7729433916882625400}
     m_Modifications:
+    - target: {fileID: 42670714038805232, guid: a5336a8d5a8c518429d5587202c1639e,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e2bee61bd8ee45946983801d45bcb5ba, type: 3}
     - target: {fileID: 284459400766290462, guid: a5336a8d5a8c518429d5587202c1639e,
         type: 3}
       propertyPath: _keyboardListener
@@ -769,6 +774,11 @@ PrefabInstance:
       propertyPath: _keyboardListener
       value: 
       objectReference: {fileID: 6313774450402246287}
+    - target: {fileID: 6530748073917893999, guid: a5336a8d5a8c518429d5587202c1639e,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bba803c60cb1b9b459cf9f5cb07d68a5, type: 3}
     - target: {fileID: 6659751754484465947, guid: a5336a8d5a8c518429d5587202c1639e,
         type: 3}
       propertyPath: m_Color.r

@@ -25,6 +25,7 @@ namespace Behaviours
         [SerializeField] private AudioClip _failEffect;
         [SerializeField] private AudioSource _audioSource, _mainAudioSource;
         [SerializeField] private UltimateComboManager ComboManager;
+        [SerializeField] private Animator _Laseranimator;
         
         private float _vertical;
         private Vector3 _direction;
@@ -37,6 +38,7 @@ namespace Behaviours
         public CharacterSituation CharacterSituation;
         private static readonly int Die = Animator.StringToHash("Die");
         private static readonly int Ulti1 = Animator.StringToHash("Ulti");
+        private static readonly int Laser = Animator.StringToHash("Laser");
 
         public void Initialize()
         {
@@ -90,6 +92,7 @@ namespace Behaviours
         
         private void HitDamage(int damage)
         {
+            _Laseranimator.SetTrigger(Laser);
             boss.damageTaken = damage;
             boss.DamageBoss();
         }
@@ -239,10 +242,7 @@ namespace Behaviours
             _mainAudioSource.volume = 0.1f;
             _audioSource.clip = _failEffect;
             _audioSource.Play();
-            if (CharacterSituation != CharacterSituation.Dead)
-            {
-                StartCoroutine(ContinueMusicAgain(_failEffect.length));
-            }
+            _mainAudioSource.volume = 0.2f;
         }
 
         private IEnumerator ContinueMusicAgain(float delay)

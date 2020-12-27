@@ -20,13 +20,11 @@ public class MouseListener : MonoBehaviour, IPointerUpHandler, IPointerDownHandl
         firstMousePos = eventData.position.y;
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Left Click");
             LeftClick?.Invoke(eventData);
         }
 
         if (Input.GetMouseButtonDown(1))
         {
-            Debug.Log("Right Click");
             RightClick?.Invoke(eventData);
         }
     }
@@ -38,22 +36,18 @@ public class MouseListener : MonoBehaviour, IPointerUpHandler, IPointerDownHandl
 
         if (Input.GetMouseButtonUp(0) && targetPos > 0.0f)
         {
-            Debug.Log("Drag Up Left ");
             LeftClickDraggedUp?.Invoke(eventData);
         }
         if (Input.GetMouseButtonUp(0) && targetPos < 0.0f)
         {
-            Debug.Log("Drag Down Left");
             LeftClickDraggedDown?.Invoke(eventData);
         }
         if (Input.GetMouseButtonUp(1) && targetPos > 0.0f)
         {
-            Debug.Log("Drag up Right");
             RightClickDraggedUp?.Invoke(eventData);
         }
         if (Input.GetMouseButtonUp(1) && targetPos < 0.0f)
         {
-            Debug.Log("Drag Down Right");
             RightClickDraggedDown?.Invoke(eventData);
         }
     }

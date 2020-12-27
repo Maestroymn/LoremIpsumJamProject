@@ -31,6 +31,7 @@ namespace Controllers
             if (_boss1.IsEntered)
             {
                 _boss1.OnEnter -= OnEnterArena;
+                _boss1.gameObject.SetActive(false);
                 _gameManager.StartArena(_boss1.ArenaType);
             }
             else  if (_boss2.IsEntered)

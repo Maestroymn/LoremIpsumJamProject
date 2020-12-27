@@ -26,6 +26,7 @@ namespace Behaviours
         private void BossSpell(int currentEvent)
         {
             animator.SetTrigger(bossEvent[currentEvent]);
+            //guitarist.DamageGuitarist();
         }
 
         public void DamageBoss()

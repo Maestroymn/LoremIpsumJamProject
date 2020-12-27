@@ -20,13 +20,14 @@ namespace Behaviours
         [SerializeField] private Animator _animator;
         [HideInInspector] public GuitarBubbleBehaviour currentBubble;
         [SerializeField] private BaseBossBehaviour boss;
-        public HealthManager _healthManager;
+        [SerializeField] public HealthManager _healthManager;
         public int guitaristMissInput;
         [SerializeField] private AudioClip _failEffect;
         [SerializeField] private AudioSource _audioSource, _mainAudioSource;
         private static readonly int Die = Animator.StringToHash("Die");
         [SerializeField] private UltimateComboManager ComboManager;
         private static readonly int Ulti1 = Animator.StringToHash("Ulti");
+        private static readonly int FirstAttack = Animator.StringToHash("FirstAttack");
 
         public void Initialize()
         {
@@ -188,6 +189,7 @@ namespace Behaviours
 
         private void HitDamage(int damage)
         {
+            _animator.SetTrigger(FirstAttack);
             boss.damageTaken = damage;
             boss.DamageBoss();
         }
@@ -198,10 +200,7 @@ namespace Behaviours
             _mainAudioSource.volume=0.1f;
             _audioSource.clip=_failEffect;
             _audioSource.Play();
-            if (CharacterSituation != CharacterSituation.Dead)
-            {
-                StartCoroutine(ContinueMusicAgain(_failEffect.length/2));
-            }
+            _mainAudioSource.volume=0.2f;
         }
         
         private IEnumerator ContinueMusicAgain(float delay)

@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: 510888c3a7e354341881de8d09270393
+guid: edfd8fd516b5bf443a80796b26ed08aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6726743895220336548
-    second: Guitar_Guy_Second_Attack_0
+      213: -7404100731645913845
+    second: Shield End_0
   - first:
-      213: -6995884675927911066
-    second: Guitar_Guy_Second_Attack_1
-  - first:
-      213: 8591754233263153309
-    second: Guitar_Guy_Second_Attack_2
-  - first:
-      213: 6256310159351995539
-    second: Guitar_Guy_Second_Attack_3
-  - first:
-      213: -5833228186981846231
-    second: Guitar_Guy_Second_Attack_4
-  - first:
-      213: -870269901780798797
-    second: Guitar_Guy_Second_Attack_5
+      213: 4077675831211909421
+    second: Shield End_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -153,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guitar_Guy_Second_Attack_0
+      name: Shield End_0
       rect:
         serializedVersion: 2
-        x: 195
-        y: 99
-        width: 224
-        height: 251
+        x: 0
+        y: 0
+        width: 480
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,113 +155,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a7b2a1dee13a5d50800000000000000
-      internalID: 6726743895220336548
+      spriteID: b051909fc995f3990800000000000000
+      internalID: -7404100731645913845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guitar_Guy_Second_Attack_1
+      name: Shield End_1
       rect:
         serializedVersion: 2
-        x: 755
-        y: 99
-        width: 267
-        height: 292
-      alignment: 9
-      pivot: {x: 0.5792316, y: 0.4275519}
+        x: 480
+        y: 0
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 665d7b9f3ff99ee90800000000000000
-      internalID: -6995884675927911066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guitar_Guy_Second_Attack_2
-      rect:
-        serializedVersion: 2
-        x: 1401
-        y: 99
-        width: 400
-        height: 251
-      alignment: 9
-      pivot: {x: 0.28149262, y: 0.49778205}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d90eb1f34fa0c3770800000000000000
-      internalID: 8591754233263153309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guitar_Guy_Second_Attack_3
-      rect:
-        serializedVersion: 2
-        x: 2001
-        y: 99
-        width: 227
-        height: 251
-      alignment: 9
-      pivot: {x: 0.50735754, y: 0.50000006}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39cd7dc41f0e2d650800000000000000
-      internalID: 6256310159351995539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guitar_Guy_Second_Attack_4
-      rect:
-        serializedVersion: 2
-        x: 2599
-        y: 99
-        width: 232
-        height: 251
-      alignment: 9
-      pivot: {x: 0.5095983, y: 0.50000006}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 923b625aed53c0fa0800000000000000
-      internalID: -5833228186981846231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guitar_Guy_Second_Attack_5
-      rect:
-        serializedVersion: 2
-        x: 3201
-        y: 99
-        width: 233
-        height: 261
-      alignment: 9
-      pivot: {x: 0.5286724, y: 0.48293623}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b234ad922e2ce3f0800000000000000
-      internalID: -870269901780798797
+      spriteID: d21e4946090d69830800000000000000
+      internalID: 4077675831211909421
       vertices: []
       indices: 
       edges: []

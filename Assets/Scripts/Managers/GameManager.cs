@@ -48,7 +48,7 @@ namespace Managers
             LeanTween.alpha(_fadeImage.rectTransform, 1, 2f).setEase(LeanTweenType.easeInCirc).setOnComplete(() =>
             {
                 lastArena.gameObject.SetActive(false);
-                _camera.transform.position=new Vector3(0f,0f,-10f);
+                _camera.transform.position = new Vector3(0f, 0f, -10f);
                 _mapController.gameObject.SetActive(false);
                 //_mapController.gameObject.SetActive(false);
                 LeanTween.alpha(_fadeImage.rectTransform, 0, 2f).setEase(LeanTweenType.easeInCirc).setOnComplete(() =>

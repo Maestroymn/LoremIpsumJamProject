@@ -153,7 +153,7 @@ namespace Behaviours
 
         }
 
-        private void DamageDrummer()
+        public void DamageDrummer()
         {
             _healthManager.SetHealth(drummerMissInput);
         }

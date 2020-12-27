@@ -150,7 +150,7 @@ namespace Behaviours
             boss.DamageBoss();
         }
 
-        private void DamageGuitarist()
+        public void DamageGuitarist()
         {
             _healthManager.SetHealth(guitaristMissInput);
         }

@@ -18,6 +18,7 @@ namespace Behaviours
         [SerializeField] private KeyboardListener _keyboardListener;
         [SerializeField] private Animator _animator;
         [HideInInspector] public DrumBubbleBehaviour currentBubble;
+        [SerializeField] private BaseBossBehaviour boss;
         [SerializeField] private HealthManager _healthManager;
         [SerializeField] private int drummerMissInput;
         [SerializeField] private AudioClip _failEffect;
@@ -39,6 +40,7 @@ namespace Behaviours
             _keyboardListener.FourthKeyPressed += OnFourthKeyPressed;
             _keyboardListener.FifthKeyPressed += OnFifthKeyPressed;
             _keyboardListener.SixthKeyPressed += OnSixthKeyPressed;
+            _healthManager.OnDead += OnDrummerDead;
             _mainAudioSource.Play();
         }
         
@@ -169,7 +171,13 @@ namespace Behaviours
             yield return new WaitForSeconds(delay);
             _mainAudioSource.volume=0.2f;
         }
+
+        private void OnDrummerDead()
+        {
+            boss.KillPlayer();
+        }
+
     }
 
-    
+
 }

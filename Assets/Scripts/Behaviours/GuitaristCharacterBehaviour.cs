@@ -32,6 +32,7 @@ namespace Behaviours
             mouseListener.LeftClickDraggedDown += OnLeftClickDragDown;
             mouseListener.RightClickDraggedUp += OnRightClickDragUp;
             mouseListener.RightClickDraggedDown += OnRightClickDragDown;
+            _healthManager.OnDead += OnGuitaristDead;
             _mainAudioSource.Play();
         }
         private void FixedUpdate()
@@ -166,5 +167,12 @@ namespace Behaviours
             yield return new WaitForSeconds(delay);
             _mainAudioSource.volume=0.2f;
         }
+
+        private void OnGuitaristDead()
+        {
+            _animator.SetTrigger("Die");
+            boss.KillPlayer();
+        }
+
     }
 }

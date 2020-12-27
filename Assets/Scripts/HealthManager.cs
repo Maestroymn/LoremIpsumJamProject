@@ -10,6 +10,7 @@ public class HealthManager : MonoBehaviour
     [SerializeField] Image mask;
     [SerializeField] List<float> percentageValues;
     public event Action<int> percentageReached;
+    public event Action OnDead;
     public float fillAmount;
     
     void Start()
@@ -31,6 +32,10 @@ public class HealthManager : MonoBehaviour
             {
                 percentageReached?.Invoke(i);
             }
+        }
+        if (current <= 0)
+        {
+            OnDead?.Invoke();
         }
     }
 }

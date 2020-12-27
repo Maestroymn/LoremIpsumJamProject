@@ -18,6 +18,7 @@ namespace Behaviours
             _isInteractable = false;
             LeanTween.scale(gameObject, Vector3.zero, .2f).setOnComplete(() =>
             {
+                drummer.DamageDrummer();
                 Destroy(gameObject);
             });
         }

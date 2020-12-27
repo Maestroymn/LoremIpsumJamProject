@@ -28,5 +28,10 @@ namespace Behaviours
         {
             healthManager.SetHealth(damageTaken);
         }
+
+        public void KillPlayer()
+        {
+            animator.SetTrigger(bossEvent[bossEvent.Count]);
+        }
     }
 }

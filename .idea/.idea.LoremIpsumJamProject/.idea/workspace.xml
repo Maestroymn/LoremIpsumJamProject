@@ -21,13 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a4c9d793-16a5-4efb-bc56-fe7704bdc10b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Guitar Guy/Guitar Guy.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Guitar Guy/Guitar Guy.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Guitar Guy/Guitar_Guy_First_Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Guitar Guy/Guitar_Guy_First_Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Guitar Guy/Guitar_Guy_Second_Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Guitar Guy/Guitar_Guy_Second_Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Arenas/Arena1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Arenas/Arena1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Guitar Guy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Guitar Guy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/ArenaManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/ArenaManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Image.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +54,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BarScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BubbleSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitarBubbleSpawner1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CharacterMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
@@ -74,6 +68,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitarBubbleSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ArenaManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainMenuController.cs" />
       </list>
     </option>
   </component>
@@ -119,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608918434029</updated>
       <workItem from="1608918452812" duration="14136000" />
-      <workItem from="1608979444454" duration="32896000" />
+      <workItem from="1608979444454" duration="33639000" />
     </task>
     <servers />
   </component>

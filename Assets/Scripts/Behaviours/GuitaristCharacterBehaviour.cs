@@ -18,12 +18,18 @@ namespace Behaviours
         [SerializeField] private DrumCharacterBehaviour _drumCharacter;
         [SerializeField] private Animator _animator;
         [HideInInspector] public GuitarBubbleBehaviour currentBubble;
+        [SerializeField] private BaseBossBehaviour boss;
 
-        public void StartInputSelectionRoutine() 
+        public void Initialize()
         {
-            StartCoroutine(GuitaristSelectInput());
+            _isMouseClaimed = true;
+            mouseListener.LeftClick += OnLeftClick;
+            mouseListener.RightClick += OnRightClick;
+            mouseListener.LeftClickDraggedUp += OnLeftClickDragUp;
+            mouseListener.LeftClickDraggedDown += OnLeftClickDragDown;
+            mouseListener.RightClickDraggedUp += OnRightClickDragUp;
+            mouseListener.RightClickDraggedDown += OnRightClickDragDown;
         }
-        
         private void FixedUpdate()
         {
             if(CharacterSituation==CharacterSituation.OnMap)
@@ -41,25 +47,6 @@ namespace Behaviours
             transform.rotation = Quaternion.AngleAxis(Angle, Vector3.forward);
         }
 
-        private IEnumerator GuitaristSelectInput()
-        {
-            while (CharacterSituation==CharacterSituation.InputSelectionStage)
-            {
-                if (Input.GetMouseButton(0) && !_isMouseClaimed)
-                {
-                    _isMouseClaimed = true;
-                    Debug.Log("Tıkladım Mouse");
-                    mouseListener.LeftClick += OnLeftClick;
-                    mouseListener.RightClick += OnRightClick;
-                    mouseListener.LeftClickDraggedUp += OnLeftClickDragUp;
-                    mouseListener.LeftClickDraggedDown += OnLeftClickDragDown;
-                    mouseListener.RightClickDraggedUp += OnRightClickDragUp;
-                    mouseListener.RightClickDraggedDown += OnRightClickDragDown;
-                }
-                yield return null;
-            }
-        }
-        
         // Mouse Inputs
         private void OnLeftClick(PointerEventData eventData)
         {
@@ -128,7 +115,11 @@ namespace Behaviours
                 transform.position = guitarLastPos;
                 _drumCharacter.transform.position = drumLastPos;
             }
-
+        }
+        private void HitDamage(int damage)
+        {
+            boss.damageTaken = damage;
+            boss.DamageBoss();
         }
     }
 }

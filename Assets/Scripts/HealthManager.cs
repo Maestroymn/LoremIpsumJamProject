@@ -5,6 +5,7 @@ using System;
 
 public class HealthManager : MonoBehaviour
 {
+    [SerializeField] TextFeedback textFeedback;
     [SerializeField] int maximum;
     [SerializeField] int current;
     [SerializeField] Image mask;
@@ -19,10 +20,13 @@ public class HealthManager : MonoBehaviour
         {
             percentageValues[i] = percentageValues[i] / (float)maximum;
         }
+        SetHealth(10);
     }
 
     public void SetHealth(int damage)
     {
+        Debug.Log(damage);
+        textFeedback.ShowDamage(damage);
         current -= damage;
         fillAmount = (float)current / (float)maximum;
         mask.fillAmount = fillAmount;

@@ -11,6 +11,8 @@ namespace Behaviours
         private bool _isMouseClaimed;
         private Vector2 _mouseDir;
         private float _vertical;
+        Vector2 guitarLastPos, drumLastPos;
+        public LayerMask layerMask;
         [SerializeField] private MouseListener mouseListener;
         [SerializeField] public Rigidbody2D Rigidbody2D;
         [SerializeField] private DrumCharacterBehaviour _drumCharacter;
@@ -111,6 +113,22 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 Debug.Log("Right Click Drag Down");
             }
+        }
+        
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            guitarLastPos = transform.position;
+            drumLastPos = _drumCharacter.transform.position;
+        }
+        private void OnCollisionStay2D(Collision2D collision)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position), 1.5f, layerMask);
+            if (hit.collider != null)
+            {
+                transform.position = guitarLastPos;
+                _drumCharacter.transform.position = drumLastPos;
+            }
+
         }
     }
 }

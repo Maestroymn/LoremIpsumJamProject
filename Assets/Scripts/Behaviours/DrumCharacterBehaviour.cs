@@ -22,6 +22,8 @@ namespace Behaviours
         private float _vertical;
         private Vector3 _direction;
         private bool _isKeyboardClaimed;
+        Vector2 guitarLastPos, drumLastPos;
+        public LayerMask layerMask;
 
         public CharacterSituation CharacterSituation;
         
@@ -40,13 +42,14 @@ namespace Behaviours
 
         void MovementBehaviour()
         {
-            _vertical = Input.GetAxis("Vertical");
+            _vertical = Input.GetAxisRaw("Vertical");
             Vector3 _newAngle = new Vector2(Mathf.Cos(_guitaristCharacter.Angle * Mathf.PI / 180f), Mathf.Sin(_guitaristCharacter.Angle * Mathf.PI / 180f));
             _direction = _vertical * _newAngle;
-            if (!(Camera.main is null) && Vector2.Distance(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition)) < 0.2f)
+            if (!(Camera.main is null) && Vector2.Distance(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition)) < 4f)
             {
                 _direction = Vector3.zero;
             }
+
             DrummerRigidBody.velocity = _direction * movementSpeed * Time.deltaTime;
             _guitaristCharacter.Rigidbody2D.velocity = _direction * movementSpeed * Time.deltaTime;
         }
@@ -119,5 +122,22 @@ namespace Behaviours
             }
         }
 
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            guitarLastPos = _guitaristCharacter.transform.position;
+            drumLastPos = transform.position;
+        }
+        private void OnCollisionStay2D(Collision2D collision)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position), 1.5f, layerMask);
+            if(hit.collider != null)
+            {
+                transform.position = drumLastPos;
+                _guitaristCharacter.transform.position = guitarLastPos;
+            }
+
+        }
     }
+
+    
 }

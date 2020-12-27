@@ -151,20 +151,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "X: Bug\xFCn \xE7ok g\xFCzel m\xFCzik yaptik dostum !"
-  - "Y: Evet! M\xFCziksiz bir hayat d\xFC\u015F\xFCnemiyorum bile. Hadi uyuyal\u0131m
+  - "Lorem : Bug\xFCn \xE7ok g\xFCzel m\xFCzik yaptik dostum !"
+  - "Ipsum : Evet! M\xFCziksiz bir hayat d\xFC\u015F\xFCnemiyorum bile. Hadi uyuyal\u0131m
     yar\u0131n kay\u0131t almam\u0131z gerek."
-  - Ah! nerdeyim ben bu sesler de ne?
-  - "Ke\u015Fke X'de yan\u0131mda olsayd\u0131 da m\xFCzik neymi\u015F g\xF6sterseydik."
-  - "\u0130\u015Fte \u015Fimdi ba\u015Fl\u0131yoruz !"
-  - "Ha Ha Ha Haa! Siz iki gerzek nap\u0131yorsunuz burada? Verin \u015Fu m\xFCzi\u011Finizi
-    bana"
-  - "Dostum, bu yarat\u0131klar d\xFCnyam\u0131z\u0131n m\xFCzi\u011Fini yok etmeye
-    \xE7al\u0131\u015F\u0131yorlar. Hadi onlara ger\xE7ek m\xFCzik neymi\u015F g\xF6sterelim!"
+  - 'Lorem : Ah! nerdeyim ben bu sesler de ne?'
+  - "Ipsum : Gel dostum sesin kayna\u011F\u0131n\u0131 buldum. M\xFCzik neymi\u015F
+    g\xF6sterelim \u015Funlara."
+  - "Lorem ve Ipsum :\u0130\u015Fte \u015Fimdi ba\u015Fl\u0131yoruz !"
+  - "Rock Killer : Ha Ha Ha Haa! Siz iki gerzek nap\u0131yorsunuz burada? Verin \u015Fu
+    notalar\u0131n\u0131z\u0131 bana."
+  - "Lorem : Dostum, bu yarat\u0131klar d\xFCnyam\u0131z\u0131n m\xFCzi\u011Fini
+    yok etmeye \xE7al\u0131\u015F\u0131yorlar. Hadi ona m\xFCzi\u011Fimizi g\xF6sterelim!"
+  - "Ipsum : \u0130\u015Fte biz buna m\xFCzik deriz!"
+  - "Lorem ve Ipsum : \u0130\u015Fte buuu!!!"
+  - "Lorem ve Ipsum : Dostum inan\u0131lmaz bir r\xFCya g\xF6rd\xFCm. Sen ve ben
+    . . . Ahahahaha!"
+  - 'Lorem : Dostum uyan!'
+  - "Lorem : \u0130nan\u0131lmaz bir r\xFCya g\xF6rd\xFCm. Seninlem\xFCzi\u011Fi
+    kurtarmaya \xE7al\u0131\u015F\u0131yorduk ama ba\u015Faramad\u0131k."
+  - 'Lorem : Hey uyan!'
+  - 'Ipsum : . . .'
   sprites:
   - {fileID: 21300000, guid: 43f96e079a33a3e4aaef5de3adf4764d, type: 3}
-  - {fileID: 21300000, guid: e12badb4e1cba7741a37a486943f8213, type: 3}
+  - {fileID: 21300000, guid: 77f55f6405d0d3d4294992fc5fd60ff4, type: 3}
+  - {fileID: 21300000, guid: 62c7180a8870427468be0aa44b4a71d1, type: 3}
+  - {fileID: 21300000, guid: 8afbeea7c83da5f44840b4198dd7ff64, type: 3}
   - {fileID: 21300000, guid: c5aa1b6e392fba34cab1d717f2104985, type: 3}
+  - {fileID: 21300000, guid: 95db70e972a0f644eae3324dbef7b81e, type: 3}
+  - {fileID: 21300000, guid: 1f7a7927a5b545944a4f342ad1620ddf, type: 3}
   mainAudioSource: {fileID: 779974268}
 --- !u!4 &114745699
 Transform:
@@ -389,7 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41fae8b95b721f940b18156eac8ea4ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typeSpeed: 0.1
+  typeSpeed: 0.08
   startDelay: 0.2
   volumeVariation: 0.1
   mainAudioSource: {fileID: 779974268}
@@ -406,7 +420,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2f34434c14fe16444b5899cfc67fcee8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.8
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0

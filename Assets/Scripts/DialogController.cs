@@ -61,7 +61,7 @@ public class DialogController : MonoBehaviour
 
             if(window != null)
             {
-                Invoke("killWindow", 2f);
+                //Invoke("killWindow", 2f);
             }
 
             count++;

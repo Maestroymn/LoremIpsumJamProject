@@ -15,6 +15,7 @@ namespace Controllers
         [SerializeField] private DrumCharacterBehaviour _drumCharacterBehaviour;
         [SerializeField] private BaseBossBehaviour _bossBehaviour;
         [HideInInspector] public bool OpenRow1G, OpenRow2G, OpenRow3G,OpenRow1D, OpenRow2D, OpenRow3D;
+        
         public void Initialize()
         {
             StartCoroutine(WaitUntilEntryFinish());

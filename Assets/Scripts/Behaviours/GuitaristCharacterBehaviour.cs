@@ -19,7 +19,7 @@ namespace Behaviours
         [SerializeField] private Animator _animator;
         [HideInInspector] public GuitarBubbleBehaviour currentBubble;
         [SerializeField] private BaseBossBehaviour boss;
-
+        [SerializeField] private HealthManager _healthManager;
         public void Initialize()
         {
             _isMouseClaimed = true;

@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace Managers
@@ -23,7 +22,7 @@ namespace Managers
                 _uiManager._characterMenuController.gameObject.SetActive(false);
                 LeanTween.alpha(_fadeImage.rectTransform, 0, 2f).setEase(LeanTweenType.easeInCirc).setOnComplete(() =>
                 {
-                    _arenaManager.StartArena1();
+                    _arenaManager.StartArena2();
                 });
             });
         }

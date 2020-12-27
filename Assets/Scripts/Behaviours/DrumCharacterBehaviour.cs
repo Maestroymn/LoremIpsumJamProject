@@ -18,7 +18,8 @@ namespace Behaviours
         [SerializeField] private KeyboardListener _keyboardListener;
         [SerializeField] private Animator _animator;
         [HideInInspector] public DrumBubbleBehaviour currentBubble;
-
+        [SerializeField] private HealthManager _healthManager;
+        
         private float _vertical;
         private Vector3 _direction;
         private bool _isKeyboardClaimed;

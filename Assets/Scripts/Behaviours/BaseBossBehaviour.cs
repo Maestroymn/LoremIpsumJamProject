@@ -7,14 +7,13 @@ namespace Behaviours
 {
     public class BaseBossBehaviour : MonoBehaviour
     {
-        [SerializeField] private BossHealthManager healthManager;
+        [SerializeField] private HealthManager healthManager;
         [SerializeField] private List<string> bossEvent;
         [SerializeField] private Animator animator;
         [SerializeField] private DrumCharacterBehaviour drummer;
         [SerializeField] private GuitaristCharacterBehaviour guitarist;
-        public int damageTaken;
+        [HideInInspector] public int damageTaken;
         
-
         public void Initialized()
         {
             healthManager.percentageReached += BossSpell;

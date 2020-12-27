@@ -70,7 +70,6 @@
             <e p="GuitaristCharacterBehaviour.cs" t="Include" />
             <e p="MainMenuSoundBarBehaviour.cs" t="Include" />
           </e>
-          <e p="BossHealthManager.cs" t="Include" />
           <e p="Controllers" t="Include">
             <e p="ArenaController.cs" t="Include" />
             <e p="BubbleController.cs" t="Include" />
@@ -78,6 +77,7 @@
             <e p="MainMenuController.cs" t="Include" />
             <e p="MapController.cs" t="Include" />
           </e>
+          <e p="HealthManager.cs" t="Include" />
           <e p="InputSystem" t="Include">
             <e p="JoystickInputs.cs" t="Include" />
             <e p="KeyboardJoystickListener.cs" t="Include" />

@@ -619,11 +619,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSituation: 1
   Angle: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
   mouseListener: {fileID: 1324668009458271042}
   Rigidbody2D: {fileID: 1324668009125251178}
   _drumCharacter: {fileID: 1324668009287248559}
   _animator: {fileID: 1324668009125251183}
   currentBubble: {fileID: 0}
+  boss: {fileID: 0}
 --- !u!50 &1324668009125251178
 Rigidbody2D:
   serializedVersion: 4
@@ -867,6 +871,9 @@ MonoBehaviour:
   _keyboardListener: {fileID: 0}
   _animator: {fileID: 1324668009287248545}
   currentBubble: {fileID: 0}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
   CharacterSituation: 1
 --- !u!50 &1324668009287248556
 Rigidbody2D:
@@ -1427,7 +1434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1644917729588017715
 RectTransform:
   m_ObjectHideFlags: 0

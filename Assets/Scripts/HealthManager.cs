@@ -20,12 +20,10 @@ public class HealthManager : MonoBehaviour
         {
             percentageValues[i] = percentageValues[i] / (float)maximum;
         }
-        SetHealth(10);
     }
 
     public void SetHealth(int damage)
     {
-        Debug.Log(damage);
         textFeedback.ShowDamage(damage);
         current -= damage;
         fillAmount = (float)current / (float)maximum;

@@ -20,8 +20,8 @@ namespace Behaviours
         [SerializeField] private Animator _animator;
         [HideInInspector] public GuitarBubbleBehaviour currentBubble;
         [SerializeField] private BaseBossBehaviour boss;
-        [SerializeField] private HealthManager _healthManager;
-        [SerializeField] private int guitaristMissInput;
+        public HealthManager _healthManager;
+        public int guitaristMissInput;
         [SerializeField] private AudioClip _failEffect;
         [SerializeField] private AudioSource _audioSource, _mainAudioSource;
         private static readonly int Die = Animator.StringToHash("Die");

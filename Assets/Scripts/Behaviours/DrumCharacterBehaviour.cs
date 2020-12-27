@@ -30,6 +30,8 @@ namespace Behaviours
         Vector2 guitarLastPos, drumLastPos;
         public LayerMask layerMask;
 
+        private float counter;
+
         public CharacterSituation CharacterSituation;
         private static readonly int Die = Animator.StringToHash("Die");
 
@@ -90,9 +92,11 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(3);
+                DrummerBuffSpells();
             }
             else
             {
+                counter--;
                 DamageDrummer();
             }
         }
@@ -103,9 +107,11 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(3);
+                DrummerBuffSpells();
             }
             else
             {
+                counter--;
                 DamageDrummer();
             }
         }
@@ -116,9 +122,11 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(3);
+                DrummerBuffSpells();
             }
             else
             {
+                counter--;
                 DamageDrummer();
             }
         }
@@ -129,9 +137,11 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(3);
+                DrummerBuffSpells();
             }
             else
             {
+                counter--;
                 DamageDrummer();
             }
         }
@@ -142,9 +152,11 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(3);
+                DrummerBuffSpells();
             }
             else
             {
+                counter--;
                 DamageDrummer();
             }
         }
@@ -155,10 +167,32 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(3);
+                DrummerBuffSpells();
             }
             else
             {
+                counter--;
                 DamageDrummer();
+            }
+        }
+
+        private void DrummerBuffSpells()
+        {
+            counter++;
+            if (counter % 4 == 0)
+            {
+                Debug.Log("Heal");
+                _animator.SetTrigger("Heal");
+                _healthManager.SetHealth(3, false);
+                _guitaristCharacter._healthManager.SetHealth(3, false);
+            }
+            if (counter % 6 == 0)
+            {
+                Debug.Log("Shield");
+                _animator.SetTrigger("Shield");
+                drummerMissInput -= 1;
+                _guitaristCharacter.guitaristMissInput -= 1;
+                _animator.SetTrigger("Glow");
             }
         }
 

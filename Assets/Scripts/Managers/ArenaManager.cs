@@ -10,10 +10,18 @@ namespace Managers
 
         public void StartArena1()
         {
+            _arenas[0].gameObject.SetActive(true);
+            _arenas[0].OpenRow1D = true;
+            _arenas[0].OpenRow1G = true;
             _arenas[0].Initialize();
         }
         public void StartArena2()
         {
+            _arenas[1].gameObject.SetActive(true);
+            _arenas[1].OpenRow1D = true;
+            _arenas[1].OpenRow1G = true;
+            _arenas[1].OpenRow2D = true;
+            _arenas[1].OpenRow2G = true;
             _arenas[1].Initialize();
         }
         public void StartArena3()

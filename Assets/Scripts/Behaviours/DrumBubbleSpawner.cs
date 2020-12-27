@@ -22,10 +22,11 @@ namespace Behaviours
         {
             while (_drummer.CharacterSituation == CharacterSituation.OnArena)
             {
+                yield return new WaitForSeconds(Random.Range(minSpawnThreshold,maxSpawnThreshold));
                 DrumBubbleBehaviour bubble = Instantiate(_bubblePrefabs[Random.Range(0, _bubblePrefabs.Count)],transform.position,Quaternion.identity);
                 bubble.drummer = _drummer;
-                _bubbleController.bubbles.Add(bubble.gameObject);
-                yield return new WaitForSeconds(Random.Range(minSpawnThreshold,maxSpawnThreshold));
+                bubble.transform.SetParent(transform);
+                _bubbleController.DrummerBubbles.Add(bubble);
             }
         }
     }

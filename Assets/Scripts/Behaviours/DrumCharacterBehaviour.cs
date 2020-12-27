@@ -24,10 +24,16 @@ namespace Behaviours
         private bool _isKeyboardClaimed;
 
         public CharacterSituation CharacterSituation;
-        
-        public void StartInputSelectionRoutine()
+
+        public void Initialize()
         {
-            StartCoroutine(DrummerSelectInputs());
+            _isKeyboardClaimed = true;
+            _keyboardListener.FirstKeyPressed += OnFirstKeyPressed;
+            _keyboardListener.SecondKeyPressed += OnSecondKeyPressed;
+            _keyboardListener.ThirdKeyPressed += OnThirdKeyPressed;
+            _keyboardListener.FourthKeyPressed += OnFourthKeyPressed;
+            _keyboardListener.FifthKeyPressed += OnFifthKeyPressed;
+            _keyboardListener.SixthKeyPressed += OnSixthKeyPressed;
         }
         
         private void FixedUpdate()
@@ -51,71 +57,53 @@ namespace Behaviours
             _guitaristCharacter.Rigidbody2D.velocity = _direction * movementSpeed * Time.deltaTime;
         }
 
-        private IEnumerator DrummerSelectInputs()
-        {
-            while (CharacterSituation==CharacterSituation.InputSelectionStage)
-            {
-                if (Input.GetKeyDown(KeyCode.Space) && !_isKeyboardClaimed)
-                {
-                    _isKeyboardClaimed = true;
-                    _keyboardListener.FirstKeyPressed += OnFirstKeyPressed;
-                    _keyboardListener.SecondKeyPressed += OnSecondKeyPressed;
-                    _keyboardListener.ThirdKeyPressed += OnThirdKeyPressed;
-                    _keyboardListener.FourthKeyPressed += OnFourthKeyPressed;
-                    _keyboardListener.FifthKeyPressed += OnFifthKeyPressed;
-                    _keyboardListener.SixthKeyPressed += OnSixthKeyPressed;
-                }
-                yield return null;
-            }
-        }
-
         // Keyboard Inputs
         private void OnFirstKeyPressed()
         {
-            if (currentBubble.input == _keyboardListener.FirstKey && currentBubble._isInteractable)
+            if (currentBubble.input == _keyboardListener.FirstKey && currentBubble._isInteractable && currentBubble!=null)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log("Key Pressed");
+                Debug.Log(currentBubble.input+" Pressed");
             }
         }
         private void OnSecondKeyPressed()
         {
-            if (currentBubble.input == _keyboardListener.SecondKey && currentBubble._isInteractable)
+            if (currentBubble.input == _keyboardListener.SecondKey && currentBubble._isInteractable && currentBubble!=null)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log("Key Pressed");
+                Debug.Log(currentBubble.input+" Pressed");
             }
         }
         private void OnThirdKeyPressed()
         {
-            if (currentBubble.input == _keyboardListener.ThirdKey && currentBubble._isInteractable)
+            if (currentBubble.input == _keyboardListener.ThirdKey && currentBubble._isInteractable && currentBubble!=null)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log("Key Pressed");
+                Debug.Log(currentBubble.input+" Pressed");
             }
         }
         private void OnFourthKeyPressed()
         {
-            if (currentBubble.input == _keyboardListener.FourthKey && currentBubble._isInteractable)
+            if (currentBubble.input == _keyboardListener.FourthKey && currentBubble._isInteractable && currentBubble!=null)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log("Key Pressed");
+                Debug.Log(currentBubble.input+" Pressed");
             }
         }
         private void OnFifthKeyPressed()
         {
-            if (currentBubble.input == _keyboardListener.FifthKey && currentBubble._isInteractable)
+            if (currentBubble.input == _keyboardListener.FifthKey && currentBubble._isInteractable && currentBubble!=null)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log("Key Pressed");
+                Debug.Log(currentBubble.input+" Pressed");
             }
         }
         private void OnSixthKeyPressed()
         {
-            if (currentBubble.input == _keyboardListener.SixthKey && currentBubble._isInteractable)
+            if (currentBubble.input == _keyboardListener.SixthKey && currentBubble._isInteractable && currentBubble!=null)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log("Key Pressed");
+                Debug.Log(currentBubble.input+" Pressed");
             }
         }
 

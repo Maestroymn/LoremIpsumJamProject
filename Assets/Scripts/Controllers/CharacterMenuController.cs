@@ -13,12 +13,11 @@ namespace Controllers
         [SerializeField] private KeyboardListener _keyboardListener;
         [SerializeField] private SkylineScroller _skylineScroller;
         [SerializeField] private Animator _drummerAnimator, _guitarAnimator;
+        [SerializeField] private GameManager _gameManager;
         private static readonly int Selected = Animator.StringToHash("Selected");
-        private UIManager _uiManager;
         private int _readyPlayers;
-        public void Initialize(UIManager uimanager)
+        public void Initialize()
         {
-            _uiManager = uimanager;
             _skylineScroller.Initialize();
             _mouseListener.LeftClick += MouseClicked;
             _keyboardListener.FirstKeyPressed += KeyboardInteraction;
@@ -33,7 +32,7 @@ namespace Controllers
                 _readyPlayers++;
                 if (_readyPlayers == 2)
                 {
-                    _uiManager.SceneChange();
+                    _gameManager.StartArena();
                 }
             });
         }
@@ -47,7 +46,7 @@ namespace Controllers
                 _readyPlayers++;
                 if (_readyPlayers == 2)
                 {
-                    _uiManager.SceneChange();
+                    _gameManager.StartArena();
                 }
             });
         }

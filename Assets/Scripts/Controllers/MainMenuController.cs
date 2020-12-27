@@ -7,7 +7,7 @@ namespace Controllers
     {
         [SerializeField] private SkylineScroller _skylineScroller;
 
-        private void Awake()
+        public void Initialize()
         {
             _skylineScroller.Initialize();
         }

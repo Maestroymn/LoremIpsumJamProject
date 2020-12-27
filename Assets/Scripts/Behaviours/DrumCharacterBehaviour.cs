@@ -24,6 +24,8 @@ namespace Behaviours
         [SerializeField] private int drummerMissInput;
         [SerializeField] private AudioClip _failEffect;
         [SerializeField] private AudioSource _audioSource, _mainAudioSource;
+        [SerializeField] private UltimateComboManager ComboManager;
+        
         private float _vertical;
         private Vector3 _direction;
         private bool _isKeyboardClaimed;
@@ -34,6 +36,7 @@ namespace Behaviours
 
         public CharacterSituation CharacterSituation;
         private static readonly int Die = Animator.StringToHash("Die");
+        private static readonly int Ulti1 = Animator.StringToHash("Ulti");
 
         public void Initialize()
         {
@@ -45,6 +48,7 @@ namespace Behaviours
             _keyboardListener.FifthKeyPressed += OnFifthKeyPressed;
             _keyboardListener.SixthKeyPressed += OnSixthKeyPressed;
             _healthManager.OnDead += OnDrummerDead;
+            ComboManager.OnSuccess += Ulti;
             _mainAudioSource.Play();
         }
         
@@ -54,6 +58,12 @@ namespace Behaviours
             {
                 MovementBehaviour();
             }
+        }
+
+        private void Ulti()
+        {
+            ComboManager.OnSuccess -= Ulti;
+            _animator.SetTrigger(Ulti1);
         }
 
         void MovementBehaviour()
@@ -96,6 +106,7 @@ namespace Behaviours
             }
             else
             {
+                ComboManager.ComboFailed();
                 counter--;
                 DamageDrummer();
             }
@@ -111,6 +122,7 @@ namespace Behaviours
             }
             else
             {
+                ComboManager.ComboFailed();
                 counter--;
                 DamageDrummer();
             }
@@ -123,9 +135,11 @@ namespace Behaviours
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(3);
                 DrummerBuffSpells();
+                ComboManager.ComboBarProgression();
             }
             else
             {
+                ComboManager.ComboFailed();
                 counter--;
                 DamageDrummer();
             }
@@ -138,13 +152,16 @@ namespace Behaviours
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(3);
                 DrummerBuffSpells();
+                ComboManager.ComboBarProgression();
             }
             else
             {
+                ComboManager.ComboFailed();
                 counter--;
                 DamageDrummer();
             }
         }
+        
         private void OnFifthKeyPressed()
         {
             if (currentBubble!=null&&currentBubble.input == _keyboardListener.FifthKey && currentBubble._isInteractable)
@@ -153,9 +170,11 @@ namespace Behaviours
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(3);
                 DrummerBuffSpells();
+                ComboManager.ComboBarProgression();
             }
             else
             {
+                ComboManager.ComboFailed();
                 counter--;
                 DamageDrummer();
             }
@@ -168,9 +187,11 @@ namespace Behaviours
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(3);
                 DrummerBuffSpells();
+                ComboManager.ComboBarProgression();
             }
             else
             {
+                ComboManager.ComboFailed();
                 counter--;
                 DamageDrummer();
             }

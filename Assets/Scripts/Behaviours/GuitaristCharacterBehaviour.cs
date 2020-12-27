@@ -25,6 +25,8 @@ namespace Behaviours
         [SerializeField] private AudioClip _failEffect;
         [SerializeField] private AudioSource _audioSource, _mainAudioSource;
         private static readonly int Die = Animator.StringToHash("Die");
+        [SerializeField] private UltimateComboManager ComboManager;
+        private static readonly int Ulti1 = Animator.StringToHash("Ulti");
 
         public void Initialize()
         {
@@ -36,8 +38,16 @@ namespace Behaviours
             mouseListener.RightClickDraggedUp += OnRightClickDragUp;
             mouseListener.RightClickDraggedDown += OnRightClickDragDown;
             _healthManager.OnDead += OnGuitaristDead;
+            ComboManager.OnSuccess += Ulti;
             _mainAudioSource.Play();
         }
+
+        private void Ulti()
+        {
+            ComboManager.OnSuccess -= Ulti;
+            _animator.SetTrigger(Ulti1);
+        }
+        
         private void FixedUpdate()
         {
             if(CharacterSituation==CharacterSituation.OnMap)
@@ -71,10 +81,12 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(5);
+                ComboManager.ComboBarProgression();
             }
             else
             {
                 DamageGuitarist();
+                ComboManager.ComboFailed();
             }
         }
 
@@ -85,10 +97,12 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(5);
+                ComboManager.ComboBarProgression();
             }
             else
             {
                 DamageGuitarist();
+                ComboManager.ComboFailed();
             }
         }
     
@@ -99,10 +113,12 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(5);
+                ComboManager.ComboBarProgression();
             }
             else
             {
                 DamageGuitarist();
+                ComboManager.ComboFailed();
             }
         }
 
@@ -113,10 +129,12 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(5);
+                ComboManager.ComboBarProgression();
             }
             else
             {
                 DamageGuitarist();
+                ComboManager.ComboFailed();
             }
         }
 
@@ -127,9 +145,11 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(5);
+                ComboManager.ComboBarProgression();
             }
             else
             {
+                ComboManager.ComboFailed();
                 DamageGuitarist();
             }
         }
@@ -142,10 +162,12 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
                 HitDamage(5);
+                ComboManager.ComboBarProgression();
             }
             else
             {
                 DamageGuitarist();
+                ComboManager.ComboFailed();
             }
         }
         

@@ -26,7 +26,7 @@ namespace Behaviours
         [SerializeField] private AudioSource _audioSource, _mainAudioSource;
         [SerializeField] private UltimateComboManager ComboManager;
         [SerializeField] private Animator _Laseranimator;
-        
+        [SerializeField] private GameManager _gameManager;
         private float _vertical;
         private Vector3 _direction;
         private bool _isKeyboardClaimed;
@@ -264,6 +264,7 @@ namespace Behaviours
             _keyboardListener.SixthKeyPressed -= OnSixthKeyPressed;
             gameObject.SetActive(false);
             boss.KillPlayer();
+            _gameManager.BadEnd(gameObject);
         }
 
     }

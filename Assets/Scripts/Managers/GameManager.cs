@@ -61,12 +61,17 @@ namespace Managers
                 {
                     _introduce.gameObject.SetActive(true);
                     _introduce.Play();
-                    _camera.isFollowing = true;
-                    _mapController.Initialize();
+                    StartCoroutine(wait(_introduce.length));
                 });
             });
         }
         
+        private IEnumerator wait(double vidlenght)
+        {
+            yield return new WaitForSeconds((float)vidlenght);
+            _camera.isFollowing = true;
+            _mapController.Initialize();
+        }
         
         public void GoodEnd(GameObject lastArena)
         {
@@ -92,6 +97,7 @@ namespace Managers
             _uiManager._mainMenu.gameObject.SetActive(true);
             _goodEnd.gameObject.SetActive(false);
         }
+        
         public void BadEnd(GameObject lastArena)
         {
             LeanTween.alpha(_fadeImage.rectTransform, 1, 2f).setEase(LeanTweenType.easeInCirc).setOnComplete(() =>
@@ -102,9 +108,16 @@ namespace Managers
                 {
                     _badEnd.gameObject.SetActive(true);
                     _badEnd.Play();
-                    _uiManager._mainMenu.gameObject.SetActive(true);
+                    StartCoroutine(WaitforBadvideoEnd(_badEnd.length));
                 });
             });
+        }
+        
+        private IEnumerator WaitforBadvideoEnd(double vidlenght)
+        {
+            yield return new WaitForSeconds((float)vidlenght);
+            _uiManager._mainMenu.gameObject.SetActive(true);
+            _badEnd.gameObject.SetActive(false);
         }
         
     }

@@ -23,6 +23,7 @@ namespace Behaviours
         [SerializeField] public HealthManager _healthManager;
         public int guitaristMissInput;
         [SerializeField] private AudioClip _failEffect;
+        [SerializeField] private GameManager _gameManager;
         [SerializeField] private AudioSource _audioSource, _mainAudioSource;
         private static readonly int Die = Animator.StringToHash("Die");
         [SerializeField] private UltimateComboManager ComboManager;
@@ -222,6 +223,7 @@ namespace Behaviours
             _animator.SetTrigger(Die);
             gameObject.SetActive(false);
             boss.KillPlayer();
+            _gameManager.BadEnd(gameObject);
         }
 
     }

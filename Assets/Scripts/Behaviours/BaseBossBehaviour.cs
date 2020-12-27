@@ -28,11 +28,5 @@ namespace Behaviours
         {
             healthManager.SetHealth(damageTaken);
         }
-
-        public void Attack()
-        {
-
-        }
-    
     }
 }

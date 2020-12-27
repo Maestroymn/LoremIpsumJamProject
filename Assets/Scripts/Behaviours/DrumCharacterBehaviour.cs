@@ -19,6 +19,7 @@ namespace Behaviours
         [SerializeField] private Animator _animator;
         [HideInInspector] public DrumBubbleBehaviour currentBubble;
         [SerializeField] private HealthManager _healthManager;
+        [SerializeField] private int drummerMissInput;
         
         private float _vertical;
         private Vector3 _direction;
@@ -69,6 +70,11 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 Debug.Log(currentBubble.input+" Pressed");
             }
+            else
+            {
+                DamageDrummer();
+            }
+
         }
         private void OnSecondKeyPressed()
         {
@@ -76,6 +82,10 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 Debug.Log(currentBubble.input+" Pressed");
+            }
+            else
+            {
+                DamageDrummer();
             }
         }
         private void OnThirdKeyPressed()
@@ -85,6 +95,10 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 Debug.Log(currentBubble.input+" Pressed");
             }
+            else
+            {
+                DamageDrummer();
+            }
         }
         private void OnFourthKeyPressed()
         {
@@ -92,6 +106,10 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 Debug.Log(currentBubble.input+" Pressed");
+            }
+            else
+            {
+                DamageDrummer();
             }
         }
         private void OnFifthKeyPressed()
@@ -101,6 +119,10 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 Debug.Log(currentBubble.input+" Pressed");
             }
+            else
+            {
+                DamageDrummer();
+            }
         }
         private void OnSixthKeyPressed()
         {
@@ -108,6 +130,10 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 Debug.Log(currentBubble.input+" Pressed");
+            }
+            else
+            {
+                DamageDrummer();
             }
         }
 
@@ -125,6 +151,11 @@ namespace Behaviours
                 _guitaristCharacter.transform.position = guitarLastPos;
             }
 
+        }
+
+        private void DamageDrummer()
+        {
+            _healthManager.SetHealth(drummerMissInput);
         }
     }
 

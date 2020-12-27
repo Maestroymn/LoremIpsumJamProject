@@ -20,6 +20,8 @@ namespace Behaviours
         [HideInInspector] public GuitarBubbleBehaviour currentBubble;
         [SerializeField] private BaseBossBehaviour boss;
         [SerializeField] private HealthManager _healthManager;
+        [SerializeField] private int guitaristMissInput;
+        
         public void Initialize()
         {
             _isMouseClaimed = true;
@@ -55,6 +57,10 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 Debug.Log("Mouse Clicked Btw");
             }
+            else
+            {
+                DamageGuitarist();
+            }
         }
 
         private void OnRightClick(PointerEventData eventData)
@@ -63,6 +69,10 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Mouse 1 OnRightClick ");
+            }
+            else
+            {
+                DamageGuitarist();
             }
         }
     
@@ -73,6 +83,10 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 Debug.Log("Left Click Drag Up");
             }
+            else
+            {
+                DamageGuitarist();
+            }
         }
 
         private void OnLeftClickDragDown(PointerEventData eventData)
@@ -81,6 +95,10 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Left Click Drag Down");
+            }
+            else
+            {
+                DamageGuitarist();
             }
         }
 
@@ -91,14 +109,23 @@ namespace Behaviours
                 currentBubble._isInteractable = false;
                 Debug.Log("right Click Drag Up");
             }
+            else
+            {
+                DamageGuitarist();
+            }
         }
 
         private void OnRightClickDragDown(PointerEventData eventData)
         {
+            
             if (currentBubble.input == MouseInputs.RightClickDragDown && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
                 Debug.Log("Right Click Drag Down");
+            }
+            else
+            {
+                DamageGuitarist();
             }
         }
         
@@ -116,10 +143,16 @@ namespace Behaviours
                 _drumCharacter.transform.position = drumLastPos;
             }
         }
+
         private void HitDamage(int damage)
         {
             boss.damageTaken = damage;
             boss.DamageBoss();
+        }
+
+        private void DamageGuitarist()
+        {
+            _healthManager.SetHealth(guitaristMissInput);
         }
     }
 }

@@ -13,7 +13,8 @@ namespace Controllers
         [SerializeField] private GameObject EntryParent;
         [SerializeField] private GuitaristCharacterBehaviour _guitaristCharacter;
         [SerializeField] private DrumCharacterBehaviour _drumCharacterBehaviour;
-        public bool OpenRow1G, OpenRow2G, OpenRow3G,OpenRow1D, OpenRow2D, OpenRow3D;
+        [SerializeField] private BaseBossBehaviour _bossBehaviour;
+        [HideInInspector] public bool OpenRow1G, OpenRow2G, OpenRow3G,OpenRow1D, OpenRow2D, OpenRow3D;
         public void Initialize()
         {
             StartCoroutine(WaitUntilEntryFinish());
@@ -52,7 +53,13 @@ namespace Controllers
         private IEnumerator WaitUntilEntryFinish()
         {
             yield return new WaitForSeconds(BossEntryAnimator.GetCurrentAnimatorStateInfo(0).length+BossEntryAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
-            LeanTween.scale(EntryParent.GetComponent<RectTransform>(),Vector3.zero,.4f).setOnComplete(StartArenaRoutine);
+            LeanTween.scale(EntryParent.GetComponent<RectTransform>(),Vector3.zero,.4f).setOnComplete(()=>
+            {
+                _guitaristCharacter.gameObject.SetActive(true);
+                _drumCharacterBehaviour.gameObject.SetActive(true);
+                _bossBehaviour.gameObject.SetActive(true);
+                StartArenaRoutine();
+            });
         }
     }
 }

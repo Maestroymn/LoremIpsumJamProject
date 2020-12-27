@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3443765021299299727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.936, y: -3.629, z: 0}
+  m_LocalPosition: {x: -7.48, y: -7.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3443765022486823468}
@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 3443765022486823468}
   - component: {fileID: 3443765022486823471}
   - component: {fileID: 647026439855578204}
+  - component: {fileID: 214096872223745256}
   m_Layer: 0
   m_Name: Guitar Guy
   m_TagString: Untagged
@@ -107,8 +108,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3443765022486823470}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.99, y: 0.3, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -937.28687, y: -481.29306, z: 405.625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3443765021299299724}
@@ -146,10 +147,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72cefc96ba497c742aa9eb5c4faea89f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterSituation: 0
+  CharacterSituation: 1
   Angle: 0
   mouseListener: {fileID: 0}
-  Rigidbody2D: {fileID: 0}
+  Rigidbody2D: {fileID: 214096872223745256}
   _drumCharacter: {fileID: 0}
-  _animator: {fileID: 0}
+  _animator: {fileID: 3443765022486823471}
   currentBubble: {fileID: 0}
+  boss: {fileID: 0}
+--- !u!50 &214096872223745256
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3443765022486823470}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

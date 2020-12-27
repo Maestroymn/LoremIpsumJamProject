@@ -621,7 +621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skylineScrollSpeed: -0.006
-  myMaterial: {fileID: 0}
+  myMaterial: {fileID: 2100000, guid: f2597db6fa63919468ff1bce42e77cfd, type: 2}
 --- !u!1 &458757623
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +864,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &622919278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1307,7 +1307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.1999512, y: 2.1999512}
+  m_AnchoredPosition: {x: 2.199707, y: 2.199707}
   m_SizeDelta: {x: 64.82068, y: 47.535156}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1766684565
@@ -1456,6 +1456,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Killer Effect
       objectReference: {fileID: 0}
+    - target: {fileID: 1914077602120730645, guid: 99ae4bde4363b7c43b1448e9d86bac55,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1914077602120730647, guid: 99ae4bde4363b7c43b1448e9d86bac55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1585,6 +1590,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drummer Laser
       objectReference: {fileID: 0}
+    - target: {fileID: 2822369100196775478, guid: 4e417eb03be7a8f4d8771c955041aae4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e417eb03be7a8f4d8771c955041aae4, type: 3}
 --- !u!1001 &4685258407303711546
@@ -1653,6 +1663,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock Killer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685258407502866099, guid: 18c301962472d6843a63b117a6be0508,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18c301962472d6843a63b117a6be0508, type: 3}
@@ -1819,7 +1834,7 @@ PrefabInstance:
     - target: {fileID: 6726435759229321114, guid: 6680f1b859d7078418540fee43e99aa3,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6726435759229321119, guid: 6680f1b859d7078418540fee43e99aa3,
         type: 3}
@@ -1898,12 +1913,12 @@ PrefabInstance:
     - target: {fileID: 7506882283781436515, guid: 9e5d5b562485718429e67d70404049ac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.32
+      value: 12.46
       objectReference: {fileID: 0}
     - target: {fileID: 7506882283781436515, guid: 9e5d5b562485718429e67d70404049ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.39
+      value: -8.29
       objectReference: {fileID: 0}
     - target: {fileID: 7506882283781436515, guid: 9e5d5b562485718429e67d70404049ac,
         type: 3}

@@ -16,9 +16,9 @@ namespace Behaviours
     public class GuitarBubbleBehaviour : MonoBehaviour
     {
         public MouseInputs input;
-        [SerializeField] private GuitaristCharacterBehaviour guitarist;
+        public GuitaristCharacterBehaviour guitarist;
         public bool _isInteractable = true;
-
+        
         public void OnHit()
         {
             guitarist.currentBubble = this;
@@ -27,6 +27,10 @@ namespace Behaviours
         private void OnTriggerExit2D(Collider2D collision)
         {
             _isInteractable = false;
+            LeanTween.scale(gameObject, Vector3.zero, .2f).setOnComplete(() =>
+            {
+                Destroy(gameObject);
+            });
         }
 
     }

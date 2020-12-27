@@ -7,8 +7,7 @@ namespace Behaviours
     public class DrumBubbleBehaviour : MonoBehaviour
     {
         public KeyCode input;
-        [SerializeField] private DrumCharacterBehaviour drummer;
-
+        public DrumCharacterBehaviour drummer;
         public bool _isInteractable = true;
 
         public void OnHit()
@@ -19,6 +18,10 @@ namespace Behaviours
         private void OnTriggerExit2D(Collider2D collision)
         {
             _isInteractable = false;
+            LeanTween.scale(gameObject, Vector3.zero, .2f).setOnComplete(() =>
+            {
+                Destroy(gameObject);
+            });
         }
 
     }

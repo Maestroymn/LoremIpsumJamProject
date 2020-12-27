@@ -8,11 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5207650313255487794}
+  - component: {fileID: 7597200964453131750}
   - component: {fileID: 3587311911097521200}
   - component: {fileID: 6740620062879202977}
   - component: {fileID: 3025501872622019511}
   - component: {fileID: 7356334460830147938}
+  - component: {fileID: 3763811814875763126}
   m_Layer: 0
   m_Name: Bubble_A
   m_TagString: Untagged
@@ -20,7 +21,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5207650313255487794
+--- !u!4 &7597200964453131750
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6450989765119910911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.23, y: 2.688, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 120, y: 120, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -137,3 +138,11 @@ MonoBehaviour:
   input: 97
   drummer: {fileID: 0}
   _isInteractable: 1
+--- !u!222 &3763811814875763126
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6450989765119910911}
+  m_CullTransparentMesh: 0

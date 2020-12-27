@@ -60,14 +60,19 @@
           <e p="ArmProjectile.cs" t="Include" />
           <e p="Behaviours" t="Include">
             <e p="BarScript.cs" t="Include" />
+            <e p="BaseBossBehaviour.cs" t="Include" />
             <e p="CameraFollow.cs" t="Include" />
             <e p="DrumBubbleBehaviour.cs" t="Include" />
+            <e p="DrumBubbleSpawner.cs" t="Include" />
             <e p="DrumCharacterBehaviour.cs" t="Include" />
             <e p="GuitarBubbleBehaviour.cs" t="Include" />
+            <e p="GuitarBubbleSpawner.cs" t="Include" />
             <e p="GuitaristCharacterBehaviour.cs" t="Include" />
             <e p="MainMenuSoundBarBehaviour.cs" t="Include" />
           </e>
+          <e p="BossHealthManager.cs" t="Include" />
           <e p="Controllers" t="Include">
+            <e p="ArenaController.cs" t="Include" />
             <e p="BubbleController.cs" t="Include" />
             <e p="CharacterMenuController.cs" t="Include" />
             <e p="MainMenuController.cs" t="Include" />
@@ -83,6 +88,7 @@
           </e>
           <e p="KeybindScript.cs" t="Include" />
           <e p="Managers" t="Include">
+            <e p="ArenaManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
           </e>

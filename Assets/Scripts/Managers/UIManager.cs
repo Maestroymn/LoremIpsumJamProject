@@ -11,6 +11,7 @@ namespace Managers
         [SerializeField] private CharacterMenuController _characterMenuController;
         [SerializeField] private SettingsMenu _settingsMenu;
         [SerializeField] private MainMenuController _mainMenu;
+        [SerializeField] private ArenaManager _arenaManager;
         public void SceneChange()
         {
             LeanTween.alpha(_fadeImage.rectTransform, 1, 2f).setEase(LeanTweenType.easeInCirc).setOnComplete(() =>

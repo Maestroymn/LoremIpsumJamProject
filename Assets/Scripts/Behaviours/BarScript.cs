@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Behaviours
 {
@@ -10,7 +8,6 @@ namespace Behaviours
         {
             if (collision.TryGetComponent(out GuitarBubbleBehaviour guitarBubble))
             {
-                //Debug.Log(collision.name + " OnStay");
                 guitarBubble.OnHit();
             }
             if (collision.TryGetComponent(out DrumBubbleBehaviour drumBubble))

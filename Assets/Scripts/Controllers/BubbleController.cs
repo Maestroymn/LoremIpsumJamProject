@@ -1,17 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class BubbleController : MonoBehaviour
+namespace Controllers
 {
-    [SerializeField] private List<GameObject> bubbles;
-    [SerializeField] private float bubbleSpeed;
-
-    private void Update()
+    public class BubbleController : MonoBehaviour
     {
-        foreach (var item in bubbles)
+        [SerializeField] public List<GameObject> bubbles;
+        [SerializeField] public float bubbleSpeed;
+
+        private void Update()
         {
-            item.transform.position += new Vector3(transform.position.x + bubbleSpeed * Time.deltaTime, transform.position.y,transform.position.z);
+            if(bubbles.Count!=0)
+            {
+                foreach (var item in bubbles)
+                {
+                    item.transform.position += new Vector3(transform.position.x + bubbleSpeed * Time.deltaTime,
+                        transform.position.y, transform.position.z);
+                }
+            }
         }
     }
 }

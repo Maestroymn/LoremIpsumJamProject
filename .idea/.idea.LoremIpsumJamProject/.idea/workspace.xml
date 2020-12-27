@@ -21,18 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a4c9d793-16a5-4efb-bc56-fe7704bdc10b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Rock_Killer_Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Rock_Killer_Death.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/GameManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Boss Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Boss Scene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/CharacterMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/CharacterMenuController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/MapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MapController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Materials/Skyline 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Materials/Skyline 1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Materials/Skyline 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Materials/Skyline 2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,14 +78,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UltimateComboManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BaseBossBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem/MouseListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CharacterMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MapController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -140,7 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608918434029</updated>
       <workItem from="1608918452812" duration="14136000" />
-      <workItem from="1608979444454" duration="62838000" />
+      <workItem from="1608979444454" duration="63694000" />
     </task>
     <servers />
   </component>

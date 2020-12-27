@@ -303,14 +303,51 @@ PrefabInstance:
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 999387630}
+    - target: {fileID: 783143054, guid: 5b9e0b8ee82d3624cb8ff12bc941b180, type: 3}
+      propertyPath: m_DirectAudioVolumes.Array.data[0]
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1413697882, guid: 5b9e0b8ee82d3624cb8ff12bc941b180, type: 3}
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 999387630}
+    - target: {fileID: 1413697882, guid: 5b9e0b8ee82d3624cb8ff12bc941b180, type: 3}
+      propertyPath: m_DirectAudioVolumes.Array.data[0]
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1793087284, guid: 5b9e0b8ee82d3624cb8ff12bc941b180, type: 3}
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 999387630}
+    - target: {fileID: 1793087284, guid: 5b9e0b8ee82d3624cb8ff12bc941b180, type: 3}
+      propertyPath: m_DirectAudioVolumes.Array.data[0]
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 335451731567897770, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 335451732584903158, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185591871584370351, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3652690533875321226, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729433916293098231, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7729433916882625400, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -376,5 +413,10 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 999387632}
+    - target: {fileID: 8503648087640723760, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9e0b8ee82d3624cb8ff12bc941b180, type: 3}

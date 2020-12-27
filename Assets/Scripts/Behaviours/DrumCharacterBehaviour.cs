@@ -242,7 +242,7 @@ namespace Behaviours
             _mainAudioSource.volume = 0.1f;
             _audioSource.clip = _failEffect;
             _audioSource.Play();
-            _mainAudioSource.volume = 0.2f;
+            _mainAudioSource.volume = 0.5f;
         }
 
         private IEnumerator ContinueMusicAgain(float delay)

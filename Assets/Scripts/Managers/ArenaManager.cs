@@ -26,6 +26,13 @@ namespace Managers
         }
         public void StartArena3()
         {
+            _arenas[2].gameObject.SetActive(true);
+            _arenas[2].OpenRow1D = true;
+            _arenas[2].OpenRow1G = true;
+            _arenas[2].OpenRow2D = true;
+            _arenas[2].OpenRow2G = true;
+            _arenas[2].OpenRow3D = true;
+            _arenas[2].OpenRow3G = true;
             _arenas[2].Initialize();
         }
     }

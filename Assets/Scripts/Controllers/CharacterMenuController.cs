@@ -61,7 +61,7 @@ namespace Controllers
         private IEnumerator WaitUntilSoundFinish(float delay)
         {
             yield return new WaitForSeconds(delay);
-            _gameManager.StartArena();
+            _gameManager.ReturnToMap(gameObject);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using InputSystem;
+﻿using System.Collections;
+using InputSystem;
 using Managers;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -14,6 +15,8 @@ namespace Controllers
         [SerializeField] private SkylineScroller _skylineScroller;
         [SerializeField] private Animator _drummerAnimator, _guitarAnimator;
         [SerializeField] private GameManager _gameManager;
+        [SerializeField] private AudioClip _guitarCharSelectVFX,_drumCharSelectVFX;
+        [SerializeField] private AudioSource _audioSource;
         private static readonly int Selected = Animator.StringToHash("Selected");
         private int _readyPlayers;
         public void Initialize()
@@ -29,10 +32,12 @@ namespace Controllers
             LeanTween.alpha(_mouseImage.rectTransform, 255, .1f).setOnComplete(() =>
             {
                 _guitarAnimator.SetTrigger(Selected);
+                _audioSource.clip = _guitarCharSelectVFX;
+                _audioSource.Play();
                 _readyPlayers++;
                 if (_readyPlayers == 2)
                 {
-                    _gameManager.StartArena();
+                    StartCoroutine(WaitUntilSoundFinish(_audioSource.clip.length));
                 }
             });
         }
@@ -44,11 +49,19 @@ namespace Controllers
             {
                 _drummerAnimator.SetTrigger(Selected);
                 _readyPlayers++;
+                _audioSource.clip = _drumCharSelectVFX;
+                _audioSource.Play();
                 if (_readyPlayers == 2)
                 {
-                    _gameManager.StartArena();
+                    StartCoroutine(WaitUntilSoundFinish(_audioSource.clip.length));
                 }
             });
+        }
+        
+        private IEnumerator WaitUntilSoundFinish(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            _gameManager.StartArena();
         }
     }
 }

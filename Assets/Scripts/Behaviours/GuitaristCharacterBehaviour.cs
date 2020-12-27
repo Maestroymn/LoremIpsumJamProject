@@ -21,7 +21,8 @@ namespace Behaviours
         [SerializeField] private BaseBossBehaviour boss;
         [SerializeField] private HealthManager _healthManager;
         [SerializeField] private int guitaristMissInput;
-        
+        [SerializeField] private AudioClip _failEffect;
+        [SerializeField] private AudioSource _audioSource, _mainAudioSource;
         public void Initialize()
         {
             _isMouseClaimed = true;
@@ -31,6 +32,7 @@ namespace Behaviours
             mouseListener.LeftClickDraggedDown += OnLeftClickDragDown;
             mouseListener.RightClickDraggedUp += OnRightClickDragUp;
             mouseListener.RightClickDraggedDown += OnRightClickDragDown;
+            _mainAudioSource.Play();
         }
         private void FixedUpdate()
         {
@@ -153,6 +155,16 @@ namespace Behaviours
         public void DamageGuitarist()
         {
             _healthManager.SetHealth(guitaristMissInput);
+            _mainAudioSource.volume=0.1f;
+            _audioSource.clip=_failEffect;
+            _audioSource.Play();
+            StartCoroutine(ContinueMusicAgain(_failEffect.length/2));
+        }
+        
+        private IEnumerator ContinueMusicAgain(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            _mainAudioSource.volume=0.2f;
         }
     }
 }

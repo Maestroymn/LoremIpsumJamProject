@@ -20,7 +20,8 @@ namespace Behaviours
         [HideInInspector] public DrumBubbleBehaviour currentBubble;
         [SerializeField] private HealthManager _healthManager;
         [SerializeField] private int drummerMissInput;
-        
+        [SerializeField] private AudioClip _failEffect;
+        [SerializeField] private AudioSource _audioSource, _mainAudioSource;
         private float _vertical;
         private Vector3 _direction;
         private bool _isKeyboardClaimed;
@@ -38,6 +39,7 @@ namespace Behaviours
             _keyboardListener.FourthKeyPressed += OnFourthKeyPressed;
             _keyboardListener.FifthKeyPressed += OnFifthKeyPressed;
             _keyboardListener.SixthKeyPressed += OnSixthKeyPressed;
+            _mainAudioSource.Play();
         }
         
         private void FixedUpdate()
@@ -156,6 +158,16 @@ namespace Behaviours
         public void DamageDrummer()
         {
             _healthManager.SetHealth(drummerMissInput);
+            _mainAudioSource.volume=0.1f;
+            _audioSource.clip=_failEffect;
+            _audioSource.Play();
+            StartCoroutine(ContinueMusicAgain(_failEffect.length));
+        }
+
+        private IEnumerator ContinueMusicAgain(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            _mainAudioSource.volume=0.2f;
         }
     }
 

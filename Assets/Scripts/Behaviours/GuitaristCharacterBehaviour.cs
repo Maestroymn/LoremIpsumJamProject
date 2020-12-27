@@ -170,7 +170,10 @@ namespace Behaviours
             _mainAudioSource.volume=0.1f;
             _audioSource.clip=_failEffect;
             _audioSource.Play();
-            StartCoroutine(ContinueMusicAgain(_failEffect.length/2));
+            if (CharacterSituation != CharacterSituation.Dead)
+            {
+                StartCoroutine(ContinueMusicAgain(_failEffect.length/2));
+            }
         }
         
         private IEnumerator ContinueMusicAgain(float delay)

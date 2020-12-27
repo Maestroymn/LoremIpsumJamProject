@@ -170,11 +170,14 @@ namespace Behaviours
 
         public void DamageDrummer()
         {
-            _healthManager.SetHealth(drummerMissInput,true);
-            _mainAudioSource.volume=0.1f;
-            _audioSource.clip=_failEffect;
+            _healthManager.SetHealth(drummerMissInput, true);
+            _mainAudioSource.volume = 0.1f;
+            _audioSource.clip = _failEffect;
             _audioSource.Play();
-            StartCoroutine(ContinueMusicAgain(_failEffect.length));
+            if (CharacterSituation != CharacterSituation.Dead)
+            {
+                StartCoroutine(ContinueMusicAgain(_failEffect.length));
+            }
         }
 
         private IEnumerator ContinueMusicAgain(float delay)

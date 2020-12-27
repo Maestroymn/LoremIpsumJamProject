@@ -55,7 +55,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0.7
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -120,7 +120,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0.7
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -185,7 +185,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0.7
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -481,6 +481,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -13.24
       objectReference: {fileID: 0}
+    - target: {fileID: 8954760614560800594, guid: 4d0c2dad171932849a78b4017a23a70b,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1911501291, guid: 4d0c2dad171932849a78b4017a23a70b, type: 3}
     - {fileID: 1667506187, guid: 4d0c2dad171932849a78b4017a23a70b, type: 3}
@@ -729,6 +734,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7729433916882625400}
     m_Modifications:
+    - target: {fileID: 262232571, guid: c7a2b007583e7dd4c9b3733b328169b9, type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 378452153141171329, guid: c7a2b007583e7dd4c9b3733b328169b9,
         type: 3}
       propertyPath: m_text
@@ -860,6 +869,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: e2bee61bd8ee45946983801d45bcb5ba, type: 3}
+    - target: {fileID: 42670714038805232, guid: a5336a8d5a8c518429d5587202c1639e,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 284459400766290462, guid: a5336a8d5a8c518429d5587202c1639e,
         type: 3}
       propertyPath: _keyboardListener
@@ -875,6 +889,11 @@ PrefabInstance:
       propertyPath: _Laseranimator
       value: 
       objectReference: {fileID: 8459453869635925378}
+    - target: {fileID: 284459400766290462, guid: a5336a8d5a8c518429d5587202c1639e,
+        type: 3}
+      propertyPath: _gameManager
+      value: 
+      objectReference: {fileID: 7729433916882625403}
     - target: {fileID: 546210667743549243, guid: a5336a8d5a8c518429d5587202c1639e,
         type: 3}
       propertyPath: m_IsActive
@@ -975,6 +994,11 @@ PrefabInstance:
       propertyPath: ComboManager
       value: 
       objectReference: {fileID: 754924280717404804}
+    - target: {fileID: 4069697636578685287, guid: a5336a8d5a8c518429d5587202c1639e,
+        type: 3}
+      propertyPath: _gameManager
+      value: 
+      objectReference: {fileID: 7729433916882625403}
     - target: {fileID: 5908761151589507757, guid: a5336a8d5a8c518429d5587202c1639e,
         type: 3}
       propertyPath: _keyboardListener
@@ -985,6 +1009,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: bba803c60cb1b9b459cf9f5cb07d68a5, type: 3}
+    - target: {fileID: 6530748073917893999, guid: a5336a8d5a8c518429d5587202c1639e,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 6659751754484465947, guid: a5336a8d5a8c518429d5587202c1639e,
         type: 3}
       propertyPath: m_Color.r
@@ -1010,6 +1039,16 @@ PrefabInstance:
       propertyPath: _gameManager
       value: 
       objectReference: {fileID: 7729433916882625403}
+    - target: {fileID: 8229024000372245046, guid: a5336a8d5a8c518429d5587202c1639e,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229024001427365738, guid: a5336a8d5a8c518429d5587202c1639e,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5336a8d5a8c518429d5587202c1639e, type: 3}
 --- !u!224 &4966567410105915290 stripped

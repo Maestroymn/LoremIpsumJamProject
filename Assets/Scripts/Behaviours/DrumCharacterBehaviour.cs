@@ -9,7 +9,7 @@ namespace Behaviours
     {
         OnMap,
         OnArena,
-        InputSelectionStage
+        Dead
     }
     public class DrumCharacterBehaviour : MonoBehaviour
     {
@@ -170,7 +170,7 @@ namespace Behaviours
 
         public void DamageDrummer()
         {
-            _healthManager.SetHealth(drummerMissInput);
+            _healthManager.SetHealth(drummerMissInput,true);
             _mainAudioSource.volume=0.1f;
             _audioSource.clip=_failEffect;
             _audioSource.Play();
@@ -185,6 +185,7 @@ namespace Behaviours
 
         private void OnDrummerDead()
         {
+            CharacterSituation = CharacterSituation.Dead;
             _animator.SetTrigger(Die);
             _keyboardListener.FirstKeyPressed -= OnFirstKeyPressed;
             _keyboardListener.SecondKeyPressed -= OnSecondKeyPressed;

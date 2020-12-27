@@ -166,7 +166,7 @@ namespace Behaviours
 
         public void DamageGuitarist()
         {
-            _healthManager.SetHealth(guitaristMissInput);
+            _healthManager.SetHealth(guitaristMissInput,true);
             _mainAudioSource.volume=0.1f;
             _audioSource.clip=_failEffect;
             _audioSource.Play();
@@ -181,6 +181,7 @@ namespace Behaviours
 
         private void OnGuitaristDead()
         {
+            CharacterSituation = CharacterSituation.Dead;
             mouseListener.LeftClick -= OnLeftClick;
             mouseListener.RightClick -= OnRightClick;
             mouseListener.LeftClickDraggedUp -= OnLeftClickDragUp;

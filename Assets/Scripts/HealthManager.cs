@@ -22,10 +22,14 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    public void SetHealth(int damage)
+    public void SetHealth(int damage,bool decrease)
     {
         textFeedback.ShowHPChange(-1*damage);
-        current -= damage;
+        if (decrease)
+        {
+            damage *= -1;
+        }
+        current += damage;
         if (current <= 0)
         {
             current = 0;

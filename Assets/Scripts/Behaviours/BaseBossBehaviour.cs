@@ -27,7 +27,7 @@ namespace Behaviours
 
         public void DamageBoss()
         {
-            healthManager.SetHealth(damageTaken);
+            healthManager.SetHealth(damageTaken,true);
         }
 
         public void KillPlayer()

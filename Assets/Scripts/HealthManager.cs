@@ -39,7 +39,7 @@ public class HealthManager : MonoBehaviour
         mask.fillAmount = fillAmount;
         for (int i = 0; i < percentageValues.Count; i++)
         {
-            if(percentageValues[i] <= fillAmount && percentageValues[i - 1] > fillAmount && i >= 1)
+            if(Math.Abs(percentageValues[i] - fillAmount) < 1f)
             {
                 percentageReached?.Invoke(i);
             }

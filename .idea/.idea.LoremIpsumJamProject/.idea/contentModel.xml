@@ -99,6 +99,7 @@
           <e p="SkylineScroller.cs" t="Include" />
           <e p="TextFeedback.cs" t="Include" />
           <e p="TypeText.cs" t="Include" />
+          <e p="UltimateComboManager.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">

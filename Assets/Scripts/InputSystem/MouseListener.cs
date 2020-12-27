@@ -30,19 +30,19 @@ public class MouseListener : MonoBehaviour, IDragHandler, IPointerDownHandler
     {
         lastMousePos = eventData.position.y - eventData.pressPosition.y;
 
-        if (Input.GetMouseButton(0) && lastMousePos > 0.0f)
+        if (Input.GetMouseButtonDown(0) && lastMousePos > 0.0f)
         {
             LeftClickDraggedUp?.Invoke(eventData);
         }
-        if (Input.GetMouseButton(0) && lastMousePos < 0.0f)
+        if (Input.GetMouseButtonDown(0) && lastMousePos < 0.0f)
         {
             LeftClickDraggedDown?.Invoke(eventData);
         }
-        if (Input.GetMouseButton(1) && lastMousePos > 0.0f)
+        if (Input.GetMouseButtonDown(1) && lastMousePos > 0.0f)
         {
             RightClickDraggedUp?.Invoke(eventData);
         }
-        if (Input.GetMouseButton(1) && lastMousePos < 0.0f)
+        if (Input.GetMouseButtonDown(1) && lastMousePos < 0.0f)
         {
             RightClickDraggedDown?.Invoke(eventData);
         }

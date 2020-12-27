@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Behaviours;
+using Managers;
 using UnityEngine;
 
 namespace Controllers
@@ -15,10 +17,11 @@ namespace Controllers
         [SerializeField] private DrumCharacterBehaviour _drumCharacterBehaviour;
         [SerializeField] private BaseBossBehaviour _bossBehaviour;
         [HideInInspector] public bool OpenRow1G, OpenRow2G, OpenRow3G,OpenRow1D, OpenRow2D, OpenRow3D;
-        
+        [SerializeField] private GameManager _gameManager;
         public void Initialize()
         {
             StartCoroutine(WaitUntilEntryFinish());
+            _bossBehaviour.OnBossDead += ArenaFinished;
         }
         
         public void StartArenaRoutine()
@@ -52,9 +55,14 @@ namespace Controllers
             }
         }
 
+        private void ArenaFinished()
+        {
+            _bossBehaviour.OnBossDead -= ArenaFinished;
+            _gameManager.ReturnToMap(gameObject);
+        }
+
         private IEnumerator WaitUntilEntryFinish()
         {
-            
             yield return new WaitForSeconds(BossEntryAnimator.GetCurrentAnimatorStateInfo(0).length+BossEntryAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
             LeanTween.scale(EntryParent.GetComponent<RectTransform>(),Vector3.zero,.4f).setOnComplete(()=>
             {

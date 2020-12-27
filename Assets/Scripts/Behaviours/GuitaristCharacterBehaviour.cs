@@ -70,6 +70,7 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
+                HitDamage(5);
             }
             else
             {
@@ -83,6 +84,7 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
+                HitDamage(5);
             }
             else
             {
@@ -96,6 +98,7 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
+                HitDamage(5);
             }
             else
             {
@@ -109,6 +112,7 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
+                HitDamage(5);
             }
             else
             {
@@ -122,6 +126,7 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
+                HitDamage(5);
             }
             else
             {
@@ -136,6 +141,7 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
+                HitDamage(5);
             }
             else
             {

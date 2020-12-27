@@ -76,6 +76,12 @@ namespace Behaviours
             });
         }
         
+        private void HitDamage(int damage)
+        {
+            boss.damageTaken = damage;
+            boss.DamageBoss();
+        }
+        
         // Keyboard Inputs
         private void OnFirstKeyPressed()
         {
@@ -83,12 +89,12 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
+                HitDamage(3);
             }
             else
             {
                 DamageDrummer();
             }
-
         }
         private void OnSecondKeyPressed()
         {
@@ -96,7 +102,7 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
-                
+                HitDamage(3);
             }
             else
             {
@@ -109,6 +115,7 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
+                HitDamage(3);
             }
             else
             {
@@ -121,6 +128,7 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
+                HitDamage(3);
             }
             else
             {
@@ -133,6 +141,7 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
+                HitDamage(3);
             }
             else
             {
@@ -145,6 +154,7 @@ namespace Behaviours
             {
                 currentBubble._isInteractable = false;
                 BubbleCorrectHit(currentBubble.gameObject);
+                HitDamage(3);
             }
             else
             {
@@ -157,6 +167,7 @@ namespace Behaviours
             guitarLastPos = _guitaristCharacter.transform.position;
             drumLastPos = transform.position;
         }
+        
         private void OnCollisionStay2D(Collision2D collision)
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position), 1.5f, layerMask);
@@ -165,7 +176,6 @@ namespace Behaviours
                 transform.position = drumLastPos;
                 _guitaristCharacter.transform.position = guitarLastPos;
             }
-
         }
 
         public void DamageDrummer()
@@ -188,6 +198,7 @@ namespace Behaviours
 
         private void OnDrummerDead()
         {
+            _healthManager.OnDead -= OnDrummerDead;
             CharacterSituation = CharacterSituation.Dead;
             _animator.SetTrigger(Die);
             _keyboardListener.FirstKeyPressed -= OnFirstKeyPressed;

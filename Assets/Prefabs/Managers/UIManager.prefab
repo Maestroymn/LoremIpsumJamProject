@@ -570,7 +570,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b78c645501d40844993f6778c25201ea, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.01
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -865,6 +865,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8080747448181603019}
     m_Modifications:
+    - target: {fileID: 816567922, guid: cb24da3890ce01743afc8f80033ef7bc, type: 3}
+      propertyPath: m_text
+      value: 'LOREM IPSUM
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 901879409, guid: cb24da3890ce01743afc8f80033ef7bc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1453,7 +1459,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _drumCharSelectVFX
       value: 
-      objectReference: {fileID: 8300000, guid: 081176fe2a37b1e478517972f4bf88d2, type: 3}
+      objectReference: {fileID: 8300000, guid: c10de946e87586c409553e66e19d21f8, type: 3}
     - target: {fileID: 51908112967548999, guid: 8ee3b51b43c27a7478852983deb47ac0,
         type: 3}
       propertyPath: _audioSource

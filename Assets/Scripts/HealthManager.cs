@@ -24,14 +24,13 @@ public class HealthManager : MonoBehaviour
 
     public void SetHealth(int damage)
     {
-        textFeedback.ShowDamage(damage);
+        textFeedback.ShowHPChange(-1*damage);
         current -= damage;
         if (current <= 0)
         {
             current = 0;
             OnDead?.Invoke();
         }
-
         fillAmount = (float)current / (float)maximum;
         mask.fillAmount = fillAmount;
         for (int i = 0; i < percentageValues.Count; i++)

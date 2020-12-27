@@ -14,15 +14,23 @@ public class TextFeedback : MonoBehaviour
     {
         firstPos = feedbackText.rectTransform.position;
     }
-    public void ShowDamage(int changedHpAmount)
+    
+    public void ShowHPChange(int changedHpAmount)
     {
-        feedbackText.enabled = true;
-        feedbackText.text = changedHpAmount + "";
-        feedbackText.gameObject.LeanMoveY(HealthBar.position.y, 2f);
-        LeanTween.alphaText(feedbackText.rectTransform, 0f, 2f).setOnComplete(() =>
+        feedbackText.gameObject.SetActive(true);
+        if (changedHpAmount < 0)
+        {
+            feedbackText.text = changedHpAmount + "";
+        }
+        else
+        {
+            feedbackText.text = "+"+changedHpAmount + "";
+        }
+        feedbackText.gameObject.LeanMoveY(HealthBar.position.y, 1f);
+        LeanTween.alphaText(feedbackText.rectTransform, 0f, 1f).setOnComplete(() =>
         {
             feedbackText.rectTransform.position = firstPos;
-            feedbackText.enabled = false;
+            feedbackText.gameObject.SetActive(false);
         });
 
     }

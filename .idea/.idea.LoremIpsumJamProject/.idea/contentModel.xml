@@ -78,6 +78,8 @@
             <e p="MainMenuController.cs" t="Include" />
             <e p="MapController.cs" t="Include" />
           </e>
+          <e p="DialogController.cs" t="Include" />
+          <e p="HealthManager.cs" t="Include" />
           <e p="InputSystem" t="Include">
             <e p="JoystickInputs.cs" t="Include" />
             <e p="KeyboardJoystickListener.cs" t="Include" />
@@ -95,6 +97,8 @@
           </e>
           <e p="SettingsMenu.cs" t="Include" />
           <e p="SkylineScroller.cs" t="Include" />
+          <e p="TextFeedback.cs" t="Include" />
+          <e p="TypeText.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">

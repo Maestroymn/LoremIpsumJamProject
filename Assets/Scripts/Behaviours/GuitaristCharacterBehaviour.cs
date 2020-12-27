@@ -24,6 +24,8 @@ namespace Behaviours
         [SerializeField] private int guitaristMissInput;
         [SerializeField] private AudioClip _failEffect;
         [SerializeField] private AudioSource _audioSource, _mainAudioSource;
+        private static readonly int Die = Animator.StringToHash("Die");
+
         public void Initialize()
         {
             _isMouseClaimed = true;
@@ -52,6 +54,14 @@ namespace Behaviours
             //_drumCharacter.transform.rotation = Quaternion.AngleAxis(Angle, Vector3.forward);
             //transform.rotation = Quaternion.AngleAxis(Angle, Vector3.forward);
         }
+        
+        private void BubbleCorrectHit(GameObject bubbleObject)
+        {
+            LeanTween.scale(bubbleObject, new Vector3(2.5f, 2.5f, 2.5f), .1f).setOnComplete(() =>
+            {
+                Destroy(bubbleObject,.01f);
+            });
+        }
 
         // Mouse Inputs
         private void OnLeftClick(PointerEventData eventData)
@@ -59,7 +69,7 @@ namespace Behaviours
             if (currentBubble!=null && currentBubble.input == MouseInputs.LeftClick && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log("Mouse Clicked Btw");
+                BubbleCorrectHit(currentBubble.gameObject);
             }
             else
             {
@@ -72,7 +82,7 @@ namespace Behaviours
             if (currentBubble!=null && currentBubble.input == MouseInputs.RightClick && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log("Mouse 1 OnRightClick ");
+                BubbleCorrectHit(currentBubble.gameObject);
             }
             else
             {
@@ -85,7 +95,7 @@ namespace Behaviours
             if (currentBubble!=null && currentBubble.input == MouseInputs.LeftClickDragUp && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log("Left Click Drag Up");
+                BubbleCorrectHit(currentBubble.gameObject);
             }
             else
             {
@@ -98,7 +108,7 @@ namespace Behaviours
             if (currentBubble!=null && currentBubble.input == MouseInputs.LeftClickDragDown && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log("Left Click Drag Down");
+                BubbleCorrectHit(currentBubble.gameObject);
             }
             else
             {
@@ -111,7 +121,7 @@ namespace Behaviours
             if (currentBubble!=null && currentBubble.input == MouseInputs.RightClickDragUp && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log("right Click Drag Up");
+                BubbleCorrectHit(currentBubble.gameObject);
             }
             else
             {
@@ -125,7 +135,7 @@ namespace Behaviours
             if (currentBubble!=null&&currentBubble.input == MouseInputs.RightClickDragDown && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log("Right Click Drag Down");
+                BubbleCorrectHit(currentBubble.gameObject);
             }
             else
             {
@@ -171,7 +181,15 @@ namespace Behaviours
 
         private void OnGuitaristDead()
         {
-            _animator.SetTrigger("Die");
+            mouseListener.LeftClick -= OnLeftClick;
+            mouseListener.RightClick -= OnRightClick;
+            mouseListener.LeftClickDraggedUp -= OnLeftClickDragUp;
+            mouseListener.LeftClickDraggedDown -= OnLeftClickDragDown;
+            mouseListener.RightClickDraggedUp -= OnRightClickDragUp;
+            mouseListener.RightClickDraggedDown -= OnRightClickDragDown;
+            _healthManager.OnDead -= OnGuitaristDead;
+            _animator.SetTrigger(Die);
+            gameObject.SetActive(false);
             boss.KillPlayer();
         }
 

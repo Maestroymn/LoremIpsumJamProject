@@ -23,6 +23,7 @@ namespace Controllers
         
         public void StartArenaRoutine()
         {
+            _bossBehaviour.Initialized();
             _guitaristCharacter.Initialize();
             _drumCharacterBehaviour.Initialize();
             if (OpenRow1D)

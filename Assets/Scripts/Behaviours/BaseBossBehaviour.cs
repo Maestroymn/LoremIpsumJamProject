@@ -32,7 +32,7 @@ namespace Behaviours
 
         public void KillPlayer()
         {
-            animator.SetTrigger(bossEvent[bossEvent.Count]);
+            animator.SetTrigger(bossEvent[bossEvent.Count-1]);
         }
     }
 }

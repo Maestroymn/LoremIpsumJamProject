@@ -31,6 +31,7 @@ namespace Behaviours
         public LayerMask layerMask;
 
         public CharacterSituation CharacterSituation;
+        private static readonly int Die = Animator.StringToHash("Die");
 
         public void Initialize()
         {
@@ -67,17 +68,24 @@ namespace Behaviours
             _guitaristCharacter.Rigidbody2D.velocity = _direction * movementSpeed * Time.deltaTime;
         }
 
+        private void BubbleCorrectHit(GameObject bubbleObject)
+        {
+            LeanTween.scale(bubbleObject, new Vector3(2.5f, 2.5f, 2.5f), .1f).setOnComplete(() =>
+            {
+                Destroy(bubbleObject,.01f);
+            });
+        }
+        
         // Keyboard Inputs
         private void OnFirstKeyPressed()
         {
             if (currentBubble!=null&&currentBubble.input == _keyboardListener.FirstKey && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log(currentBubble.input+" Pressed");
+                BubbleCorrectHit(currentBubble.gameObject);
             }
             else
             {
-                Debug.Log("Damage");
                 DamageDrummer();
             }
 
@@ -87,11 +95,11 @@ namespace Behaviours
             if (currentBubble!=null&&currentBubble.input == _keyboardListener.SecondKey && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log(currentBubble.input+" Pressed");
+                BubbleCorrectHit(currentBubble.gameObject);
+                
             }
             else
             {
-                Debug.Log("Damage");
                 DamageDrummer();
             }
         }
@@ -100,11 +108,10 @@ namespace Behaviours
             if ( currentBubble!=null&&currentBubble.input == _keyboardListener.ThirdKey && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log(currentBubble.input+" Pressed");
+                BubbleCorrectHit(currentBubble.gameObject);
             }
             else
             {
-                Debug.Log("Damage");
                 DamageDrummer();
             }
         }
@@ -113,11 +120,10 @@ namespace Behaviours
             if (currentBubble!=null&&currentBubble.input == _keyboardListener.FourthKey && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log(currentBubble.input+" Pressed");
+                BubbleCorrectHit(currentBubble.gameObject);
             }
             else
             {
-                Debug.Log("Damage");
                 DamageDrummer();
             }
         }
@@ -126,11 +132,10 @@ namespace Behaviours
             if (currentBubble!=null&&currentBubble.input == _keyboardListener.FifthKey && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log(currentBubble.input+" Pressed");
+                BubbleCorrectHit(currentBubble.gameObject);
             }
             else
             {
-                Debug.Log("Damage");
                 DamageDrummer();
             }
         }
@@ -139,11 +144,10 @@ namespace Behaviours
             if (currentBubble!=null&&currentBubble.input == _keyboardListener.SixthKey && currentBubble._isInteractable)
             {
                 currentBubble._isInteractable = false;
-                Debug.Log(currentBubble.input+" Pressed");
+                BubbleCorrectHit(currentBubble.gameObject);
             }
             else
             {
-                Debug.Log("Damage");
                 DamageDrummer();
             }
         }
@@ -181,6 +185,14 @@ namespace Behaviours
 
         private void OnDrummerDead()
         {
+            _animator.SetTrigger(Die);
+            _keyboardListener.FirstKeyPressed -= OnFirstKeyPressed;
+            _keyboardListener.SecondKeyPressed -= OnSecondKeyPressed;
+            _keyboardListener.ThirdKeyPressed -= OnThirdKeyPressed;
+            _keyboardListener.FourthKeyPressed -= OnFourthKeyPressed;
+            _keyboardListener.FifthKeyPressed -= OnFifthKeyPressed;
+            _keyboardListener.SixthKeyPressed -= OnSixthKeyPressed;
+            gameObject.SetActive(false);
             boss.KillPlayer();
         }
 

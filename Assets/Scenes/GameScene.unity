@@ -285,6 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drummer: {fileID: 1667506190}
   smoothDampValue: 0.5
+  isFollowing: 0
 --- !u!4 &1667506190 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1045400199211142575, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
@@ -298,26 +299,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1045400199211142574, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
-        type: 3}
-      propertyPath: movementSpeed
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 3652690533875321226, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5689530557398198067, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5689530557708908243, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7729433916882625400, guid: 5b9e0b8ee82d3624cb8ff12bc941b180,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -382,6 +363,6 @@ PrefabInstance:
         type: 3}
       propertyPath: _camera
       value: 
-      objectReference: {fileID: 999387630}
+      objectReference: {fileID: 999387632}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9e0b8ee82d3624cb8ff12bc941b180, type: 3}

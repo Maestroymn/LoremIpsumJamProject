@@ -53,6 +53,7 @@ namespace Controllers
 
         private IEnumerator WaitUntilEntryFinish()
         {
+            
             yield return new WaitForSeconds(BossEntryAnimator.GetCurrentAnimatorStateInfo(0).length+BossEntryAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
             LeanTween.scale(EntryParent.GetComponent<RectTransform>(),Vector3.zero,.4f).setOnComplete(()=>
             {

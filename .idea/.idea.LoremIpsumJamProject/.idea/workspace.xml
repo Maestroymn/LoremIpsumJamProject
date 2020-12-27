@@ -20,16 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4c9d793-16a5-4efb-bc56-fe7704bdc10b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LoremIpsumJamProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Arenas/Arena1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Arenas/Arena1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Drummer/Drummer Laser.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Drummer/Drummer Laser.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Drummer/Drummer.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Drummer/Drummer.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Drummer/Drummer_Laser.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Drummer/Drummer_Laser.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/ArenaManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/ArenaManager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/BaseBossBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/BaseBossBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BossHealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BossHealthManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Maps/Grid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Maps/Grid.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Materials/Skyline 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Materials/Skyline 1.mat" afterDir="false" />
@@ -76,11 +73,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitarBubbleSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/ArenaManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MainMenuController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BaseBossBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GuitaristCharacterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/DrumCharacterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ArenaController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       </list>
     </option>
@@ -127,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608918434029</updated>
       <workItem from="1608918452812" duration="14136000" />
-      <workItem from="1608979444454" duration="36246000" />
+      <workItem from="1608979444454" duration="38465000" />
     </task>
     <servers />
   </component>

@@ -22,7 +22,7 @@ namespace Managers
                 _uiManager._characterMenuController.gameObject.SetActive(false);
                 LeanTween.alpha(_fadeImage.rectTransform, 0, 2f).setEase(LeanTweenType.easeInCirc).setOnComplete(() =>
                 {
-                    _arenaManager.StartArena2();
+                    _arenaManager.StartArena1();
                 });
             });
         }

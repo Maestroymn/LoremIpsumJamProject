@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Managers;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -48,8 +49,8 @@ namespace Behaviours
             if (!(Camera.main is null))
                 _mouseDir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
             Angle = Mathf.Atan2(_mouseDir.y, _mouseDir.x) * Mathf.Rad2Deg;
-            _drumCharacter.transform.rotation = Quaternion.AngleAxis(Angle, Vector3.forward);
-            transform.rotation = Quaternion.AngleAxis(Angle, Vector3.forward);
+            //_drumCharacter.transform.rotation = Quaternion.AngleAxis(Angle, Vector3.forward);
+            //transform.rotation = Quaternion.AngleAxis(Angle, Vector3.forward);
         }
 
         // Mouse Inputs

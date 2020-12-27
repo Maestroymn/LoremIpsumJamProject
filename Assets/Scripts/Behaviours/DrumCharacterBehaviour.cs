@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using InputSystem;
+using Managers;
 using UnityEngine;
 
 namespace Behaviours

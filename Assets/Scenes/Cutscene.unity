@@ -152,7 +152,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - "X: Bug\xFCn \xE7ok g\xFCzel m\xFCzik yaptik dostum !"
-  - "Y: Evet! M\xFCziksiz bir hayat d\xFC\u015F\xFCnemiyorum."
+  - "Y: Evet! M\xFCziksiz bir hayat d\xFC\u015F\xFCnemiyorum bile. Hadi uyuyal\u0131m
+    yar\u0131n kay\u0131t almam\u0131z gerek."
   - Ah! nerdeyim ben bu sesler de ne?
   - "Ke\u015Fke X'de yan\u0131mda olsayd\u0131 da m\xFCzik neymi\u015F g\xF6sterseydik."
   - "\u0130\u015Fte \u015Fimdi ba\u015Fl\u0131yoruz !"
@@ -162,9 +163,9 @@ MonoBehaviour:
     \xE7al\u0131\u015F\u0131yorlar. Hadi onlara ger\xE7ek m\xFCzik neymi\u015F g\xF6sterelim!"
   sprites:
   - {fileID: 21300000, guid: 43f96e079a33a3e4aaef5de3adf4764d, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  mainAudioSource: {fileID: 0}
+  - {fileID: 21300000, guid: e12badb4e1cba7741a37a486943f8213, type: 3}
+  - {fileID: 21300000, guid: c5aa1b6e392fba34cab1d717f2104985, type: 3}
+  mainAudioSource: {fileID: 779974268}
 --- !u!4 &114745699
 Transform:
   m_ObjectHideFlags: 0

@@ -149,5 +149,11 @@ public class TypeText : MonoBehaviour
 		StopTyping();
 	}
 
+	public void clearText()
+    {
+		StopTyping();
+		dialogText.text = "";
+	}
+
 	public bool IsTyping() { return typing; }
 }

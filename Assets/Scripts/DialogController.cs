@@ -61,11 +61,11 @@ public class DialogController : MonoBehaviour
 
             if(window != null)
             {
-                Invoke("killWindow", 1f);
+                Invoke("killWindow", 2f);
             }
 
             count++;
-            Invoke("changeImage", 1f);
+            Invoke("changeImage", 2f);
         }
     }
 
@@ -84,6 +84,8 @@ public class DialogController : MonoBehaviour
         {
             image.sprite = sprites[count];
         }
+
+        tT.clearText();
     }
 
     private void playSound(AudioClip clip)

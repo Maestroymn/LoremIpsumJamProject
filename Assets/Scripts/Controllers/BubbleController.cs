@@ -9,6 +9,13 @@ namespace Controllers
         public List<DrumBubbleBehaviour> DrummerBubbles;
         public List<GuitarBubbleBehaviour> GuitarBubbles;
         [SerializeField] public float bubbleSpeed;
+        [SerializeField] private float beatTempo;
+        [SerializeField] private float bpm;
+
+        private void Start()
+        {
+            beatTempo = beatTempo / bpm;
+        }
 
         private void Update()
         {
@@ -18,7 +25,7 @@ namespace Controllers
                 {
                     if (x != null)
                     {
-                        x.transform.localPosition+=Time.deltaTime*Vector3.right*bubbleSpeed;
+                        x.transform.localPosition+=Time.deltaTime*Vector3.right*beatTempo;
                     }
                 });
             }
@@ -28,7 +35,7 @@ namespace Controllers
                 {
                     if (x != null)
                     {
-                        x.transform.localPosition+=Time.deltaTime*Vector3.right*bubbleSpeed;
+                        x.transform.localPosition+=Time.deltaTime*Vector3.right*beatTempo;
                     }
                 });
             }

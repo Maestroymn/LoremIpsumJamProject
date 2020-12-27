@@ -26,6 +26,12 @@ public class HealthManager : MonoBehaviour
     {
         textFeedback.ShowDamage(damage);
         current -= damage;
+        if (current <= 0)
+        {
+            current = 0;
+            OnDead?.Invoke();
+        }
+
         fillAmount = (float)current / (float)maximum;
         mask.fillAmount = fillAmount;
         for (int i = 0; i < percentageValues.Count; i++)
@@ -35,9 +41,6 @@ public class HealthManager : MonoBehaviour
                 percentageReached?.Invoke(i);
             }
         }
-        if (current <= 0)
-        {
-            OnDead?.Invoke();
-        }
+
     }
 }

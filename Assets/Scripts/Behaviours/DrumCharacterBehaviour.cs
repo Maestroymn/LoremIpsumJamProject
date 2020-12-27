@@ -77,6 +77,7 @@ namespace Behaviours
             }
             else
             {
+                Debug.Log("Damage");
                 DamageDrummer();
             }
 
@@ -90,6 +91,7 @@ namespace Behaviours
             }
             else
             {
+                Debug.Log("Damage");
                 DamageDrummer();
             }
         }
@@ -102,6 +104,7 @@ namespace Behaviours
             }
             else
             {
+                Debug.Log("Damage");
                 DamageDrummer();
             }
         }
@@ -114,6 +117,7 @@ namespace Behaviours
             }
             else
             {
+                Debug.Log("Damage");
                 DamageDrummer();
             }
         }
@@ -126,6 +130,7 @@ namespace Behaviours
             }
             else
             {
+                Debug.Log("Damage");
                 DamageDrummer();
             }
         }
@@ -138,6 +143,7 @@ namespace Behaviours
             }
             else
             {
+                Debug.Log("Damage");
                 DamageDrummer();
             }
         }

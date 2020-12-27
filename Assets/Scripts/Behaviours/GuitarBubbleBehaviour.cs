@@ -26,10 +26,13 @@ namespace Behaviours
 
         private void OnTriggerExit2D(Collider2D collision)
         {
-            _isInteractable = false;
+            //_isInteractable = false;
             LeanTween.scale(gameObject, Vector3.zero, .2f).setOnComplete(() =>
             {
-                guitarist.DamageGuitarist();
+                if (_isInteractable)
+                {
+                    guitarist.DamageGuitarist();
+                }
                 Destroy(gameObject);
             });
         }
